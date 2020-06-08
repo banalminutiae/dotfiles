@@ -1,0 +1,90 @@
+;;; -*- coding: utf-8 -*-
+
+;; ----- ido-last-directory-list -----
+(
+ ("c:/Users/Andre/Packages/Emacs/" . "bin/")
+ ("c:/Users/Andre/Packages/" . "Emacs/")
+ ("c:/Users/Andre/OneDrive/" . "Documents/")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" . "elpa/")
+ ("c:/Users/Andre/AppData/Roaming/" . ".emacs.d/")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/archives/" . "melpa/")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" . "naysayer-theme-20191207.1936/")
+ ("c:/Users/Andre/AppData/" . "Roaming/")
+ ("c:/Users/Andre/" . "Documents/")
+ ("c:/Users/" . "Andre/")
+)
+
+;; ----- ido-work-directory-list -----
+(
+ "c:/ssh19460677@/"
+ "c:/Users/Andre/Documents/"
+ "c:/Users/Andre/AppData/Roaming/.emacs.d/"
+ "c:/Users/Andre/Packages/Emacs/bin/"
+ "c:/Users/Andre/Packages/Emacs/"
+ "c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/naysayer-theme-20191207.1936/"
+ "c:/Users/Andre/OneDrive/Desktop/"
+ "c:/Users/Andre/Documents/Stuff/"
+ "c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/archives/melpa/"
+)
+
+;; ----- ido-work-file-list -----
+(
+ "lab218-a01.cs.curtin.edu.au"
+ "Makefile"
+ "Banal.c"
+ "init.el~"
+ "init.el"
+ "2to3"
+ ".emacs.d"
+ "naysayer-theme-autoloads.el"
+ "Banal-theme.el"
+ "Reading_List.org"
+)
+
+;; ----- ido-dir-file-cache -----
+(
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24154 29266 0 0) "recentf" "init.el~" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "bookmarks" "Banal-theme.el~" "Banal-theme.el" "auto-save-list/" "../" "./")
+
+ ("c:/Users/Andre/Documents/" (24145 24114 0 0) "Stuff/" "SNES/" "Reading_List.org~" "Reading_List.org" "OOSE/" "My Videos/" "My Pictures/" "My Music/" "Hackyshit.txt" "Dead_Integrity/" "Books/" "Banal.c~" "Banal.c" "../" "./")
+
+ ("c:/Users/Andre/" (24149 51514 0 0) "VirtualBox VMs/" "Videos/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Packages/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{1340e7d6-bca0-11e9-b331-dec071bbdaf9}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{1340e7d6-bca0-11e9-b331-dec071bbdaf9}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{1340e7d6-bca0-11e9-b331-dec071bbdaf9}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "My Documents/" "Music/" "miktex-console.lock" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Cisco Packet Tracer 7.2.2/" "Application Data/" "AppData/" "AndroidStudioProjects/" "3D Objects/" ".vscode/" ".VirtualBox/" ".tooling/" ".ssh/" ".packettracer" ".gradle/" ".emulator_console_auth_token" ".cisco/" ".AndroidStudio3.4/" ".android/" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/archives/melpa/" (24106 63177 0 0) "archive-contents" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/Desktop/" (24137 27053 0 0) "timetable.png" "Fallout New Vegas.url" "desktop.ini" "CT+.zip" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/" (24106 58588 0 0) "xah-fly-keys.el~" "xah-fly-keys.elc" "xah-fly-keys.el" "xah-fly-keys-pkg.el" "xah-fly-keys-autoloads.el" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/naysayer-theme-20191207.1936/" (24072 48777 0 0) "naysayer-theme.el" "naysayer-theme-pkg.el" "naysayer-theme-autoloads.el" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" (24100 27961 0 0) "xah-fly-keys-20191226.2348/" "with-editor-20191222.1939/" "which-key-20191221.1857/" "use-package-20191126.2034/" "undo-tree-0.7.1/" "try-20181204.236/" "transient-20191226.1938/" "naysayer-theme-20191207.1936/" "magit-20191229.1345/" "goto-chg-20190110.2114/" "git-commit-20191227.1317/" "dash-20191109.1327/" "color-theme-sanityinc-tomorrow-20191221.823/" "bind-key-20191110.416/" "async-20191226.1227/" "archives/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Stuff/" (24076 44753 0 0) "UnixRSI.ahk~" "UnixRSI.ahk" "Algorithms.hs" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/color-theme-sanityinc-tomorrow-20191221.823/" (24097 33535 0 0) "sanityinc-tomorrow-night-theme.elc" "sanityinc-tomorrow-night-theme.el" "sanityinc-tomorrow-eighties-theme.elc" "sanityinc-tomorrow-eighties-theme.el" "sanityinc-tomorrow-day-theme.elc" "sanityinc-tomorrow-day-theme.el" "sanityinc-tomorrow-bright-theme.elc" "sanityinc-tomorrow-bright-theme.el" "sanityinc-tomorrow-blue-theme.elc" "sanityinc-tomorrow-blue-theme.el" "color-theme-sanityinc-tomorrow.el~" "color-theme-sanityinc-tomorrow.elc" "color-theme-sanityinc-tomorrow.el" "color-theme-sanityinc-tomorrow-pkg.el" "color-theme-sanityinc-tomorrow-autoloads.el" ".#color-theme-sanityinc-tomorrow.el" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/Documents/" (24088 20693 0 0) "SNES/" "My Games/" "desktop.ini" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/" (24027 23818 0 0) "Pictures/" "Getting started with OneDrive.docx" "Documents/" "desktop.ini" "Desktop/" "Attachments/" ".849C9593-D756-4E56-8D6E-42412F2A707B" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/auto-save-list/" (24074 4616 0 0) ".saves-53004-DESKTOP-ATRM843~" ".saves-36988-DESKTOP-ATRM843~" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/Adobe/" (23887 57975 0 0) "Flash Player/" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/" (24072 24393 0 0) "winscp.rnd" "Waterfox/" "vs_installershell/" "vstelemetry/" "VMware/" "vlc/" "Visual Studio Setup/" "Visual Studio Code/" "texstudio/" "SumatraPDF/" "Racket/" "NuGet/" "Notepad++/" "Mozilla/" "MiKTeX/" "Microsoft FxCop/" "Microsoft/" "Macromedia/" "Kast/" "Google/" "Discord/" "Code/" "Adobe/" ".emacs.d/" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/archives/" (24072 15460 0 0) "melpa/" "gnu/" "../" "./")
+
+ ("c:/Users/Andre/AppData/" (23887 57680 0 0) "Roaming/" "LocalLow/" "Local/" "../" "./")
+
+ ("c:/Users/" (24032 51849 0 0) "Public/" "desktop.ini" "defaultuser100001/" "Default User/" "Default/" "Andre/" "All Users/" "../" "./")
+
+ ("c:/Users/Andre/Packages/" (24072 13899 0 0) "Emacs/" "../" "./")
+
+ ("c:/Users/Andre/Packages/Emacs/" (24072 13753 0 0) "ssl/" "share/" "libexec/" "lib/" "include/" "etc/" "bin/" "../" "./")
+
+ ("c:/Users/Andre/Packages/Emacs/bin/" (24072 14381 0 0) "zlib1.dll" "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec.exe" "xzcmp" "xzcat.exe" "xz.exe" "xmlwf.exe" "xmllint.exe" "xmlcatalog.exe" "xml2-config" "xgettext.exe" "x86_64-w64-mingw32-tset.exe" "x86_64-w64-mingw32-tput.exe" "x86_64-w64-mingw32-toe.exe" "x86_64-w64-mingw32-tic.exe" "x86_64-w64-mingw32-tabs.exe" "x86_64-w64-mingw32-reset.exe" "x86_64-w64-mingw32-infotocap.exe" "x86_64-w64-mingw32-infocmp.exe" "x86_64-w64-mingw32-clear.exe" "x86_64-w64-mingw32-captoinfo.exe" "x86_64-w64-mingw32-agrep.exe" "wrjpgcom.exe" "wish86.exe" "wish.exe" "update-ca-trust" "unxz.exe" "trust.exe" "transicc.exe" "tk86.dll" "tjbench.exe" "tificc.exe" "tiffsplit.exe" "tiffset.exe" "tiffmedian.exe" "tiffinfo.exe" "tiffdump.exe" "tiffdither.exe" "tiffcrop.exe" "tiffcp.exe" "tiffcmp.exe" "tiff2rgba.exe" "tiff2ps.exe" "tiff2pdf.exe" "tiff2bw.exe" "tclsh86.exe" "tclsh.exe" "tcl86.dll" "ssleay32.dll" "srptool.exe" "sqlite3_analyzer.sh" "sexp-conv.exe" "runemacs.exe" "rsvg-view-3.exe" "rsvg-convert.exe" "recode-sr-latin.exe" "rdjpgcom.exe" "raw2tiff.exe" "python2w.exe" "python2.exe" "python2.7.exe" "python2.7-config" "python2-config" "python.exe" "python-config.sh" "python-config-u.sh" "python-config" "pydoc" "psktool.exe" "psicc.exe" "ppm2tiff.exe" "pngfix.exe" "png-fix-itxt.exe" "pkcs1-conv.exe" "pcretest.exe" "pcregrep.exe" "pcre-config" "pango-view.exe" "pal2rgb.exe" "p11tool.exe" "p11-kit.exe" "openssl.exe" "ocsptool.exe" "ngettext.exe" "nettle-pbkdf2.exe" "nettle-lfib-stream.exe" "nettle-hash.exe" "ncursesw6-config" "msguniq.exe" "msgunfmt.exe" "msgmerge.exe" "msginit.exe" "msggrep.exe" "msgfmt.exe" "msgfilter.exe" "msgexec.exe" "msgen.exe" "msgconv.exe" "msgcomm.exe" "msgcmp.exe" "msgcat.exe" "msgattrib.exe" "minizip.exe" "miniunzip.exe" "lzmainfo.exe" "lzmadec.exe" "linkicc.exe" "libXpm-noX4.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libturbojpeg-0.dll" "libtre-5.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libtermcap-0.dll" "libtasn1-6.dll" "libsystre-0.dll" "libstdc++-6.dll" "libssp-0.dll" "librsvg-2-2.dll" "libreadline7.dll" "libquadmath-0.dll" "libpython2.7.dll" "libpng16-config" "libpng16-16.dll" "libpng-config" "libpixman-1-0.dll" "libpcreposix-0.dll" "libpcrecpp-0.dll" "libpcre32-0.dll" "libpcre16-0.dll" "libpcre-1.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-6.dll" "libminizip-1.dll" "liblzo2-2.dll" "liblzma-5.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjasper-4.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-4.dll" "libhistory7.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgthread-2.0-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmpxx-4.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgettextsrc-0-19-8-1.dll" "libgettextpo-0.dll" "libgettextlib-0-19-8-1.dll" "libgdk_pixbuf-2.0-0.dll" "libgdbm-4.dll" "libgcc_s_seh-1.dll" "libfreetype-6.dll" "libfreeglut.dll" "libfontconfig-1.dll" "libffi-6.dll" "libexpat-1.dll" "libeay32.dll" "libcroco-0.6-3.dll" "libcharset-1.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libatomic-1.dll" "libasprintf-0.dll" "jpgicc.exe" "jpegtran.exe" "jasper.exe" "imginfo.exe" "imgcmp.exe" "idn2.exe" "idle" "hb-view.exe" "hb-shape.exe" "hb-ot-shape-closure.exe" "gspawn-win64-helper.exe" "gspawn-win64-helper-console.exe" "gsettings.exe" "gresource.exe" "gr2fonttest.exe" "gobject-query.exe" "gnutls-serv.exe" "gnutls-cli.exe" "gnutls-cli-debug.exe" "glib-mkenums.exe" "glib-mkenums-script.py" "glib-gettextize" "glib-genmarshal.exe" "glib-genmarshal-script.py" "glib-compile-schemas.exe" "glib-compile-resources.exe" "gio.exe" "gio-querymodules.exe" "gettextize" "gettext.sh" "gettext.exe" "gdk-pixbuf-thumbnailer.exe" "gdk-pixbuf-query-loaders.exe" "gdk-pixbuf-pixdata.exe" "gdk-pixbuf-csource.exe" "gdbus.exe" "gdbus-codegen.exe" "gdbus-codegen-script.py" "gdbm_load.exe" "gdbm_dump.exe" "gdbmtool.exe" "freetype-config" "fc-validate.exe" "fc-scan.exe" "fc-query.exe" "fc-pattern.exe" "fc-match.exe" "fc-list.exe" "fc-cat.exe" "fc-cache.exe" "fax2tiff.exe" "fax2ps.exe" "etags.exe" "envsubst.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-26.3.exe" "edit_test_dll.exe" "edit_test.exe" "edit.dll" "ebrowse.exe" "djpeg.exe" "cxpm-noX.exe" "ctags.exe" "csslint-0.6.exe" "croco-0.6-config" "cjpeg.exe" "certtool.exe" "bzmore" "bzless" "bzip2recover.exe" "bzip2.exe" "bzgrep" "bzfgrep" "bzegrep" "bzdiff" "bzcmp" "bzcat.exe" "bunzip2.exe" "autopoint" "asn1Parser.exe" "asn1Decoding.exe" "asn1Coding.exe" "addpm.exe" "2to3" "../" "./")
+)
+
+;; ----- ido-unc-hosts-cache -----
+t

@@ -1,0 +1,44 @@
+ls
+clear
+man diff
+man
+vim
+clear
+man gcc
+cd ~
+ls
+cd..
+cd ..
+ls
+cd ../../..
+ls
+cd ..
+ls
+ssh 19460677@saeshell01p.curtin.edu
+vim
+cl
+clear
+ls
+rm thing.cpp 
+clear
+ls
+rm naysayer-theme.el 
+clear
+ls
+cd elpa
+ls
+rm Banal-theme.el 
+clear
+ls
+ant
+make clean
+ls
+clear
+cd ~
+ls
+clear
+clear
+cd ..
+cd ~
+ls
+clear
