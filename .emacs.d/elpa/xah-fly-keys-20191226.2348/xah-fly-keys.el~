@@ -371,6 +371,20 @@ Version 2015-03-24"
   (interactive)
   (re-search-backward "\\.+\\|,+\\|;+" nil t))
 
+(defun split-and-follow-horizontally ()
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+;(global-set-key (kbd "C-x 2") 'split-and-follow-horizontally)
+
+(defun split-and-follow-vertically ()
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+
+
 ;; (defun goto-point-min ()
 ;;   "Goto the beginning of buffer.
 ;; This is different from `beginning-of-buffer'

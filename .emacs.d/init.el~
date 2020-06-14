@@ -1,5 +1,3 @@
-(set gc-cons-threshold 100000000);gotta go fast
-
 ;;quality of life stuf
 ;(server-start) -> spooky
 (menu-bar-mode -1)
@@ -114,8 +112,7 @@
 ;;autocomplete command completion
 (use-package which-key
   :ensure t
-  :config
-  (which-key-mode))
+  :config)
 
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")

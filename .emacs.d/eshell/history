@@ -42,3 +42,21 @@ cd ..
 cd ~
 ls
 clear
+ls
+dir
+clear
+ls -a
+cd ~
+cd Users/Andre/
+ls
+pwd
+cd ../..
+cd Documents/
+clear
+ls
+ls -a
+cd Stuff/
+gcc
+wasm
+emacs
+runemacs

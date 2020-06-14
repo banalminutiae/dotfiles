@@ -27,7 +27,7 @@
  ("c:/Users/Andre/AppData/Roaming/.emacs.d/" . "elpa/")
  ("c:/Users/Andre/AppData/Roaming/" . ".emacs.d/")
  ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/archives/" . "melpa/")
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" . "naysayer-theme-20191207.1936/")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" . "xah-fly-keys-20191226.2348/")
  ("c:/Users/Andre/AppData/" . "Roaming/")
  ("c:/Users/Andre/" . "Downloads/")
  ("c:/Users/" . "Andre/")
@@ -36,6 +36,8 @@
 ;; ----- ido-work-directory-list -----
 (
  "c:/Users/Andre/AppData/Roaming/.emacs.d/"
+ "c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/"
+ "c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_A/src/"
  "c:/Users/Andre/Documents/Stuff/Kaleidoscope/OCAML/"
  "c:/Users/Andre/Documents/OpenCV/"
  "c:/Users/Andre/Documents/Stuff/Kaleidoscope/CPP/"
@@ -47,7 +49,6 @@
  "c:/Users/Andre/Documents/OOSE/Assignment/src/View/"
  "c:/Users/Andre/Documents/OOSE/Assignment/"
  "c:/Users/Andre/Documents/OOSE/P03/AddressBook/src/Controller/"
- "c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_A/src/"
  "c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_B/src/"
  "c:/Users/Andre/Documents/OS/Assignment/"
  "c:/Users/Andre/Documents/goof/"
@@ -80,26 +81,26 @@
 ;; ----- ido-work-file-list -----
 (
  "init.el"
+ "init.el~"
+ "xah-fly-keys.el"
+ "thread_info.h"
  "Lexer.ml"
  "Houghie_Line.py"
  "gray.py"
  "circles.py"
  "Lexer.cpp"
  "Lexer.h"
- "Parser.h"
- "Parser.cpp"
- "AST.cpp"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/Andre/AppData/Roaming/" (24279 8434 0 0) "winscp.rnd" "Waterfox/" "vs_installershell/" "vstelemetry/" "VMware/" "Visual Studio Setup/" "Visual Studio Code/" "texstudio/" "SumatraPDF/" "Spotify/" "Racket/" "NuGet/" "Notepad++/" "Mozilla/" "MiKTeX/" "Microsoft FxCop/" "Microsoft/" "Macromedia/" "KeePass/" "Kast/" "JetBrains/" "Google/" "FileZilla/" "Discord/" "com.RustyLake.SamsaraRoom/" "Code/" "Adobe/" "acme-home/" ".saves/" ".emacs.d/" "../" "./")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24293 58732 0 0) "url/" "snippets/" "server/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" "../" "./")
 
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24285 63526 0 0) "url/" "snippets/" "server/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".#init.el" "../" "./")
+ ("c:/Users/Andre/AppData/Roaming/" (24291 2276 0 0) "Yandex/" "winscp.rnd" "Waterfox/" "vs_installershell/" "vstelemetry/" "VMware/" "Visual Studio Setup/" "Visual Studio Code/" "texstudio/" "SumatraPDF/" "Spotify/" "README.md" "Racket/" "NuGet/" "Notepad++/" "Mozilla/" "MiKTeX/" "Microsoft FxCop/" "Microsoft/" "Macromedia/" "KeePass/" "Kast/" "JetBrains/" "Google/" "FileZilla/" "Discord/" "com.RustyLake.SamsaraRoom/" "Code/" "Adobe/" "acme-home/" ".saves/" ".git/" ".emacs.d/" "../" "./")
 
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" (24283 4600 0 0) "yasnippet-snippets-20200425.1210/" "yasnippet-20191222.2206/" "xah-fly-keys-20191226.2348/" "with-editor-20191222.1939/" "which-key-20191221.1857/" "use-package-20191126.2034/" "try-20181204.236/" "transient-20191226.1938/" "solarized-theme-20200411.1026/" "s-20180406.808/" "rich-minority-20190419.1136/" "pyvenv-20191202.1039/" "plan9-theme-20180804.1441/" "page-break-lines-readme.txt" "page-break-lines-20200121.837/" "nord-theme-20200108.833/" "naysayer-theme-20191207.1936/" "moe-theme-20200216.1927/" "highlight-indentation-20181204.839/" "gruvbox-theme-20200307.1522/" "git-commit-20191227.1317/" "dash-20191109.1327/" "darktooth-theme-20190412.142/" "company-20200324.2145/" "command-log-mode-20160413.447/" "caml-20190413.1205/" "bind-key-20191110.416/" "autothemer-20180920.923/" "async-20191226.1227/" "archives/" "../" "./")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/" (24291 12594 0 0) "xah-fly-keys.el~" "xah-fly-keys.elc" "xah-fly-keys.el" "xah-fly-keys-pkg.el" "xah-fly-keys-autoloads.el" "../" "./")
 
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/" (24106 60356 0 0) "xah-fly-keys.el~" "xah-fly-keys.elc" "xah-fly-keys.el" "xah-fly-keys-pkg.el" "xah-fly-keys-autoloads.el" "../" "./")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" (24291 10121 0 0) "yasnippet-snippets-20200425.1210/" "yasnippet-20191222.2206/" "xah-fly-keys-20191226.2348/" "with-editor-20191222.1939/" "which-key-20191221.1857/" "use-package-20191126.2034/" "try-20181204.236/" "transient-20191226.1938/" "solarized-theme-20200411.1026/" "s-20180406.808/" "rich-minority-20190419.1136/" "pyvenv-20191202.1039/" "plan9-theme-20180804.1441/" "page-break-lines-readme.txt" "page-break-lines-20200121.837/" "nord-theme-20200108.833/" "naysayer-theme-20200405.123/" "moe-theme-20200216.1927/" "highlight-indentation-20181204.839/" "gruvbox-theme-20200307.1522/" "git-commit-20191227.1317/" "dash-20191109.1327/" "darktooth-theme-20190412.142/" "company-20200324.2145/" "command-log-mode-20160413.447/" "caml-20190413.1205/" "bind-key-20191110.416/" "autothemer-20180920.923/" "async-20191226.1227/" "archives/" "../" "./")
 
  ("c:/Users/Andre/Documents/Stuff/Kaleidoscope/OCAML/" (24283 44687 0 0) "../" "./")
 

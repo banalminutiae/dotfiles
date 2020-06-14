@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Kaleidoscope"
+(("xah-fly-keys-20191226.2348"
+ (filename . "~/.emacs.d/elpa/xah-fly-keys-20191226.2348/")
+ (front-context-string . "xah-fly-keys-aut")
+ (rear-context-string . "585 01-13 14:34 ")
+ (position . 272))
+("Kaleidoscope"
  (filename . "c:/Users/Andre/Documents/Stuff/Kaleidoscope/")
  (front-context-string)
  (rear-context-string . "0 03-30 20:39 .\n")

@@ -1,8 +1,9 @@
 ;;; naysayer-theme.el --- The naysayer color theme
 
 ;; Author: Nick Aversano <nickav@users.noreply.github.com>
-;; Version: 0.3
-;; Package-Version: 20191207.1936
+;; Version: 0.33
+;; Package-Version: 20200405.123
+;; Package-Commit: 9d0bef898f31368cd30e063d53d443dee29683b0
 ;; Filename: naysayer-theme.el
 ;; Package-Requires: ((emacs "24"))
 ;; URL: https://github.com/nickav/naysayer-theme.el
@@ -29,23 +30,23 @@
 (defcustom naysayer-theme-cyan "#A1EFE4" "Primary colors - cyan" :type 'string :group 'monokai)
 (defcustom naysayer-theme-violet "#AE81FF" "Primary colors - violet" :type 'string :group 'monokai)
 
-(let ((background "#03191c");03191c
-      (gutters    "#03191c")
-      (gutter-fg  "#03191c")
-      (gutters-active "#03191c")
+(let ((background "#062329")
+      (gutters    "#062329")
+      (gutter-fg  "#062329")
+      (gutters-active "#062329")
       (builtin      "#ffffff")
       (selection  "#0000ff")
-      (text       "#bdb395");d2b58d
-      (comments   "#5ebd55")
-      (punctuation "#86E08F")
+      (text       "#d1b897")
+      (comments   "#44b340")
+      (punctuation "#8cde94")
       (keywords "#ffffff")
-      (variables "#d4d4d4")
-      (functions "#d4d4d4")
-      (methods    "#d4d4d4")
+      (variables "#c1d1e3")
+      (functions "#ffffff")
+      (methods    "#c1d1e3")
       (strings    "#2ec09c")
-      (constants "#8fe1c8")
-      (macros "#86E08F")
-      (numbers "#8fe1c8")
+      (constants "#7ad0c6")
+      (macros "#8cde94")
+      (numbers "#7ad0c6")
       (white     "#ffffff")
       (error "#ff0000")
       (warning "#ffaa00")
@@ -68,7 +69,7 @@
    ;; Font lock faces
    ;; *****************************************************************************
 
-   `(font-lock-keyword-face           ((t (:foreground ,keywords, :weight normal))))
+   `(font-lock-keyword-face           ((t (:foreground ,keywords))))
    `(font-lock-type-face              ((t (:foreground ,punctuation))))
    `(font-lock-constant-face          ((t (:foreground ,constants))))
    `(font-lock-variable-name-face     ((t (:foreground ,variables))))
@@ -76,6 +77,7 @@
    `(font-lock-string-face            ((t (:foreground ,strings))))
    `(font-lock-comment-face           ((t (:foreground ,comments))))
    `(font-lock-comment-delimiter-face ((t (:foreground ,comments))))
+   `(font-lock-doc-face               ((t (:foreground ,comments))))
    `(font-lock-function-name-face     ((t (:foreground ,functions))))
    `(font-lock-doc-string-face        ((t (:foreground ,strings))))
    `(font-lock-preprocessor-face      ((t (:foreground ,macros))))
@@ -122,7 +124,7 @@
    `(mode-line-inactive ((t (:inverse-video unspecified
                                             :underline unspecified
                                             :foreground ,text
-                                            :background , background
+                                            :background ,background
                                             :box nil))))
    `(powerline-inactive1 ((t (:background ,background :foreground ,text))))
    `(powerline-inactive2 ((t (:background ,background :foreground ,text))))

@@ -1,4 +1,4 @@
-;;; xah-fly-keys.el --- ergonomic modal keybinding minor mode. -*- coding: utf-8; lexical-binding: t; -*-
+;;; xah-keys.el --- ergonomic modal keybinding minor mode. -*- coding: utf-8; lexical-binding: t; -*-
 
 ;; Copyright © 2013-2019, by Xah Lee
 
@@ -370,6 +370,20 @@ URL `http://ergoemacs.org/emacs/emacs_jump_to_punctuations.html'
 Version 2015-03-24"
   (interactive)
   (re-search-backward "\\.+\\|,+\\|;+" nil t))
+
+(defun split-and-follow-horizontally ()
+  (interactive)
+  (split-window-below)
+  (balance-windows)
+  (other-window 1))
+;(global-set-key (kbd "C-x 2") 'split-and-follow-horizontally)
+
+(defun split-and-follow-vertically ()
+  (interactive)
+  (split-window-right)
+  (balance-windows)
+  (other-window 1))
+;(global-set-key (kbd "C-x 3") 'split-and-follow-vertically)
 
 ;; (defun goto-point-min ()
 ;;   "Goto the beginning of buffer.
@@ -3499,7 +3513,7 @@ Version 2019-02-12"
 
    
    ("3" . delete-window)
-   ("4" . split-window-right)
+   ("4" . split-and-follow-vertically)
    ("5" . balance-windows)
    
    
@@ -3820,7 +3834,7 @@ Version 2017-01-21"
      ("1" . xah-extend-selection)
      ("2" . xah-select-line)
      ("3" . delete-other-windows)
-     ("4" . split-window-below)
+     ("4" . split-and-follow-horizontally)
      ("5" . delete-char)
      ("6" . xah-select-block)
      ("7" . xah-select-line)
@@ -3991,7 +4005,7 @@ Version 2017-07-07"
   (xah-fly-command-mode-init)
   (run-hooks 'xah-fly-command-mode-activate-hook))
 
-(Defun Xah-fly-command-mode-activate-no-hook ()
+(defun xah-fly-command-mode-activate-no-hook ()
   "Activate command mode. Does not run `xah-fly-command-mode-activate-hook'
 Version 2017-07-07"
   (interactive)
