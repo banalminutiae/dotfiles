@@ -2,7 +2,27 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("xah-fly-keys-20191226.2348"
+(("RBTree"
+ (filename . "c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/")
+ (front-context-string . "..\n  drwxrwxrwx ")
+ (rear-context-string . "  0 07-19 18:17 ")
+ (position . 152))
+("def.el"
+ (filename . "~/.emacs.d/def.el")
+ (front-context-string . "(defalias 'eb 'e")
+ (rear-context-string)
+ (position . 1))
+("Go_Workspace"
+ (filename . "c:/Users/Andre/Documents/Go_Workspace/")
+ (front-context-string . "..\n  drwxrwxrwx ")
+ (rear-context-string . "192 07-09 11:30 ")
+ (position . 136))
+("Rust_Learning"
+ (filename . "c:/Users/Andre/Documents/Rust_Learning/")
+ (front-context-string . "..\n  drwxrwxrwx ")
+ (rear-context-string . "192 07-10 20:01 ")
+ (position . 142))
+("xah-fly-keys-20191226.2348"
  (filename . "~/.emacs.d/elpa/xah-fly-keys-20191226.2348/")
  (front-context-string . "xah-fly-keys-aut")
  (rear-context-string . "585 01-13 14:34 ")

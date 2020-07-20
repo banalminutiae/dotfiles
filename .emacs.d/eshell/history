@@ -60,3 +60,17 @@ gcc
 wasm
 emacs
 runemacs
+./Hello.exe
+go build RabinKarp.go 
+go build RabinKarp.go 
+dir
+ls
+clear
+go build RabinKarp.go 
+./RabinKarp.exe 
+clear
+cd ..
+clear
+cd bin
+ls
+cd ..

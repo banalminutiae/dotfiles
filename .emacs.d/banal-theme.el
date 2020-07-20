@@ -38,7 +38,7 @@
  '(fringe ((t (:background "#gray14"))))
  '(header-line ((t (:weight normal :foreground "#61ACBB" :background "#282828"))))
  '(tooltip ((((class color)) (:inherit (variable-pitch) :foreground "black" :background "lightyellow")) (t (:inherit (variable-pitch)))))
- '(mode-line ((t (:background "#d2b58d" :foreground "black" :box nil))))
+ '(mode-line ((t (:background "#d9c19f" :foreground "black" :box nil))))
  '(mode-line-buffer-id ((t (:weight bold))))
  '(mode-line-emphasis ((t (:weight bold))))
  '(mode-line-highlight ((((class color) (min-colors 88)) (:box (:line-width 2 :color "grey40" :style released-button))) (t (:inherit (highlight)))))
