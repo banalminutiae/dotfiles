@@ -2,6 +2,7 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("c:/Users/Andre/Documents/TFCS/" . "Notes/")
  ("c:/Users/Andre/Documents/Rust_Learning/" . "hello_cargo/")
  ("c:/Users/Andre/Documents/Rust_Learning/hello_cargo/" . "src/")
  ("c:/Users/Andre/Documents/Go_Workspace/src/" . "Thief/")
@@ -29,7 +30,7 @@
  ("c:/Users/Andre/Documents/OOSE/" . "Assignment/")
  ("c:/Users/Andre/Documents/Dead_Integrity/P1/" . "AddressBook/")
  ("c:/Users/Andre/Documents/Dead_Integrity/" . "P3/")
- ("c:/Users/Andre/Documents/" . "Stuff/")
+ ("c:/Users/Andre/Documents/" . "TFCS/")
  ("c:/Users/Andre/Packages/Emacs/" . "bin/")
  ("c:/Users/Andre/Packages/" . "Emacs/")
  ("c:/Users/Andre/OneDrive/" . "Documents/")
@@ -44,6 +45,9 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/Users/Andre/Documents/Lox/jlox/"
+ "c:/Users/Andre/Documents/TFCS/Notes/"
+ "c:/Users/Andre/Documents/Stuff/"
  "c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/"
  "c:/Users/Andre/Documents/Go_Workspace/src/Trees/AVLTree/"
  "c:/Users/Andre/AppData/Roaming/.emacs.d/"
@@ -54,7 +58,6 @@
  "c:/Users/Andre/Documents/Rust_Learning/"
  "c:/Users/Andre/Documents/Go_Workspace/src/Thief/"
  "c:/Users/Andre/Documents/Go_Workspace/src/RSA/"
- "c:/Users/Andre/Documents/Stuff/"
  "c:/Users/Andre/nand2tetris/nand2tetris/projects/01/"
  "c:/Users/Andre/nand2tetris/nand2tetris/projects/00/"
  "c:/Users/Andre/Documents/OOSE/Exam/"
@@ -92,47 +95,55 @@
  "c:/Users/Andre/~Desktop/"
  "c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/color-theme-sanityinc-tomorrow-20191221.823/"
  "c:/ssh19460677@/"
- "c:/Users/Andre/Packages/Emacs/bin/"
- "c:/Users/Andre/Packages/Emacs/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "AST.java"
+ "Scanner.java"
+ "TokenType.java"
+ "Token.java"
+ "Lox.java"
+ "Lecture_1.html"
+ "goof.html"
+ "Lecture_1.org"
+ "Lecture_1.tex"
  "RBTreeTest.go"
- "RBTree.go"
- "AVLTreeTest.go"
- "AVLTree.go"
- "init.el"
- "def.el"
- "default-black-theme.el"
- "TODO.org"
- "Cargo.lock"
- "Cargo.toml"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/" (24340 25855 0 0) "RBTreeTest.go" "RBTree.go" ".#RBTree.go" "../" "./")
+ ("c:/Users/Andre/Documents/Lox/jlox/" (24366 10413 0 0) "TokenType.java" "TokenType.class" "Token.java" "Token.class" "Scanner.java" "Scanner.class" "Lox.java" "Lox.class" ".#Scanner.java" "../" "./")
 
- ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/AVLTree/" (24340 7725 0 0) "AVLTree.go" "../" "./")
+ ("c:/Users/Andre/Documents/Lox/" (24365 31113 0 0) "jlox/" "../" "./")
 
- ("c:/Users/Andre/Documents/Go_Workspace/src/Thief/" (24333 38389 0 0) "RabinKarp.go" "RabinKarp.exe" ".#RabinKarp.go" "../" "./")
+ ("c:/Users/Andre/Downloads/" (24365 17119 0 0) "winsdksetup.exe" "W6-RemoteData.zip" "vs_emulatorsetup.exe" "vs_Community.exe" "VSCodeUserSetup-x64-1.44.2.exe" "VMware-player-15.5.1-15018445.exe" "VMware-Horizon-Client-5.4.0-15805437.exe" "vlc-3.0.8-win64.exe" "tush.zip" "tush/" "thing.jpg" "texstudio-2.12.16-win-qt5.exe" "sunflowers.jpg" "SteamSetup.exe" "ssl/" "SpotifySetup.exe" "snes9x-1.60-win32-x64.zip" "snaps/" "SimSkylines-master.zip" "share/" "SDL2.dll" "sav/" "sam-20090407.zip" "sam-20090407/" "rustup-init.exe" "RRoboto_Mono/" "Roboto_Mono.zip" "Ripcord_Win_0.4.25.zip" "Ripcord/" "RemoteServer/" "Remote/" "radeon-software-adrenalin-2020-19.12.2-minimalsetup-191212_64bit.exe" "pgconfig/" "palettes/" "PacketTracer-7.2.2-win64-setup.exe" "os-notes-full.pdf" "OpenJDK11U-jdk_x64_windows_hotspot_11.0.4_11(1).msi" "nvse_5_1_beta6.7z" "nvse/" "Ninite 7Zip FileZilla Java AdoptOpenJDK x64 8 Installer.exe" "nand2tetris.zip" "MSERT.exe" "Mobile-Application-Development-Assignment-2019S2-master.zip" "Mobile-Application-Development-Assignment-2019S2-master/" "MobaXterm_Portable_v20.2.zip" "MobaXterm_Personal_20.2.exe" "MobaXterm.ini" "MobaXterm backup.zip" "mcs/" "mcm/" "lips102.zip" "linuxmint-19.2-xfce-64bit.iso" "libexec/" "Liberation_Mono/" "liberation-mono.zip" "lib/" "KeePassXC-2.5.3-Win64-portable.zip" "KeePassXC/" "Install VALORANT.exe" "include/" "ideaIC-2020.1.exe" "hwi_620.exe" "go1.14.4.windows-amd64.msi" "glfw-3.3.2.bin.WIN32.zip" "glfw-3.3.2.bin.WIN32/" "Git-2.25.1-64-bit.exe" "genymotion-3.0.2.exe" "flt_blunderbuss.zip" "FLCL_Screenshot_0246.jpg" "firmware/" "FileZilla_3.48.0_win64-setup.exe" "Fedora-KDE-Live-x86_64-32-1.6.iso" "Fantastique_Sans_Mono/" "etc/" "dxwebsetup.exe" "dia-setup-0.97.2-2-unsigned.exe" "desktop.ini" "Design Patterns.zip" "Design Patterns/" "dejavu-fonts-ttf-2.37.zip" "dejavu-fonts-ttf-2.37/" "Daa_test2.jpg" "CygUtils.plugin" "code.zip" "code/" "cheats/" "blunderbuss/" "bin/" "basic-miktex-2.9.7152-x64.exe" "asar171.zip" "apache-ant-1.10.7-bin.zip" "apache-ant-1.10.7/" "anyconnect-win-4.7.04056-core-vpn-webdeploy-k9.exe" "android-studio-ide-183.5692245-windows.exe" "acme-0.13.zip" "acme-0.13/" "7z1900-x64.msi" "7z1900-x64.exe" "../" "./")
 
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24333 29541 0 0) "url/" "snippets/" "server/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "default-black-theme.el" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" "../" "./")
+ ("c:/Users/Andre/Documents/Go_Workspace/src/Thief/" (24335 8703 0 0) "RabinKarp.go" "RabinKarp.exe" "../" "./")
+
+ ("c:/Users/Andre/Documents/Rust_Learning/" (24328 31729 0 0) "variables/" "hello_cargo/" "guessing_game/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Rust_Learning/guessing_game/src/" (24328 31610 0 0) "main.rs" "../" "./")
+
+ ("c:/Users/Andre/Documents/" (24365 31109 0 0) "TFCS/" "Stuff/" "Source Code/" "SNES/" "Rust_Learning/" "OS/" "OpenCV/" "OOSE/" "My Videos/" "My Pictures/" "My Music/" "masm32v11r.zip" "Lox/" "install.exe" "Hackyshit.txt" "Go_Workspace/" "dc.zip" "DC/" "CCSEP/" "Books/" "Blog/" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24365 21458 0 0) "url/" "transient/" "snippets/" "server/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "default-black-theme.el" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "#init.el#" "../" "./")
+
+ ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/AVLTree/" (24340 7750 0 0) "AVLTreeTest.go" "AVLTree.go" "../" "./")
+
+ ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/" (24340 27399 0 0) "RBTreeTest.go" "RBTree.go" "../" "./")
+
+ ("c:/Users/Andre/Documents/Stuff/" (24365 15546 0 0) "RSA.scm" "main.zip" "main.cpp" "Kaleidoscope/" "hello_world/" "goof.html" "goblin.py" "Game_Of_Life/" "fizzbuzz.ml" "fizzbuzz.cmo" "fizzbuzz.cmi" "fizzbuzz" "AntiRSI.ahk" ".git/" "../" "./")
+
+ ("c:/Users/Andre/Documents/TFCS/Notes/" (24365 15755 0 0) "Lecture_1.tex" "Lecture_1.pdf" "Lecture_1.org" "Lecture_1.html" "../" "./")
+
+ ("c:/Users/Andre/Documents/TFCS/" (24365 10145 0 0) "Notes/" "../" "./")
 
  ("c:/Users/Andre/Documents/Rust_Learning/guessing_game/" (24328 26020 0 0) "target/" "src/" "Cargo.toml" "Cargo.lock" ".gitignore" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/Rust_Learning/guessing_game/src/" (24328 25938 0 0) "main.rs" "../" "./")
-
- ("c:/Users/Andre/Documents/Rust_Learning/" (24328 24082 0 0) "main.rs" "main.pdb" "main.exe" "hello_cargo/" "../" "./")
 
  ("c:/Users/Andre/Documents/Rust_Learning/hello_cargo/src/" (24328 23817 0 0) "main.rs" "../" "./")
 
  ("c:/Users/Andre/Documents/Rust_Learning/hello_cargo/" (24328 23817 0 0) "src/" "Cargo.toml" ".gitignore" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/" (24328 22699 0 0) "Stuff/" "Source Code/" "SNES/" "Rust_Learning/" "Robot_SourceCode.tar.gz" "OS/" "OpenCV/" "OOSE/" "My Videos/" "My Pictures/" "My Music/" "masm32v11r.zip" "install.exe" "Hackyshit.txt" "Go_Workspace/" "Dead_Integrity/" "dc.zip" "DC/" "Books/" "../" "./")
-
- ("c:/Users/Andre/Downloads/" (24326 50123 0 0) "winsdksetup.exe" "W6-RemoteData.zip" "vs_emulatorsetup.exe" "vs_Community.exe" "VSCodeUserSetup-x64-1.44.2.exe" "VMware-player-15.5.1-15018445.exe" "VMware-Horizon-Client-5.4.0-15805437.exe" "vlc-3.0.8-win64.exe" "tush.zip" "tush/" "thing.jpg" "texstudio-2.12.16-win-qt5.exe" "sunflowers.jpg" "SteamSetup.exe" "ssl/" "SpotifySetup.exe" "snes9x-1.60-win32-x64.zip" "snaps/" "SimSkylines-master.zip" "share/" "SDL2.dll" "sav/" "sam-20090407.zip" "sam-20090407/" "rustup-init.exe" "RRoboto_Mono/" "Roboto_Mono.zip" "Ripcord_Win_0.4.25.zip" "Ripcord/" "RemoteServer/" "Remote/" "radeon-software-adrenalin-2020-19.12.2-minimalsetup-191212_64bit.exe" "pgconfig/" "palettes/" "PacketTracer-7.2.2-win64-setup.exe" "os-notes-full.pdf" "OpenJDK11U-jdk_x64_windows_hotspot_11.0.4_11(1).msi" "Ninite 7Zip FileZilla Java AdoptOpenJDK x64 8 Installer.exe" "nand2tetris.zip" "MSERT.exe" "Mobile-Application-Development-Assignment-2019S2-master.zip" "Mobile-Application-Development-Assignment-2019S2-master/" "MobaXterm_Portable_v20.2.zip" "MobaXterm_Personal_20.2.exe" "MobaXterm.ini" "MobaXterm backup.zip" "mcs/" "mcm/" "lips102.zip" "linuxmint-19.2-xfce-64bit.iso" "libexec/" "Liberation_Mono/" "liberation-mono.zip" "lib/" "KeePassXC-2.5.3-Win64-portable.zip" "KeePassXC/" "Install VALORANT.exe" "include/" "ideaIC-2020.1.exe" "hwi_620.exe" "go1.14.4.windows-amd64.msi" "glfw-3.3.2.bin.WIN32.zip" "glfw-3.3.2.bin.WIN32/" "Git-2.25.1-64-bit.exe" "genymotion-3.0.2.exe" "FLCL_Screenshot_0246.jpg" "firmware/" "FileZilla_3.48.0_win64-setup.exe" "Fedora-KDE-Live-x86_64-32-1.6.iso" "Fantastique_Sans_Mono/" "etc/" "dxwebsetup.exe" "dia-setup-0.97.2-2-unsigned.exe" "desktop.ini" "Design Patterns.zip" "Design Patterns/" "dejavu-fonts-ttf-2.37.zip" "dejavu-fonts-ttf-2.37/" "Daa_test2.jpg" "CygUtils.plugin" "code.zip" "code/" "cheats/" "bin/" "basic-miktex-2.9.7152-x64.exe" "asar171.zip" "apache-ant-1.10.7-bin.zip" "apache-ant-1.10.7/" "anyconnect-win-4.7.04056-core-vpn-webdeploy-k9.exe" "android-studio-ide-183.5692245-windows.exe" "acme-0.13.zip" "acme-0.13/" "7z1900-x64.msi" "7z1900-x64.exe" "../" "./")
 
  ("c:/Users/Andre/Documents/Go_Workspace/" (24326 37869 0 0) "src/" "pkg/" "bin/" "../" "./")
 
@@ -149,8 +160,6 @@
  ("c:/Users/Andre/Documents/OOSE/Exam/" (24304 59577 0 0) "QuestionTwo.java" "QuestionThree.java" "QuestionOne.java" "QuestionFour.java" "Answers.txt" "../" "./")
 
  ("c:/Users/Andre/nand2tetris/nand2tetris/projects/01/" (24319 16747 0 0) "Xor.tst" "Xor.out" "Xor.hdl" "Xor.cmp" "Or8Way.tst" "Or8Way.hdl" "Or8Way.cmp" "Or16.tst" "Or16.hdl" "Or16.cmp" "Or.tst" "Or.hdl" "Or.cmp" "Not16.tst" "Not16.hdl" "Not16.cmp" "Not.tst" "Not.hdl" "Not.cmp" "Mux8Way16.tst" "Mux8Way16.hdl" "Mux8Way16.cmp" "Mux4Way16.tst" "Mux4Way16.hdl" "Mux4Way16.cmp" "Mux16.tst" "Mux16.hdl" "Mux16.cmp" "Mux.tst" "Mux.hdl" "Mux.cmp" "DMux8Way.tst" "DMux8Way.hdl" "DMux8Way.cmp" "DMux4Way.tst" "DMux4Way.hdl" "DMux4Way.cmp" "DMux.tst" "DMux.hdl" "DMux.cmp" "And16.tst" "And16.hdl" "And16.cmp" "And.tst" "And.hdl" "And.cmp" "../" "./")
-
- ("c:/Users/Andre/Documents/Stuff/" (24323 23635 0 0) "settings.json" "RSA.scm" "README.md" "main.zip" "main.cpp" "Kaleidoscope/" "index.html" "hello_world/" "GOF.rb" "goblin.py" "Game_Of_Life/" "fun.py" "fizzbuzz.ml" "fizzbuzz.cmo" "fizzbuzz.cmi" "fizzbuzz" "figlet-2.2.3.tar.gz" "figlet-2.2.3.tar" "figlet-2.2.3/" "AntiRSI.ahk" "Algorithms.hs" ".git/" "../" "./")
 
  ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" (24326 37399 0 0) "yasnippet-snippets-20200425.1210/" "yasnippet-20191222.2206/" "xah-fly-keys-20191226.2348/" "with-editor-20191222.1939/" "which-key-20191221.1857/" "use-package-20191126.2034/" "try-20181204.236/" "transient-20191226.1938/" "solarized-theme-20200411.1026/" "s-20180406.808/" "rich-minority-20190419.1136/" "pyvenv-20191202.1039/" "plan9-theme-20180804.1441/" "page-break-lines-readme.txt" "page-break-lines-20200121.837/" "nord-theme-20200108.833/" "naysayer-theme-20200405.123/" "moe-theme-20200216.1927/" "minsk-theme-20200306.1220/" "highlight-indentation-20181204.839/" "gruvbox-theme-20200307.1522/" "go-mode-20200425.1740/" "git-commit-20191227.1317/" "dash-20191109.1327/" "darktooth-theme-20190412.142/" "creamsody-theme-20170222.1058/" "company-20200324.2145/" "command-log-mode-20160413.447/" "bind-key-20191110.416/" "autothemer-20180920.923/" "async-20191226.1227/" "archives/" "../" "./")
 

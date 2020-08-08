@@ -1,10 +1,8 @@
- ;;quality of life stuf
+ ;;quality of life stuff
 ;(server-start) -> spooky
-;increase garbage collection at startup
-(setq startup/gc-cons-threshold gc-cons-threshold)
-(setq gc-cons-threshold most-positive-fixnum)
-(defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
-(add-hook 'emacs-startup-hook 'startup/reset-gc)
+(setq gc-cons-threshold (* 511 1024 1024))
+(setq gc-cons-percentage 0.5)
+(run-with-idle-timer 5 t #'garbage-collect)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)

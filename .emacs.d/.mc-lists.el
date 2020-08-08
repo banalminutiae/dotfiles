@@ -3,7 +3,9 @@
 
 (setq mc/cmds-to-run-for-all
       '(
+        cua-paste
         mouse-minor-mode-menu
+        xah-backward-kill-word
         xah-fly-command-mode-activate-no-hook
         xah-fly-insert-mode-activate
         ))
