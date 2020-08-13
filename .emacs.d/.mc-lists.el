@@ -12,4 +12,5 @@
 
 (setq mc/cmds-to-run-once
       '(
+        xah-delete-backward-char-or-bracket-text
         ))

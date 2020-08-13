@@ -1,4 +1,4 @@
- ;;quality of life stuff
+;;quality of life stuff
 ;(server-start) -> spooky
 (setq gc-cons-threshold (* 511 1024 1024))
 (setq gc-cons-percentage 0.5)
@@ -122,12 +122,6 @@ Inhibits startup screen on the first unrecognised option."
 
 (yas-global-mode 1)
 
-(require 'rand-theme)
-(setq rand-theme-wanted '(banal flatland gruvbox-dark-soft afternoon creamsody foggy-night
-                                sanityinc-tomorrow-bright ample darktooth gruvbox minsk naysayer ample-flat
-                                gruvbox-dark-hard nord sanityinc-tomorrow-eighties soothe default-black-theme))
-(rand-theme)
-
 ;;autocomplete command completion
 (use-package which-key
   :ensure t
@@ -145,3 +139,4 @@ Inhibits startup screen on the first unrecognised option."
 (xah-fly-command-mode-activate);command mode on startups
 
 
+(load-theme 'gruvbox-dark-hard)

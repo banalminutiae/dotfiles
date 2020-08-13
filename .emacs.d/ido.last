@@ -45,6 +45,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/Users/Andre/Documents/MP/Labs/Lab1/"
+ "c:/Users/Andre/Documents/CCSEP/P2/"
  "c:/Users/Andre/Documents/Lox/jlox/"
  "c:/Users/Andre/Documents/TFCS/Notes/"
  "c:/Users/Andre/Documents/Stuff/"
@@ -93,41 +95,43 @@
  "c:/Users/Andre/Downloads/code/"
  "c:/Users/Andre/Downloads/"
  "c:/Users/Andre/~Desktop/"
- "c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/color-theme-sanityinc-tomorrow-20191221.823/"
- "c:/ssh19460677@/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "prac01ex04img01.png"
+ "contours.py"
+ "exercise_four.py"
+ "exercise_three.py"
+ "hist.py"
+ "practise.html"
  "AST.java"
  "Scanner.java"
  "TokenType.java"
  "Token.java"
- "Lox.java"
- "Lecture_1.html"
- "goof.html"
- "Lecture_1.org"
- "Lecture_1.tex"
- "RBTreeTest.go"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/Andre/Documents/Lox/jlox/" (24366 10413 0 0) "TokenType.java" "TokenType.class" "Token.java" "Token.class" "Scanner.java" "Scanner.class" "Lox.java" "Lox.class" ".#Scanner.java" "../" "./")
+ ("c:/Users/Andre/Documents/MP/Labs/Lab1/" (24373 4960 0 0) "wallpaper.jpg" "rotate_image.png" "prac01ex04img01.png" "prac01ex02img01.png" "prac01ex02crop.txt" "prac01ex01img05.png" "prac01ex01img04.png" "prac01ex01img03.png" "prac01ex01img02.png" "prac01ex01img01.png" "License_Plate.png" "hist.py" "exercise_three.py" "exercise_four.py" "contours.py" "contoured_image.png" "../" "./")
+
+ ("c:/Users/Andre/Documents/" (24371 62448 0 0) "TFCS/" "Stuff/" "Source Code/" "SNES/" "Rust_Learning/" "OS/" "OOSE/" "My Videos/" "My Pictures/" "My Music/" "MP/" "masm32v11r.zip" "Lox/" "install.exe" "Hackyshit.txt" "Go_Workspace/" "dc.zip" "DC/" "CCSEP/" "BrainFrick/" "Books/" "Blog/" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24372 64998 0 0) "url/" "transient/" "snippets/" "server/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "default-black-theme.el" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "#init.el#" "../" "./")
+
+ ("c:/Users/Andre/Documents/CCSEP/P2/" (24370 39783 0 0) "../" "./")
+
+ ("c:/Users/Andre/Downloads/" (24368 57011 0 0) "winsdksetup.exe" "W6-RemoteData.zip" "vs_emulatorsetup.exe" "vs_Community.exe" "VSCodeUserSetup-x64-1.44.2.exe" "VMware-player-15.5.1-15018445.exe" "VMware-Horizon-Client-5.4.0-15805437.exe" "vlc-3.0.8-win64.exe" "tush.zip" "tush/" "thing.jpg" "texstudio-2.12.16-win-qt5.exe" "sunflowers.jpg" "SteamSetup.exe" "ssl/" "SpotifySetup.exe" "snes9x-1.60-win32-x64.zip" "snaps/" "SimSkylines-master.zip" "share/" "SDL2.dll" "sav/" "sam-20090407.zip" "sam-20090407/" "rustup-init.exe" "RRoboto_Mono/" "Roboto_Mono.zip" "Ripcord_Win_0.4.25.zip" "Ripcord/" "RemoteServer/" "Remote/" "radeon-software-adrenalin-2020-19.12.2-minimalsetup-191212_64bit.exe" "pgconfig/" "palettes/" "PacketTracer-7.2.2-win64-setup.exe" "os-notes-full.pdf" "OpenJDK11U-jdk_x64_windows_hotspot_11.0.4_11(1).msi" "nvse_5_1_beta6.7z" "nvse/" "Ninite 7Zip FileZilla Java AdoptOpenJDK x64 8 Installer.exe" "nand2tetris.zip" "MSERT.exe" "Mobile-Application-Development-Assignment-2019S2-master.zip" "Mobile-Application-Development-Assignment-2019S2-master/" "MobaXterm_Portable_v20.2.zip" "MobaXterm_Personal_20.2.exe" "MobaXterm.ini" "MobaXterm backup.zip" "mcs/" "mcm/" "lips102.zip" "linuxmint-19.2-xfce-64bit.iso" "libexec/" "Liberation_Mono/" "liberation-mono.zip" "lib/" "KeePassXC-2.5.3-Win64-portable.zip" "KeePassXC/" "Install VALORANT.exe" "include/" "ideaIC-2020.1.exe" "hwi_620.exe" "go1.14.4.windows-amd64.msi" "glfw-3.3.2.bin.WIN32.zip" "glfw-3.3.2.bin.WIN32/" "Git-2.25.1-64-bit.exe" "genymotion-3.0.2.exe" "flt_blunderbuss.zip" "FLCL_Screenshot_0246.jpg" "firmware/" "FileZilla_3.48.0_win64-setup.exe" "Fedora-KDE-Live-x86_64-32-1.6.iso" "Fantastique_Sans_Mono/" "etc/" "dxwebsetup.exe" "dia-setup-0.97.2-2-unsigned.exe" "desktop.ini" "Design Patterns.zip" "Design Patterns/" "dejavu-fonts-ttf-2.37.zip" "dejavu-fonts-ttf-2.37/" "Daa_test2.jpg" "CygUtils.plugin" "Copy of MP-VM.ova" "code.zip" "code/" "cheats/" "CCSEP.ova" "blunderbuss/" "bin/" "basic-miktex-2.9.7152-x64.exe" "asar171.zip" "apache-ant-1.10.7-bin.zip" "apache-ant-1.10.7/" "anyconnect-win-4.7.04056-core-vpn-webdeploy-k9.exe" "android-studio-ide-183.5692245-windows.exe" "acme-0.13.zip" "acme-0.13/" "7z1900-x64.msi" "7z1900-x64.exe" "../" "./")
+
+ ("c:/Users/Andre/Documents/Lox/jlox/" (24366 16556 0 0) "tree/" "TokenType.java" "TokenType.class" "Token.java" "Token.class" "Scanner.java" "Scanner.class" "Lox.java" "Lox.class" "GenerateAST.java" "GenerateAST.class" "../" "./")
 
  ("c:/Users/Andre/Documents/Lox/" (24365 31113 0 0) "jlox/" "../" "./")
-
- ("c:/Users/Andre/Downloads/" (24365 17119 0 0) "winsdksetup.exe" "W6-RemoteData.zip" "vs_emulatorsetup.exe" "vs_Community.exe" "VSCodeUserSetup-x64-1.44.2.exe" "VMware-player-15.5.1-15018445.exe" "VMware-Horizon-Client-5.4.0-15805437.exe" "vlc-3.0.8-win64.exe" "tush.zip" "tush/" "thing.jpg" "texstudio-2.12.16-win-qt5.exe" "sunflowers.jpg" "SteamSetup.exe" "ssl/" "SpotifySetup.exe" "snes9x-1.60-win32-x64.zip" "snaps/" "SimSkylines-master.zip" "share/" "SDL2.dll" "sav/" "sam-20090407.zip" "sam-20090407/" "rustup-init.exe" "RRoboto_Mono/" "Roboto_Mono.zip" "Ripcord_Win_0.4.25.zip" "Ripcord/" "RemoteServer/" "Remote/" "radeon-software-adrenalin-2020-19.12.2-minimalsetup-191212_64bit.exe" "pgconfig/" "palettes/" "PacketTracer-7.2.2-win64-setup.exe" "os-notes-full.pdf" "OpenJDK11U-jdk_x64_windows_hotspot_11.0.4_11(1).msi" "nvse_5_1_beta6.7z" "nvse/" "Ninite 7Zip FileZilla Java AdoptOpenJDK x64 8 Installer.exe" "nand2tetris.zip" "MSERT.exe" "Mobile-Application-Development-Assignment-2019S2-master.zip" "Mobile-Application-Development-Assignment-2019S2-master/" "MobaXterm_Portable_v20.2.zip" "MobaXterm_Personal_20.2.exe" "MobaXterm.ini" "MobaXterm backup.zip" "mcs/" "mcm/" "lips102.zip" "linuxmint-19.2-xfce-64bit.iso" "libexec/" "Liberation_Mono/" "liberation-mono.zip" "lib/" "KeePassXC-2.5.3-Win64-portable.zip" "KeePassXC/" "Install VALORANT.exe" "include/" "ideaIC-2020.1.exe" "hwi_620.exe" "go1.14.4.windows-amd64.msi" "glfw-3.3.2.bin.WIN32.zip" "glfw-3.3.2.bin.WIN32/" "Git-2.25.1-64-bit.exe" "genymotion-3.0.2.exe" "flt_blunderbuss.zip" "FLCL_Screenshot_0246.jpg" "firmware/" "FileZilla_3.48.0_win64-setup.exe" "Fedora-KDE-Live-x86_64-32-1.6.iso" "Fantastique_Sans_Mono/" "etc/" "dxwebsetup.exe" "dia-setup-0.97.2-2-unsigned.exe" "desktop.ini" "Design Patterns.zip" "Design Patterns/" "dejavu-fonts-ttf-2.37.zip" "dejavu-fonts-ttf-2.37/" "Daa_test2.jpg" "CygUtils.plugin" "code.zip" "code/" "cheats/" "blunderbuss/" "bin/" "basic-miktex-2.9.7152-x64.exe" "asar171.zip" "apache-ant-1.10.7-bin.zip" "apache-ant-1.10.7/" "anyconnect-win-4.7.04056-core-vpn-webdeploy-k9.exe" "android-studio-ide-183.5692245-windows.exe" "acme-0.13.zip" "acme-0.13/" "7z1900-x64.msi" "7z1900-x64.exe" "../" "./")
 
  ("c:/Users/Andre/Documents/Go_Workspace/src/Thief/" (24335 8703 0 0) "RabinKarp.go" "RabinKarp.exe" "../" "./")
 
  ("c:/Users/Andre/Documents/Rust_Learning/" (24328 31729 0 0) "variables/" "hello_cargo/" "guessing_game/" "../" "./")
 
  ("c:/Users/Andre/Documents/Rust_Learning/guessing_game/src/" (24328 31610 0 0) "main.rs" "../" "./")
-
- ("c:/Users/Andre/Documents/" (24365 31109 0 0) "TFCS/" "Stuff/" "Source Code/" "SNES/" "Rust_Learning/" "OS/" "OpenCV/" "OOSE/" "My Videos/" "My Pictures/" "My Music/" "masm32v11r.zip" "Lox/" "install.exe" "Hackyshit.txt" "Go_Workspace/" "dc.zip" "DC/" "CCSEP/" "Books/" "Blog/" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24365 21458 0 0) "url/" "transient/" "snippets/" "server/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "default-black-theme.el" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "#init.el#" "../" "./")
 
  ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/AVLTree/" (24340 7750 0 0) "AVLTreeTest.go" "AVLTree.go" "../" "./")
 

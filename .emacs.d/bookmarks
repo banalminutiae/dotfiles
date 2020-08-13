@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("RBTree"
+(("MP"
+ (filename . "c:/Users/Andre/Documents/MP/")
+ (front-context-string . "wallpaper.jpg\n  ")
+ (rear-context-string . "172 06-05 11:48 ")
+ (position . 228))
+("RBTree"
  (filename . "c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/")
  (front-context-string . "..\n  drwxrwxrwx ")
  (rear-context-string . "  0 07-19 18:17 ")
