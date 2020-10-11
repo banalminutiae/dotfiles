@@ -1,20 +1,15 @@
-;;quality of life stuff
-;(server-start) -> spooky
 (setq gc-cons-threshold (* 511 1024 1024))
 (setq gc-cons-percentage 0.5)
 (run-with-idle-timer 5 t #'garbage-collect)
-
+(scroll-bar-mode -1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (setq case-fold-search nil)
 (global-subword-mode 1);;move through camel case
 
-(defun my-inhibit-startup-screen-always ()
-  "Startup screen inhibitor for `command-line-functions`.
-Inhibits startup screen on the first unrecognised option."
-  (ignore (setq inhibit-startup-screen t)))
-
-(add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
+(setq mouse-wheel-progressive-speed nil)
+(setq mouse-wheel-follow-mouse 't)
+(global-hl-line-mode 1)
 
 (setq line-number-mode t)
 
@@ -55,8 +50,9 @@ Inhibits startup screen on the first unrecognised option."
 (setq tab-width 4)
 (setq-default tab-wdith 4)
 (setq-default c-basic-offset 4)
-(setq default-style '((java-mode . "java")
-                      (other. "linux")))
+ (setq c-default-style
+           '((java-mode . "java")
+             (other . "linux")))
 
 ;;aesthetic
 (global-prettify-symbols-mode t)
@@ -138,5 +134,4 @@ Inhibits startup screen on the first unrecognised option."
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-command-mode-activate);command mode on startups
 
-
-(load-theme 'gruvbox-dark-hard)
+(load-theme 'ample-flat)

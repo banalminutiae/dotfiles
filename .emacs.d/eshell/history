@@ -1,15 +1,3 @@
-ls
-clear
-man diff
-man
-vim
-clear
-man gcc
-cd ~
-ls
-cd..
-cd ..
-ls
 cd ../../..
 ls
 cd ..
@@ -74,3 +62,67 @@ clear
 cd bin
 ls
 cd ..
+ls
+cd ..
+git add .emacs.d
+git commit -m "bump"
+git push
+clear
+ls
+mv 2020\ Assignment\ Part\ 1.pdf Assignment
+clear
+ls
+cp Task_1.py Task_2.py
+ls
+cp Task_1.py Task_3.py
+cp Task_1.py Task_4.py
+clear
+ls
+vim Task_4.py
+notepad Task_4.py
+git remote add origin https://github.com/banalminutiae/Malock.git
+git init
+git remote add origin https://github.com/banalminutiae/Malock.git
+git branch -M master
+git add malock.c 
+git commit "bump"
+git commit -m "bump"
+git push
+git branch -M master
+git push -u origin master
+clear
+wsl
+bash
+dir
+ls
+clear
+ant
+cls
+clear
+bash
+clear
+gcc
+cls
+clear
+python3
+python
+mkdir home/student/andrew_li19460677
+ls
+mkdir home
+cd home
+mkdir andrew_li_19460677
+cd andrew_li_19460677/
+cd ..
+ls
+mkdir student
+mv andrew_li_19460677 student
+ls
+mkdir test val train
+clear
+ls
+cd ..
+ls
+cd test
+ls
+cd ../train/ls
+clear 

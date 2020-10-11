@@ -5,7 +5,7 @@
 
 (custom-theme-set-faces
  'banal
- '(default ((t (:inherit nil :stipple nil :background "gray15" :foreground "#d2b58d" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 110 :width normal :foundry "outline"))))
+ '(default ((t (:inherit nil :stipple nil :background "#1c272b" :foreground "#d2b58d" :inverse-video nil :box nil :strike-through nil :overline nil :underline nil :slant normal :weight normal :height 110 :width normal :foundry "outline"))))
  '(cursor ((t (:background "#ffffff"))))
  '(fixed-pitch ((t (:family "Monospace"))))
  '(variable-pitch ((((type w32)) (:foundry "outline" :family "Arial")) (t (:family "Sans Serif"))))

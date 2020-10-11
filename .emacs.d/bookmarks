@@ -2,26 +2,26 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("MP"
+(("Assignment2"
+ (filename . "c:/Users/Andre/Documents/MP/Assignment2/")
+ (front-context-string . "..\n  drwxrwxrwx ")
+ (rear-context-string . "096 10-06 15:13 ")
+ (position . 136))
+("TFCS"
+ (filename . "c:/Users/Andre/Documents/TFCS/")
+ (front-context-string . "Assignment\n  drw")
+ (rear-context-string . "  0 09-01 13:04 ")
+ (position . 222))
+("Ray-Tracer"
+ (filename . "c:/Users/Andre/Documents/Ray-Tracer/")
+ (front-context-string . "code\n  -rw-rw-rw")
+ (rear-context-string . "  0 2019-02-27  ")
+ (position . 231))
+("MP"
  (filename . "c:/Users/Andre/Documents/MP/")
  (front-context-string . "wallpaper.jpg\n  ")
  (rear-context-string . "172 06-05 11:48 ")
  (position . 228))
-("RBTree"
- (filename . "c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/")
- (front-context-string . "..\n  drwxrwxrwx ")
- (rear-context-string . "  0 07-19 18:17 ")
- (position . 152))
-("def.el"
- (filename . "~/.emacs.d/def.el")
- (front-context-string . "(defalias 'eb 'e")
- (rear-context-string)
- (position . 1))
-("Go_Workspace"
- (filename . "c:/Users/Andre/Documents/Go_Workspace/")
- (front-context-string . "..\n  drwxrwxrwx ")
- (rear-context-string . "192 07-09 11:30 ")
- (position . 136))
 ("Rust_Learning"
  (filename . "c:/Users/Andre/Documents/Rust_Learning/")
  (front-context-string . "..\n  drwxrwxrwx ")
@@ -32,16 +32,6 @@
  (front-context-string . "xah-fly-keys-aut")
  (rear-context-string . "585 01-13 14:34 ")
  (position . 272))
-("Kaleidoscope"
- (filename . "c:/Users/Andre/Documents/Stuff/Kaleidoscope/")
- (front-context-string)
- (rear-context-string . "0 03-30 20:39 .\n")
- (position . 191))
-("banal-theme.el"
- (filename . "~/.emacs.d/banal-theme.el")
- (front-context-string . ";good theme on t")
- (rear-context-string)
- (position . 1))
 ("snippets"
  (filename . "~/.emacs.d/elpa/yasnippet-snippets-20200425.1210/snippets/")
  (front-context-string . "java-mode\n  drwx")
