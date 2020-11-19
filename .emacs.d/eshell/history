@@ -1,80 +1,3 @@
-cd ../../..
-ls
-cd ..
-ls
-ssh 19460677@saeshell01p.curtin.edu
-vim
-cl
-clear
-ls
-rm thing.cpp 
-clear
-ls
-rm naysayer-theme.el 
-clear
-ls
-cd elpa
-ls
-rm Banal-theme.el 
-clear
-ls
-ant
-make clean
-ls
-clear
-cd ~
-ls
-clear
-clear
-cd ..
-cd ~
-ls
-clear
-ls
-dir
-clear
-ls -a
-cd ~
-cd Users/Andre/
-ls
-pwd
-cd ../..
-cd Documents/
-clear
-ls
-ls -a
-cd Stuff/
-gcc
-wasm
-emacs
-runemacs
-./Hello.exe
-go build RabinKarp.go 
-go build RabinKarp.go 
-dir
-ls
-clear
-go build RabinKarp.go 
-./RabinKarp.exe 
-clear
-cd ..
-clear
-cd bin
-ls
-cd ..
-ls
-cd ..
-git add .emacs.d
-git commit -m "bump"
-git push
-clear
-ls
-mv 2020\ Assignment\ Part\ 1.pdf Assignment
-clear
-ls
-cp Task_1.py Task_2.py
-ls
-cp Task_1.py Task_3.py
 cp Task_1.py Task_4.py
 clear
 ls
@@ -126,3 +49,80 @@ cd test
 ls
 cd ../train/ls
 clear 
+deno
+deno
+dotnet
+cls
+clear
+dotnet build hello_world.cs 
+dotnet build
+cd ..
+ls
+dotnet sln Ray-Tracer.sln add Ray-Tracer/
+dotnet build
+dotnet run
+cd ..
+cls
+clear
+dotnet run
+ls
+cd CS
+ls
+dotnet run
+dotnet new console -n "Test"
+dotnet new -sln "Test"
+dotnet new sln -n "Test"
+dotnet sln Test.sln add Test
+dotnet build
+ls
+rm -rf Ray-Tracer/
+rm -rf Ray-Tracer.sln
+clear
+ls
+dotnet build
+dotnet run
+ls
+cd Test/
+ls
+cd bin
+ls
+cd Debug
+ls
+cd ...
+cd ..
+clear
+cd Test/
+ls
+cat Program.cs
+cd obj
+ls
+cd ..
+clear
+cd ..
+dotnet run
+dotnet build
+cd Test/bin/
+ls
+cd Debug/netcoreapp3.1/
+clear
+ls
+./Test.exe
+./TEst.dll
+./Test.dll
+go
+java
+clear
+gradle
+cls
+clear
+go
+cargo
+dotnet
+deno
+clear
+mkdir SS
+mv Screenshot* SS
+clear
+go run main.go 
+go run main.go 
+go run main.go 

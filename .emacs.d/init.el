@@ -1,7 +1,7 @@
 (setq gc-cons-threshold (* 511 1024 1024))
 (setq gc-cons-percentage 0.5)
 (run-with-idle-timer 5 t #'garbage-collect)
-(scroll-bar-mode -1)
+;; (scroll-bar-mode -1)
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (setq case-fold-search nil)
@@ -21,23 +21,6 @@
 
 (setq-default x-select-enable-clipboard t)
 
-;; (setq-default mode-line-format
-;;               '("%e"
-;;                 mode-line-front-space
-;;                 mode-line-mule-info
-;;                 mode-line-client
-;;                 mode-line-modified
-;;                 mode-line-remote
-;;                 mode-line-frame-identification
-;;                 mode-line-buffer-identification
-;;                 "  "  
-;;                 "(%l,%c)"
-;;                 (vc-mode vc-mode);version control
-;;                 " "
-;;                 "(%m)"
-;;                 " "
-;;                 ))
-
 (setq backup-directory-alist `(("." . "~/.saves")))
 
 (show-paren-mode 1)
@@ -45,6 +28,13 @@
 (set-language-environment "UTF-8")
 
 (setq x-select-enable-clipboard t)
+(set-terminal-coding-system 'utf-8)
+(set-language-environment 'utf-8)
+(set-keyboard-coding-system 'utf-8)
+(prefer-coding-system 'utf-8)
+(setq locale-coding-system 'utf-8)
+(set-default-coding-systems 'utf-8)
+(set-terminal-coding-system 'utf-8)
 
 (setq-default indent-tabs-mode nil)
 (setq tab-width 4)
@@ -54,10 +44,8 @@
            '((java-mode . "java")
              (other . "linux")))
 
-;;aesthetic
-(global-prettify-symbols-mode t)
+(setq auto-hscroll-mode 'current-line)
 
-;;completion
 (add-hook 'after-init-hook 'global-company-mode)
 
 ;;bracket matching
@@ -100,20 +88,20 @@
              `("melpa" . "https://melpa.org/packages/"))
 
 (package-initialize)
+(use-package highlight-numbers
+  :ensure t
+  :config)
+
+(add-hook 'prog-mode-hook 'highlight-numbers-mode)
+'(highlight-numbers-number ((t (:foreground "#e95c4b"))))
 
 `use-package;;install through init file
 (unless (package-installed-p `use-package)
   (package-refresh-contents)
-  (package-install `use-package))
+  (package-install `use-package))                                                        
 
-;;try out a cool package
+;;try out a cool package  
 (use-package try
-  :ensure t)
-
-;(use-package ace-jump-mode)
-;(define-key global-map (kbd "C-c SPC") 'ace-jump-mode)
-
-(use-package multiple-cursors
   :ensure t)
 
 (yas-global-mode 1)
@@ -130,8 +118,111 @@
 (use-package cargo
   :hook (rust-mode . cargo-minor-mode))
 
-(require 'xah-fly-keys)
+(use-package csharp-mode
+  :ensure t)
+
+(require 'xah-fly-keys)                    
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-command-mode-activate);command mode on startups
 
-(load-theme 'ample-flat)
+;SPC-
+
+(define-key xah-fly-leader-key-map (kbd "b") 'bookmark-bmenu-list);bring up bookmarks
+;; (define-key xah-fly-leader-key-map (kbd "b") 'xah-open-file-fast);bring up bookmarks with ido window, for when there's tons of relevant files 
+
+;coppied out of xah-fly-keys.el 
+;key funcitonality without leader key in command mode
+(defun xah-fly-command-mode-init ()
+  "Set command mode keys.
+Version 2017-01-21"
+  (interactive)
+  (xah-fly--define-keys
+   xah-fly-key-map
+   '(
+     ("~" . nil)
+     (":" . nil)
+
+     ("SPC" . xah-fly-leader-key-map)
+     ("DEL" . xah-fly-leader-key-map)
+
+     ("'" . xah-reformat-lines)
+     ("," . xah-shrink-whitespaces)
+     ("-" . xah-cycle-hyphen-underscore-space)
+     ("." . xah-backward-kill-word)
+     (";" . xah-comment-dwim)
+     ("/" . hippie-expand)
+     ("\\" . nil)
+     ;; ("=" . xah-forward-equal-sign)
+     ("[" . xah-backward-punct )
+     ("]" . xah-forward-punct)
+     ("`" . other-frame)
+
+     ;; ("#" . xah-backward-quote)
+     ;; ("$" . xah-forward-punct)
+
+     ("1" . xah-extend-selection)
+     ("2" . xah-select-line)
+     ("3" . delete-other-windows)
+     ("4" . split-and-follow-horizontally)
+     ("5" . delete-char)
+     ("6" . xah-select-block)
+     ("7" . xah-select-line)
+     ("8" . xah-extend-selection)
+     ("9" . xah-select-text-in-quote)
+     ("0" . xah-pop-local-mark-ring)
+
+     ("a" . execute-extended-command)
+     ("b" . isearch-forward)
+     ("c" . previous-line)
+     ("d" . xah-beginning-of-line-or-block)
+     ("e" . xah-delete-backward-char-or-bracket-text)
+     ("f" . undo)
+     ("g" . backward-word)
+     ("h" . left-char);backward-char
+     ("i" . xah-delete-current-text-block)
+     ("j" . xah-copy-line-or-region)
+     ("k" . xah-paste-or-paste-previous)
+     ;; ("l" . xah-fly-insert-mode-activate-space-before)
+     ("l" . xah-insert-space-before)
+     ("m" . xah-backward-left-bracket)
+     ("n" . right-char);forward-char
+     ("o" . goto-line)
+     ("p" . xah-kill-word)
+     ("q" . xah-cut-line-or-region)
+     ("r" . forward-word)
+     ("s" . xah-end-of-line-or-block)
+     ("t" . next-line)
+     ("u" . xah-fly-insert-mode-activate)
+     ("v" . xah-forward-right-bracket)
+     ("w" . xah-next-window-or-frame)
+     ("x" . xah-toggle-letter-case)
+     ("y" . set-mark-command)
+     ("z" . xah-goto-matching-bracket)))
+
+  (define-key xah-fly-key-map (kbd (xah-fly--key-char "a"))
+    (cond ((fboundp 'smex) 'smex)
+	  ((fboundp 'helm-M-x) 'helm-M-x)
+	  ((fboundp 'counsel-M-x) 'counsel-M-x)
+	  (t 'execute-extended-command)))
+
+  ;; (when xah-fly-swapped-1-8-and-2-7-p
+  ;;     (xah-fly--define-keys
+  ;;      xah-fly-key-map
+  ;;      '(
+  ;;        ("8" . pop-global-mark)
+  ;;        ("7" . xah-pop-local-mark-ring)
+  ;;        ("2" . xah-select-line)
+  ;;        ("1" . xah-extend-selection))))
+
+  (progn
+    (setq xah-fly-insert-state-q nil )
+    (modify-all-frames-parameters (list (cons 'cursor-type 'box))))
+
+  (setq mode-line-front-space "C")
+  (force-mode-line-update)
+
+  ;;
+  )
+
+(load-theme 'ample-flat) 
+(set-face-attribute 'default t :font "-outline-Inconsolata-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1" )

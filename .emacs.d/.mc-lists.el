@@ -4,13 +4,17 @@
 (setq mc/cmds-to-run-for-all
       '(
         cua-paste
+        indent-for-tab-command
         mouse-minor-mode-menu
         xah-backward-kill-word
+        xah-cut-line-or-region
         xah-fly-command-mode-activate-no-hook
         xah-fly-insert-mode-activate
+        xah-kill-word
         ))
 
 (setq mc/cmds-to-run-once
       '(
+        mouse-set-region
         xah-delete-backward-char-or-bracket-text
         ))
