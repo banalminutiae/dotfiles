@@ -22,7 +22,7 @@
 (setq-default x-select-enable-clipboard t)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
-
+ 
 (show-paren-mode 1)
 
 (set-language-environment "UTF-8")
@@ -103,8 +103,6 @@
 ;;try out a cool package  
 (use-package try
   :ensure t)
-
-(yas-global-mode 1)
 
 ;;autocomplete command completion
 (use-package which-key
@@ -224,5 +222,24 @@ Version 2017-01-21"
   ;;
   )
 
-(load-theme 'ample-flat) 
-(set-face-attribute 'default t :font "-outline-Inconsolata-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1" )
+(setq-default truncate-lines t)
+(setq truncate-partial-width-windows t)
+(split-window-horizontally)
+
+(set-background-color "gray9")
+(set-face-attribute 'default nil :foreground "#DAB98F")
+(set-face-attribute 'hl-line nil :foreground nil :background "blue")
+(set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
+(set-face-attribute 'font-lock-comment-face nil :foreground "dim gray")
+(set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
+(set-face-attribute 'font-lock-doc-face nil :foreground "dim gray")
+(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood3")
+(set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3")
+(set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
+(set-face attribute 'font-lock-type-face nil: foreground "burlywood3")
+(set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood3")
+
+
+
+;; (load-theme 'ample-flat) 
+;; (set-face-attribute 'default t :font "-outline-Inconsolata-normal-normal-normal-mono-13-*-*-*-c-*-iso8859-1" )

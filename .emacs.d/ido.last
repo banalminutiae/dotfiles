@@ -59,6 +59,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/Users/Andre/Documents/AOC/3/"
+ "c:/Users/Andre/Documents/AOC/2/"
  "c:/Users/Andre/AppData/Roaming/.emacs.d/"
  "c:/Users/Andre/Documents/TFCS/exam/"
  "c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/"
@@ -107,35 +109,49 @@
  "c:/Users/Andre/nand2tetris/nand2tetris/projects/00/"
  "c:/Users/Andre/Documents/OOSE/Exam/"
  "c:/Users/Andre/Documents/Stuff/Kaleidoscope/CPP/"
- "c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_A/src/"
- "c:/Users/Andre/Documents/Stuff/Kaleidoscope/OCAML/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "map.txt"
+ "day3.cpp"
+ "day2.c"
+ "day2.rs"
+ "input.txt"
  "init.el"
  "def.el"
  "proofs"
  "custom.el"
  "banal-theme.el"
- "xah-fly-keys-autoloads.el"
- "Part_Three.txt"
- "default-black-theme.el"
- "training.py"
- "inner.py"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("c:/Users/Andre/Documents/AOC/3/" (24520 42931 0 0) "map.txt" "day3.cpp" "a.out" "../" "./")
+
+ ("c:/Users/Andre/Documents/" (24520 30127 0 0) "TFCS/" "Stuff/" "SQL-aight/" "SNES/" "SET/" "Rust_Learning/" "Ray-Tracer/" "OS/" "OOSE/" "ocaml_learning/" "My Videos/" "My Pictures/" "My Music/" "msdev.bat" "MP/" "masm32v11r.zip" "malock/" "Lox/" "install.exe" "Handmade-Math-1.11.1.zip" "Handmade-Math-1.11.1/" "Hackyshit.txt" "Go_Workspace/" "dc.zip" "DC/" "CCSEP/" "BrainFrick/" "Books/" "Blog/" "AOC/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Stuff/" (24520 30109 0 0) "Kaleidoscope/" "hello_world/" "Game_Of_Life/" ".git/" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/Desktop/" (24520 32151 0 0) "Xming.lnk" "writeup.pdf" "Untitled.png" "SumatraPDF.lnk" "Start Tor Browser.lnk" "Spotify.lnk" "Screenshot 2020-11-18 151338.png" "SAS-Guidev.2-1.pdf" "problem2.png" "overflow.png" "OCaml64.lnk" "MASM32 Editor.lnk" "Machine_Perception-Exam 2020S2_Student(5).pdf" "Helltaker.url" "Fallout New Vegas.url" "desktop.ini" "Cygwin64 Terminal.lnk" "bof.getenv.txt" "BAS_October.png" "assessment-secure-java.zip" "Annotation 2020-09-08 135410.png" "2020_TFCS_Test_2.pdf" "2020 Assignment Test 2 Clean.pdf" "2020 Assignment Test 2 Clean.docx" "2020 Assignment Test 1 Clean v2.docx" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24519 17925 0 0) "transient/" "snippets/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "fuckall-theme.el" "eshell/" "elpy/" "elpa/" "default-black-theme.el" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
+
+ ("c:/Users/Andre/Documents/AOC/2/" (24519 17730 0 0) "input.txt" "day2.c" "day2/" "a.out" "../" "./")
+
+ ("c:/Users/Andre/Documents/MP/" (24500 37297 0 0) "the_bigg_cheg.pdf" "tests/" "String_Match.pdf" "nested_func.py" "Labs/" "Extras/" "Assignment2/" "Assignment/" "../" "./")
+
+ ("c:/Users/Andre/Documents/MP/Labs/Lab6/" (24478 25846 0 0) "template_match.py" "svm_data.dat" "suuport_vector_machine.py" "prac06ex01_template.png" "prac06ex01_image.png" "prac06(1).zip" "k_nearest.py" "digits.png" "../" "./")
+
+ ("c:/Users/Andre/Documents/TFCS/Assignment/" (24510 22109 0 0) "Part_Two.txt" "Part_Three.txt" "Notes.org" "2020 Assignment Part 3.pdf" "2020 Assignment Part 2.pdf" "2020 Assignment Part 1.pdf" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/" (24518 40077 0 0) "xah-fly-keys.el~" "xah-fly-keys.elc" "xah-fly-keys.el" "xah-fly-keys-pkg.el" "xah-fly-keys-autoloads.el" "../" "./")
+
  ("c:/Users/Andre/Documents/Ray-Tracer/copy/src/" (24501 4533 0 0) "Vec3.h" "Ray.h" "ray" "out.ppm" "Makefile" "main.cpp" "Colour.h" "../" "./")
 
  ("c:/Users/Andre/Documents/MP/Assignment2/home/student/andrew_li_19460677/" (24490 5280 0 0) "training.py" "task.sh" "scratch.txt" "Report.pdf" "Report-19460677.pdf" "output/" "main.py" "Assignment.zip" "../" "./")
 
- ("c:/Users/Andre/Documents/TFCS/Assignment/" (24490 43679 0 0) "Part_Two.txt" "Part_Three.txt" "Notes.org" "2020 Assignment Part 3.pdf" "2020 Assignment Part 2.pdf" "2020 Assignment Part 1.pdf" "../" "./")
-
  ("c:/Users/Andre/Documents/TFCS/exam/" (24496 41358 0 0) "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24501 63106 0 0) "url/" "transient/" "snippets/" "server/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "fuckall-theme.el" "eshell/" "elpy/" "elpa/" "default-black-theme.el" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
 
  ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/" (24454 60074 0 0) "yasnippet-snippets-20200425.1210/" "yasnippet-20191222.2206/" "xah-math-input-20200217.740/" "xah-fly-keys-20191226.2348/" "xah-find-20190314.2039/" "with-editor-20200617.1234/" "with-editor-20191222.1939/" "which-key-20191221.1857/" "vs-dark-theme-20191209.1600/" "use-package-20191126.2034/" "try-20181204.236/" "transient-20200707.2034/" "transient-20191226.1938/" "toml-mode-readme.txt" "toml-mode-20161107.1800/" "soothe-theme-20141027.1441/" "solarized-theme-20200411.1026/" "s-20180406.808/" "rust-mode-20200709.723/" "rich-minority-20190419.1136/" "rand-theme-20151219.2335/" "railscasts-reloaded-theme-20190308.759/" "pyvenv-20191202.1039/" "plan9-theme-20180804.1441/" "page-break-lines-readme.txt" "page-break-lines-20200121.837/" "nord-theme-20200108.833/" "multiple-cursors-20191210.1759/" "moe-theme-20200216.1927/" "highlight-indentation-20181204.839/" "gruvbox-theme-20200307.1522/" "go-mode-20200425.1740/" "git-commit-20200701.2112/" "git-commit-20191227.1317/" "flatland-theme-20171113.1521/" "dash-20200524.1947/" "dash-20191109.1327/" "darktooth-theme-20190412.142/" "csharp-mode-readme.txt" "csharp-mode-20201013.811/" "creamsody-theme-20170222.1058/" "company-20200324.2145/" "command-log-mode-20160413.447/" "color-theme-sanityinc-tomorrow-20200522.227/" "bind-key-20191110.416/" "autothemer-20180920.923/" "async-20200113.1745/" "async-20191226.1227/" "archives/" "ample-theme-20180207.1745/" "afternoon-theme-20140104.1859/" "../" "./")
 
@@ -165,10 +181,6 @@
 
  ("c:/Users/Andre/Documents/CCSEP/Pracs/P8/" (24462 43254 0 0) "string_m_internal.h" "string_m.h" "patchme_static_assert.c" "patchme_orig.c" "patchme.c" "patchme.bin" "../" "./")
 
- ("c:/Users/Andre/Documents/" (24461 34154 0 0) "thing.java" "TFCS/" "Stuff/" "SNES/" "Rust_Learning/" "ray.lisp" "Ray-Tracer/" "OS/" "OOSE/" "My Videos/" "My Pictures/" "My Music/" "MP/" "masm32v11r.zip" "malock/" "Lox/" "key_points_hist_diamond.png" "install.exe" "Hackyshit.txt" "Go_Workspace/" "dc.zip" "DC/" "CCSEP/" "BrainFrick/" "Books/" "Blog/" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab6/" (24448 25314 0 0) "template_match.py" "svm_data.dat" "suuport_vector_machine.py" "prac06ex01_template.png" "prac06ex01_image.png" "prac06(1).zip" "k_nearest.py" "knn_data.npz" "digits.png" "../" "./")
-
  ("c:/Users/Andre/Documents/MP/Labs/Lab7/Prac 7/" (24449 52596 0 0) "task_1.py" "SC3.jpg" "SC2.jpg" "SC1.jpg" "Sam_s OCR Challenge.pdf" "Sam_s OCR Challenge.docx" "debug.log" "../" "./")
 
  ("c:/Users/Andre/Documents/MP/Labs/Lab7/" (24448 29535 0 0) "Prac 7(1).zip" "Prac 7/" "../" "./")
@@ -178,8 +190,6 @@
  ("c:/Users/Andre/Documents/MP/Assignment2/home/" (24446 56980 0 0) "student/" "../" "./")
 
  ("c:/Users/Andre/Documents/MP/Assignment2/home/student/val_updated/" (24449 42894 0 0) "val06.jpg" "val05.jpg" "val04.jpg" "val03.jpg" "val02.jpg" "val01.jpg" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/" (24444 6401 0 0) "nested_func.py" "Labs/" "Extras/" "Assignment2/" "Assignment/" "../" "./")
 
  ("c:/Users/Andre/Documents/CCSEP/Assignment/assignment/src/big_demo/" (24432 46336 0 0) "user_t.h" "task_t.h" "task_manager.h" "task_manager.c" "Makefile" "main.h" "main.c" "file_manager.h" "file_manager.c" ".gitkeep" "../" "./")
 
@@ -245,8 +255,6 @@
 
  ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/AVLTree/" (24340 7750 0 0) "AVLTreeTest.go" "AVLTree.go" "../" "./")
 
- ("c:/Users/Andre/Documents/Stuff/" (24365 15546 0 0) "RSA.scm" "main.zip" "main.cpp" "Kaleidoscope/" "hello_world/" "goof.html" "goblin.py" "Game_Of_Life/" "fizzbuzz.ml" "fizzbuzz.cmo" "fizzbuzz.cmi" "fizzbuzz" "AntiRSI.ahk" ".git/" "../" "./")
-
  ("c:/Users/Andre/Documents/TFCS/Notes/" (24365 15755 0 0) "Lecture_1.tex" "Lecture_1.pdf" "Lecture_1.org" "Lecture_1.html" "../" "./")
 
  ("c:/Users/Andre/Documents/TFCS/" (24365 10145 0 0) "Notes/" "../" "./")
@@ -293,8 +301,6 @@
 
  ("c:/Users/Andre/Documents/Stuff/Kaleidoscope/OCAML/" (24283 46451 0 0) "Lexer.ml" "../" "./")
 
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/" (24300 25442 0 0) "xah-fly-keys.el~" "xah-fly-keys.elc" "xah-fly-keys.el" "xah-fly-keys-pkg.el" "xah-fly-keys-autoloads.el" "../" "./")
-
  ("c:/Users/Andre/AppData/Roaming/" (24291 2276 0 0) "Yandex/" "winscp.rnd" "Waterfox/" "vs_installershell/" "vstelemetry/" "VMware/" "Visual Studio Setup/" "Visual Studio Code/" "texstudio/" "SumatraPDF/" "Spotify/" "README.md" "Racket/" "NuGet/" "Notepad++/" "Mozilla/" "MiKTeX/" "Microsoft FxCop/" "Microsoft/" "Macromedia/" "KeePass/" "Kast/" "JetBrains/" "Google/" "FileZilla/" "Discord/" "com.RustyLake.SamsaraRoom/" "Code/" "Adobe/" "acme-home/" ".saves/" ".git/" ".emacs.d/" "../" "./")
 
  ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/archives/melpa/" (24283 4590 0 0) "archive-contents" "../" "./")
@@ -320,10 +326,6 @@
  ("c:/Users/Andre/Documents/OOSE/Practise/" (24232 18075 0 0) "Pay_By_Credit_Card.java" "Payment_Strategy.java" "Payment_Processor.java" "../" "./")
 
  ("c:/Users/Andre/Documents/OOSE/P03/AddressBook/src/Model/" (24237 35678 0 0) "Entry.java" "AddressBook.java" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/Mid-Sem/" (24240 12371 0 0) "Answers.txt" ".#Answers.txt" "../" "./")
-
- ("c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_B/" (24209 21523 0 0) "src/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

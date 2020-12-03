@@ -1,29 +1,3 @@
-cp Task_1.py Task_4.py
-clear
-ls
-vim Task_4.py
-notepad Task_4.py
-git remote add origin https://github.com/banalminutiae/Malock.git
-git init
-git remote add origin https://github.com/banalminutiae/Malock.git
-git branch -M master
-git add malock.c 
-git commit "bump"
-git commit -m "bump"
-git push
-git branch -M master
-git push -u origin master
-clear
-wsl
-bash
-dir
-ls
-clear
-ant
-cls
-clear
-bash
-clear
 gcc
 cls
 clear
@@ -126,3 +100,29 @@ clear
 go run main.go 
 go run main.go 
 go run main.go 
+rustc day2.rs
+ls
+./day2.exe
+clear
+clear
+ls
+rm day2.exe day2.pdb
+cargo new --bin day2
+ls
+cd day2
+ls
+cd src
+ls
+main.rs
+$(find-file "main.rs")
+cargo run
+clear
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cargo run
+cl
+msdev

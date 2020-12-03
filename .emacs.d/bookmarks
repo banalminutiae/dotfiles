@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("def.el"
+(("AOC"
+ (filename . "c:/Users/Andre/Documents/AOC/")
+ (front-context-string . "1\n  drwxrwxrwx  ")
+ (rear-context-string . "096 12-02 03:20 ")
+ (position . 221))
+("def.el"
  (filename . "~/.emacs.d/def.el")
  (front-context-string . "(defalias 'eb 'e")
  (rear-context-string)
