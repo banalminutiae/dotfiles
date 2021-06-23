@@ -1,93 +1,3 @@
-gcc
-cls
-clear
-python3
-python
-mkdir home/student/andrew_li19460677
-ls
-mkdir home
-cd home
-mkdir andrew_li_19460677
-cd andrew_li_19460677/
-cd ..
-ls
-mkdir student
-mv andrew_li_19460677 student
-ls
-mkdir test val train
-clear
-ls
-cd ..
-ls
-cd test
-ls
-cd ../train/ls
-clear 
-deno
-deno
-dotnet
-cls
-clear
-dotnet build hello_world.cs 
-dotnet build
-cd ..
-ls
-dotnet sln Ray-Tracer.sln add Ray-Tracer/
-dotnet build
-dotnet run
-cd ..
-cls
-clear
-dotnet run
-ls
-cd CS
-ls
-dotnet run
-dotnet new console -n "Test"
-dotnet new -sln "Test"
-dotnet new sln -n "Test"
-dotnet sln Test.sln add Test
-dotnet build
-ls
-rm -rf Ray-Tracer/
-rm -rf Ray-Tracer.sln
-clear
-ls
-dotnet build
-dotnet run
-ls
-cd Test/
-ls
-cd bin
-ls
-cd Debug
-ls
-cd ...
-cd ..
-clear
-cd Test/
-ls
-cat Program.cs
-cd obj
-ls
-cd ..
-clear
-cd ..
-dotnet run
-dotnet build
-cd Test/bin/
-ls
-cd Debug/netcoreapp3.1/
-clear
-ls
-./Test.exe
-./TEst.dll
-./Test.dll
-go
-java
-clear
-gradle
-cls
 clear
 go
 cargo
@@ -126,3 +36,93 @@ cargo run
 cargo run
 cl
 msdev
+pwd
+cd ..
+git add .emacs.d
+git commit -m "toned back the bikeshedding"
+git push
+msdev
+dotnet new console -lang F# -o FSharpApp
+cd FSharpApp/
+ls
+dotnet run
+msdev
+build.bat
+msdve
+grep --color -nh "DCHECK" -e
+grep -nh "DCHECK" -e
+grep -nH "DCHECK" -e
+grep -nH "DCHECK" *.cpp
+grep -nH "DCHECK" *.h
+grep -nH "Spectrum" *.cpp
+dotnet new console -lang F# -o BrainF#ck
+cls
+clear
+dir
+ls
+cd BrainF#ck
+clear
+dir
+s
+ls
+dotnet run
+clear
+ls
+dotnet run
+dotnet run
+dotnet run
+msdev
+cl
+dotnet
+cls
+clear
+Hugo version
+clear
+clear
+ls
+hugo server -D
+hugo --version
+clear
+npm
+clear
+ls *html
+cls
+clear
+find -name "*.html"
+cls
+ls
+hugo server
+hugo server
+clear
+go get github.com/bwmarrin/discordgo
+go un
+go 
+go build
+cd ..\..
+ls
+cd assignment2/
+ls
+cat Readme.adoc 
+make build
+cd ..
+l
+ls
+dotnet new classlib -o RegistryResponce
+emacs --version
+nuget
+cd ..c
+cd ../..
+cd ..
+cls
+clear
+dir
+ls
+ls -a
+git remote add Capstone git@bitbucket.org:ComputingSEP/2021-03-interactive-study-planner.git
+clear
+git remote -v
+clear
+aws list
+git
+cls
+clear

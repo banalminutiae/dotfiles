@@ -2,6 +2,15 @@
 
 ;; ----- ido-last-directory-list -----
 (
+ ("c:/Users/Andre/Documents/DC/Assignment2/8/Tutorial_8/" . "ClientLibrary/")
+ ("c:/Users/Andre/OneDrive/Desktop/DC_Exam/" . "Centre Booking/")
+ ("c:/Users/Andre/Documents/DC/Assignment2/7/Tutorial_7/" . "Transaction/")
+ ("c:/Users/Andre/Documents/DC/Assignment2/7/" . "Tutorial_7/")
+ ("c:/Users/Andre/Documents/DC/Assignment/Registry/" . "Controllers/")
+ ("c:/Users/Andre/Documents/DC/Assignment/" . "Registry/")
+ ("c:/Users/Andre/Documents/Books/" . "AI/")
+ ("c:/Users/Andre/Documents/DC/Labs/1/" . "Api_Classes/")
+ ("c:/Users/Andre/Documents/Ray-Tracer/weekdn/" . "build/")
  ("c:/Users/Andre/Documents/CCSEP/Pracs/P9/lab-9/" . "numeric-overflow/")
  ("c:/Users/Andre/Documents/CCSEP/Pracs/P9/" . "lab-9/")
  ("c:/Users/Andre/Documents/CCSEP/Pracs/" . "P9/")
@@ -14,7 +23,7 @@
  ("c:/Users/Andre/Downloads/glibc/glibc-2.25/" . "malloc/")
  ("c:/Users/Andre/Downloads/glibc/" . "glibc-2.25/")
  ("c:/Users/Andre/Documents/MP/Assignment/" . "src/")
- ("c:/Users/Andre/OneDrive/Desktop/" . "ray/")
+ ("c:/Users/Andre/OneDrive/Desktop/" . "DC_Exam/")
  ("c:/Users/Andre/Documents/MP/Labs/" . "Lab6/")
  ("c:/Users/Andre/Documents/TFCS/" . "Notes/")
  ("c:/Users/Andre/Documents/Rust_Learning/" . "hello_cargo/")
@@ -44,7 +53,7 @@
  ("c:/Users/Andre/Documents/OOSE/" . "Assignment/")
  ("c:/Users/Andre/Documents/Dead_Integrity/P1/" . "AddressBook/")
  ("c:/Users/Andre/Documents/Dead_Integrity/" . "P3/")
- ("c:/Users/Andre/Documents/" . "CCSEP/")
+ ("c:/Users/Andre/Documents/" . "Handmade-Math-1.11.1/")
  ("c:/Users/Andre/Packages/Emacs/" . "bin/")
  ("c:/Users/Andre/Packages/" . "Emacs/")
  ("c:/Users/Andre/OneDrive/" . "Desktop/")
@@ -59,85 +68,245 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/Users/Andre/Documents/rend/src/"
+ "c:/Users/Andre/Documents/Graphics/Renderer/Renderer/"
+ "c:/Users/Andre/Documents/Handmade-Math-1.11.1/"
+ "c:/Users/Andre/Documents/Graphics/Renderer/"
+ "c:/Users/Andre/Documents/DC/Assignment2/8/Tutorial_8/ClientLibrary/"
+ "c:/Users/Andre/OneDrive/Desktop/DC_Exam/Centre Booking/"
+ "c:/Users/Andre/Documents/DC/Assignment2/7/Tutorial_7/Transaction/"
+ "c:/Users/Andre/Documents/"
+ "c:/Users/Andre/Documents/ami/"
+ "c:/Users/Andre/Documents/DC/Assignment2/3/Tutorial_3/WebApp/Controllers/"
+ "c:/Users/Andre/Documents/DC/Assignment2/"
+ "c:/Users/Andre/Documents/DC/Assignment2/4/Tutorial_4/Tutorial_4_Data_Tier/Controllers/"
+ "c:/Users/Andre/Documents/DC/Assignment/ServiceProvider/Controllers/"
+ "c:/Users/Andre/Documents/DC/Assignment/Registry/Controllers/"
+ "c:/Users/Andre/Documents/DC/Assignment/Authenticator/"
+ "c:/Users/Andre/Documents/DC/Assignment/ServiceResponse/"
+ "c:/Users/Andre/Documents/DC/Assignment/ServicePayload/"
+ "c:/Users/Andre/Documents/Books/AI/"
+ "c:/Users/Andre/Documents/DC/Assignment/Registry/Models/"
+ "c:/Users/Andre/Documents/DC/Labs/1/Api_Classes/"
+ "c:/Users/Andre/Documents/DC/Labs/1/BusinessTier/"
+ "c:/Users/Andre/Documents/DC/Labs/1/WpfApp1/"
+ "c:/Users/Andre/Documents/DC/Labs/1/ConsoleApp1/"
+ "c:/Users/Andre/Packages/Emacs/i686/bin/"
+ "c:/Users/Andre/Documents/MP/Assignment/src/"
+ "c:/Users/Andre/Documents/fa/assignment2/test/java/"
+ "c:/Users/Andre/Documents/fa/assignment2/src/main/java/app/"
+ "c:/Users/Andre/Documents/MalBot/"
+ "c:/Users/Andre/Documents/fivestarenterprises/site/"
+ "c:/Users/Andre/Documents/Ray-Tracer/weekdn/src/"
+ "c:/Users/Andre/Documents/fivestartenterprise/Site/content/posts/"
+ "c:/Users/Andre/Documents/Ray-Tracer/weekdn/build/"
+ "c:/Users/Andre/Documents/Ray-Tracer/weekdn/"
+ "c:/Users/Andre/Documents/Lox/clox/src/"
+ "c:/Users/Andre/Documents/Go_Workspace/src/Thief/"
+ "c:/Users/Andre/Documents/fivestartenterprise/src/"
+ "c:/Users/Andre/Documents/rend/obj/"
+ "c:/Users/Andre/Documents/rend/"
+ "c:/Users/Andre/Documents/BrainF#ck/BrainF#ck/"
+ "c:/Users/Andre/Documents/BrainF#ck/"
+ "c:/Users/Andre/Documents/Lispy/py/calculator/"
+ "c:/Users/Andre/Documents/startpage/"
+ "c:/Users/Andre/Documents/Ray-Tracer/pbrt-v3/src/core/"
+ "c:/Users/Andre/Documents/Lox/clox/"
+ "c:/Users/Andre/Documents/BrainFrick/"
+ "c:/Users/Andre/Documents/AOC/4/"
  "c:/Users/Andre/Documents/AOC/3/"
  "c:/Users/Andre/Documents/AOC/2/"
  "c:/Users/Andre/AppData/Roaming/.emacs.d/"
  "c:/Users/Andre/Documents/TFCS/exam/"
- "c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/"
- "c:/Users/Andre/Documents/TFCS/Assignment/"
- "c:/Users/Andre/Documents/MP/Assignment2/home/student/andrew_li_19460677/"
- "c:/Users/Andre/Documents/MP/Assignment2/home/student/andrew_li_19460677/output/"
- "c:/Users/Andre/Documents/MP/Assignment/src/"
- "c:/Users/Andre/Documents/CCSEP/Pracs/P9/lab-9/numeric-overflow/"
- "c:/Users/Andre/OneDrive/Desktop/"
- "c:/Users/Andre/Documents/CCSEP/Pracs/P8/"
- "c:/Users/Andre/Documents/MP/Labs/Lab6/"
- "c:/Users/Andre/Documents/MP/Labs/Lab7/Prac 7/"
- "c:/Users/Andre/Documents/MP/Assignment2/"
- "c:/Users/Andre/Documents/MP/Labs/Lab4/"
- "c:/Users/Andre/Documents/MP/Assignment/data/"
- "c:/Users/Andre/Documents/MP/Labs/"
- "c:/Users/Andre/Documents/MP/Labs/Lab5/"
- "c:/Users/Andre/Documents/CCSEP/Assignment/assignment/src/big_demo/"
- "c:/Users/Andre/Documents/MP/Labs/Lab3/"
- "c:/Users/Andre/Documents/MP/Assignment/"
- "c:/Users/Andre/Documents/MP/Labs/Lab1/"
- "c:/Users/Andre/Documents/CCSEP/Pracs/P6/"
- "c:/Users/Andre/Documents/malock/"
- "c:/Users/Andre/Downloads/glibc/glibc-2.25/malloc/"
- "c:/Users/Andre/Documents/MP/Labs/Lab2/"
- "c:/Users/Andre/Documents/Ray-Tracer/copy/src/"
- "c:/Users/Andre/Documents/Ray-Tracer/Itch/"
- "c:/Users/Andre/Documents/MP/"
- "c:/Users/Andre/OneDrive/Desktop/ray/"
- "c:/Users/Andre/Documents/CCSEP/P5/"
- "c:/Users/Andre/Documents/Ray-Tracer/src/"
- "c:/Users/Andre/Documents/CCSEP/P2/"
- "c:/Users/Andre/Documents/Lox/jlox/"
- "c:/Users/Andre/Documents/TFCS/Notes/"
- "c:/Users/Andre/Documents/Stuff/"
- "c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/"
- "c:/Users/Andre/Documents/Go_Workspace/src/Trees/AVLTree/"
- "c:/Users/Andre/Documents/"
- "c:/Users/Andre/Documents/Rust_Learning/guessing_game/"
- "c:/Users/Andre/Documents/Rust_Learning/guessing_game/src/"
- "c:/Users/Andre/Documents/Rust_Learning/hello_cargo/src/"
- "c:/Users/Andre/Documents/Rust_Learning/"
- "c:/Users/Andre/Documents/Go_Workspace/src/Thief/"
- "c:/Users/Andre/Documents/Go_Workspace/src/RSA/"
- "c:/Users/Andre/nand2tetris/nand2tetris/projects/01/"
- "c:/Users/Andre/nand2tetris/nand2tetris/projects/00/"
- "c:/Users/Andre/Documents/OOSE/Exam/"
- "c:/Users/Andre/Documents/Stuff/Kaleidoscope/CPP/"
 )
 
 ;; ----- ido-work-file-list -----
 (
- "map.txt"
- "day3.cpp"
- "day2.c"
- "day2.rs"
- "input.txt"
- "init.el"
- "def.el"
- "proofs"
- "custom.el"
- "banal-theme.el"
+ "tgaimage.h"
+ "main.cpp"
+ "Renderer.h"
+ "HandmadeMath.h"
+ "Client.cs"
+ "README.txt"
+ "MainWindow.xaml.cs"
+ "garbage.xml"
+ "AMI-Exam-Answer-Template.txt"
+ "table.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/Andre/Documents/AOC/3/" (24520 42931 0 0) "map.txt" "day3.cpp" "a.out" "../" "./")
+ ("c:/Users/Andre/Documents/rend/src/" (24785 45661 0 0) "tgaimage.h" "tgaimage.cpp" "stb_image_write.h" "model.h" "model.cpp" "math.h" "main.cpp" "build.bat" "../" "./")
 
- ("c:/Users/Andre/Documents/" (24520 30127 0 0) "TFCS/" "Stuff/" "SQL-aight/" "SNES/" "SET/" "Rust_Learning/" "Ray-Tracer/" "OS/" "OOSE/" "ocaml_learning/" "My Videos/" "My Pictures/" "My Music/" "msdev.bat" "MP/" "masm32v11r.zip" "malock/" "Lox/" "install.exe" "Handmade-Math-1.11.1.zip" "Handmade-Math-1.11.1/" "Hackyshit.txt" "Go_Workspace/" "dc.zip" "DC/" "CCSEP/" "BrainFrick/" "Books/" "Blog/" "AOC/" "../" "./")
+ ("c:/Users/Andre/Documents/Graphics/Renderer/" (24785 44816 0 0) "Renderer.sln" "Renderer/" "Debug/" ".vs/" ".git/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Graphics/Renderer/Renderer/" (24785 44816 0 0) "Renderer_Win32.cpp" "Renderer.vcxproj.user" "Renderer.vcxproj.filters" "Renderer.vcxproj" "Renderer.h" "Debug/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Handmade-Math-1.11.1/" (24622 17269 0 0) "test/" "README.md" "LICENSE" "HandmadeMath.h" "CONTRIBUTING.md" ".travis.yml" ".gitmodules" ".gitignore" ".editorconfig" "../" "./")
+
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24785 41853 0 0) "transient/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
+
+ ("c:/Users/Andre/Documents/" (24781 41045 0 0) "SNES/" "SET/" "rend/" "read-list-textbook-3rd-edition.pdf" "Ray-Tracer/" "My Videos/" "My Pictures/" "My Music/" "msdev.bat" "MP/" "masm32v11r.zip" "Handmade-Math-1.11.1/" "Hacker's Delight Exercises/" "Graphics/" "Go_Workspace/" "fivestarenterprises/" "DC/" "Cover Sheet.docx" "Books/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/8/Tutorial_8/ClientLibrary/" (24746 18959 0 0) "Properties/" "obj/" "ClientList.cs" "ClientLibrary.csproj" "Client.cs" "bin/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/8/Tutorial_8/BlocksLibrary/" (24745 13422 0 0) "TransactionStruct.cs" "Transactions.cs" "Properties/" "obj/" "BlocksLibrary.csproj" "BlockchainServerInterface.cs" "BlockchainServer.cs" "BlockChain.cs" "Block.cs" "bin/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/8/Tutorial_8/" (24743 30186 0 0) "Tutorial_8.sln" "packages/" "ClientLibrary/" "ClientApplication/" "BlocksLibrary/" "BlockChain/" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/8/Tutorial_8/ClientApplication/" (24748 30881 0 0) "Properties/" "packages.config" "obj/" "MainWindow.xaml.cs" "MainWindow.xaml" "ClientApplication.csproj" "bin/" "App.xaml.cs" "App.xaml" "App.config" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/Desktop/DC_Exam/Centre Booking/" (24777 46275 0 0) "Centre Booking/" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/Desktop/DC_Exam/" (24777 46035 0 0) "Cover Sheet.docx" "COMP3008 _Exam_Answers_Andrew_Li_19460677.docx" "Centre Booking/" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/Desktop/" (24777 31199 0 0) "Xming.lnk" "unknown.png" "Transfer/" "SumatraPDF.lnk" "Spotify.lnk" "Scanned Documents.pdf" "prac_answers/" "Postman.lnk" "Milestone_3/" "Milestone_2/" "Milestone 4/" "MASM32 Editor.lnk" "flipcode/" "Final Submission/" "Final sprint/" "Figma.lnk" "Fallout New Vegas.url" "evalutaion_recordings.zip" "Docker Desktop.lnk" "desktop.ini" "DC_Exam/" "Cover Sheet.docx" "Command Prompt (3).lnk" "AssignmentImplementation.zip" "Assignment 1 HCI 2021.pdf" "Among Us.url" "AMI_Not-An-Exam-2020-Marking-Guide_.docx" "3_Capstone_UML_v2.png" "../" "./")
+
+ ("c:/Users/Andre/OneDrive/" (24756 61409 0 0) "Pictures/" "Getting started with OneDrive.docx" "Documents/" "desktop.ini" "Desktop/" "Attachments/" ".849C9593-D756-4E56-8D6E-42412F2A707B" "../" "./")
+
+ ("c:/Users/Andre/" (24748 54672 0 0) "Videos/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Postman/" "Packages/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "node_modules/" "NetHood/" "nand2tetris/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "Favorites/" "Dropbox/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" "AndroidStudioProjects/" "3D Objects/" ".zenmap/" ".vscode/" ".VirtualBox/" ".tooling/" ".templateengine/" ".ssh/" ".rustup/" ".packettracer" ".nuget/" ".node_repl_history" ".nbi/" ".idlerc/" ".gradle/" ".gitconfig" ".fiddler/" ".emulator_console_auth_token" ".dotnet/" ".docker/" ".dia/" ".deno/" ".config/" ".cisco/" ".cargo/" ".cache/" ".babel.7.8.4.production.json" ".azure/" ".aws/" ".AndroidStudio3.4/" ".android/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/" (24754 21578 0 0) "Tutorial 9.pdf" "Tutorial 8.pdf" "Tutorial 7.pdf" "Tutorial 6.pdf" "Tutorial 5.pdf" "Tutorial 4.pdf" "Tutorial 3.pdf" "Tutorial 2.pdf" "Tutorial 1.pdf" "Pracs.zip" "Lectures/" "Labs/" "dllex/" "DC-Assignment-1.pdf" "DC-2021-Bentley-Assignment-2.pdf" "Assignment2.zip" "Assignment2/" "Assignment.zip" "Assignment/" "1_example/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/4/" (24715 62786 0 0) "Tutorial_4/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/4/Tutorial_4/" (24716 6883 0 0) "Tutorial_4_Data_Tier/" "Tutorial_4_Business_Tier/" "Tutorial_4.sln" "packages/" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/4/Tutorial_4/Tutorial_4_Business_Tier/" (24716 7725 0 0) "Web.Release.config" "Web.Debug.config" "Web.config" "Views/" "Tutorial_4_Business_Tier.csproj.user" "Tutorial_4_Business_Tier.csproj" "Scripts/" "Properties/" "packages.config" "obj/" "Models/" "Global.asax.cs" "Global.asax" "fonts/" "favicon.ico" "Controllers/" "Content/" "bin/" "App_Start/" "App_Data/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/7/Tutorial_7/Transaction/" (24748 29824 0 0) "Transaction.csproj" "Properties/" "packages.config" "obj/" "MainWindow.xaml.cs" "MainWindow.xaml" "bin/" "App.xaml.cs" "App.xaml" "App.config" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/7/Tutorial_7/BlockChain/" (24726 25918 0 0) "Web.Release.config" "Web.Debug.config" "Web.config" "Views/" "Tutorial_7_BlockChain.csproj.user" "Tutorial_7_BlockChain.csproj" "Scripts/" "Properties/" "packages.config" "obj/" "Models/" "Global.asax.cs" "Global.asax" "fonts/" "favicon.ico" "Controllers/" "Content/" "bin/" "App_Start/" "App_Data/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/7/Tutorial_7/" (24722 48426 0 0) "Tutorial_7.sln" "Transaction/" "packages/" "Miner/" "BlockChain/" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/7/" (24722 43421 0 0) "Tutorial_7/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/3/" (24723 56262 0 0) "Tutorial_3/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/3/Tutorial_3/" (24726 19001 0 0) "WebApp/" "Tutorial_3.sln" "packages/" "DBServer/" "DBLib/" "DBInterface/" "DBClient/" "DataIntermed/" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/3/Tutorial_3/DBClient/" (24748 29493 0 0) "Properties/" "packages.config" "obj/" "MainWindow.xaml.cs" "MainWindow.xaml" "DBClient.csproj" "bin/" "App.xaml.cs" "App.xaml" "App.config" "../" "./")
+
+ ("c:/Users/Andre/Documents/ami/" (24768 11499 0 0) "uncertain.txt" "table.txt" "lectures/" "big_chegg.pdf" "AndrewLi-19460677-AMI-Exam-Answers.txt" "AMI Test 2 Comments_Q8-11.docx" "../" "./")
+
+ ("c:/Users/Andre/Documents/Books/AI/" (24733 14360 0 0) "SzeliskiBook_20100903_draft.pdf" "Patrick Henry Winston - Artificial intelligence-Addison-Wesley Pub. Co (1992).djvu" "Artificial Intelligence A Modern Approach - Solutions.pdf" "ami300-exam-2014-complete.pdf" "ami251-exam-2017-cleaned.pdf" "a154ffbcec538a4161a406abf62f5b76-original.pdf" "2018_Book_NeuralNetworksAndDeepLearning.pdf" "2018 S2 COMP3006 Exam for Release.pdf" "2017_Book_AnIntroductionToMachineLearnin.pdf" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/4/Tutorial_4/Tutorial_4_Data_Tier/Controllers/" (24741 11580 0 0) "UserController.cs" "TransactionController.cs" "HomeController.cs" "AdminController.cs" "AccountController.cs" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/" (24746 26285 0 0) "XSS/" "Cover Sheet.docx" "Assignment Report.docx" "8/" "7/" "6/" "5/" "4/" "3/" "2/" "1/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/3/Tutorial_3/WebApp/Controllers/" (24728 49576 0 0) "SearchController.cs" "MiscApiController.cs" "HomeController.cs" "GetValuesController.cs" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/5/" (24744 62030 0 0) "XSS.html" "TestPage.html" "getTheStuff.html" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/ServicePayload/" (24711 48511 0 0) "TwoNumberPayload.cs" "ThreeNumberPayload.cs" "SingleNumberPayload.cs" "ServicePayload.csproj" "ServiceDescription.cs" "SearchPayload.cs" "RemoveServicePayload.cs" "RegistryPayload.cs" "Properties/" "obj/" "bin/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/ServiceResponse/" (24710 55267 0 0) "SingleValueData.cs" "ServiceStatusResponse.cs" "ServiceResponse.csproj" "SearchResponse.cs" "RegistryResponse.cs" "Properties/" "packages.config" "obj/" "MultiValueData.cs" "BooleanValueData.cs" "bin/" "AuthenticationResponse.cs" "app.config" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/Authenticator/" (24712 3860 0 0) "Properties/" "packages.config" "obj/" "Data/" "bin/" "AuthenticatorServer.cs" "AuthenticatorInterface.cs" "AuthenticatorHost.cs" "Authenticator.csproj.user" "Authenticator.csproj" "App.config" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/Registry/Controllers/" (24712 8677 0 0) "ServiceController.cs" "HomeController.cs" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/ServiceProvider/Controllers/" (24710 48064 0 0) "HomeController.cs" "CalculationController.cs" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/4/Tutorial_4/Tutorial_4_Business_Tier/Controllers/" (24718 29621 0 0) "HomeController.cs" "BankAPIController.cs" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/Registry/" (24695 35 0 0) "Web.Release.config" "Web.Debug.config" "Web.config" "Views/" "ServiceFile.txt" "Scripts/" "Registry.csproj.user" "Registry.csproj" "Properties/" "packages.config" "obj/" "Models/" "Global.asax.cs" "Global.asax" "fonts/" "favicon.ico" "Controllers/" "Content/" "bin/" "App_Start/" "App_Data/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/ServiceProvider/" (24695 2811 0 0) "Web.Release.config" "Web.Debug.config" "Web.config" "Views/" "ServiceProvider.csproj.user" "ServiceProvider.csproj" "Scripts/" "Properties/" "packages.config" "obj/" "Models/" "Global.asax.cs" "Global.asax" "fonts/" "favicon.ico" "Controllers/" "Content/" "bin/" "App_Start/" "App_Data/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/" (24693 5774 0 0) "ServiceResponse/" "ServiceProvider/" "ServicePayload/" "Registry/" "PublishingConsole/" "packages/" "ClientGui/" "Authenticator/" "Assignment.sln" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Books/" (24677 13446 0 0) "Theory/" "The Pragmatic Programmer From Journeyman to Master by Andrew Hunt, David Thomas (z-lib.org).pdf" "Security/" "Robert Sedgewick, Kevin Wayne - Algorithms-Addison-Wesley Professional (2011).pdf" "Reading/" "Practical/" "Novels/" "Math/" "Languages/" "Ken Steiglitz - A Digital Signal Processing Primer with Applications to Digital Audio and Computer Music-Addison-Wesley (1996).djvu" "Helen Sharp, Jenny Preece, Yvonne Rogers - Interaction Design_ Beyond Human-Computer Interaction-Wiley (2019).pdf" "Harvey Lodish, Arnold Berk, Paul Matsudaira, Chris A. Kaiser, Monty Krieger, Matthew P. Scott, Lawrence Zipursky, James Darnell - Molecular Cell Biology (2008, W. H. Freeman) - libgen.lc.pdf" "Hardware/" "Classic Textbooks/" "AI/" "../" "./")
+
+ ("c:/Users/Andre/Packages/" (24546 51442 0 0) "Emacs/" "../" "./")
+
+ ("c:/Users/Andre/Packages/Emacs/" (24546 50246 0 0) "Uninstall.exe" "i686/" "../" "./")
+
+ ("c:/Users/Andre/Packages/Emacs/i686/" (24546 50198 0 0) "share/" "libexec/" "lib/" "include/" "etc/" "bin/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Labs/1/ConsoleApp1/" (24672 20751 0 0) "ServerProg.csproj" "Properties/" "obj/" "DataServerInterface.cs" "DataServer.cs" "bin/" "App.config" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Labs/1/WpfApp1/" (24676 23859 0 0) "WpfApp1.csproj" "Properties/" "packages.config" "obj/" "MainWindow.xaml.cs" "MainWindow.xaml" "bin/" "App.xaml.cs" "App.xaml" "App.config" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment/Registry/Models/" (24679 7723 0 0) "DataModel.cs" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Labs/1/BusinessTier/" (24672 20753 0 0) "Properties/" "obj/" "BusinessTierInterface.cs" "BusinessTier.csproj" "BusinessServer.cs" "bin/" "App.config" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Labs/1/Api_Classes/" (24676 23632 0 0) "SearchData.cs" "Properties/" "obj/" "DataIntermed.cs" "bin/" "Api_Classes.csproj" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Labs/1/" (24672 27213 0 0) "WpfApp1/" "WebApp/" "Library1/" "ConsoleApp1/" "BusinessTier/" "Api_Classes/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Labs/1/WebApp/" (24672 22794 0 0) "WebApp.csproj.user" "WebApp.csproj" "Web.Release.config" "Web.Debug.config" "Web.config" "Views/" "Scripts/" "Properties/" "packages.config" "obj/" "Models/" "Global.asax.cs" "Global.asax" "fonts/" "favicon.ico" "Controllers/" "Content/" "bin/" "App_Start/" "App_Data/" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Labs/1/WebApp/Models/" (24672 26929 0 0) "DataModel.cs" "../" "./")
+
+ ("c:/Users/Andre/Documents/Ray-Tracer/weekdn/src/" (24616 52768 0 0) "vec3.h" "sphere.h" "ray.h" "ray.cpp" "output_colour.h" "hittable_list.h" "hittable.h" "common.h" "camera.h" "build.bat" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/fa/assignment2/src/main/java/app/" (24613 13883 0 0) "Main.java" "../" "./")
+
+ ("c:/Users/Andre/Documents/fa/assignment2/test/java/" (24613 13883 0 0) "appSpec.java" "appSecuritySpec.java" "../" "./")
+
+ ("c:/Users/Andre/Documents/NN/" (24622 13654 0 0) "../" "./")
+
+ ("c:/Users/Andre/Packages/Emacs/i686/bin/" (24546 50190 0 0) "zstd.exe" "zlib1.dll" "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec.exe" "xzcmp" "xzcat.exe" "xz.exe" "xmlwf.exe" "xmllint.exe" "xmlcatalog.exe" "xml2-config" "xgettext.exe" "wrjpgcom.exe" "unxz.exe" "trust.exe" "trietool.exe" "trietool-0.2.exe" "transicc.exe" "tjbench.exe" "tificc.exe" "tiffsplit.exe" "tiffset.exe" "tiffmedian.exe" "tiffinfo.exe" "tiffdump.exe" "tiffdither.exe" "tiffcrop.exe" "tiffcp.exe" "tiffcmp.exe" "tiff2rgba.exe" "tiff2ps.exe" "tiff2pdf.exe" "tiff2bw.exe" "srptool.exe" "sexp-conv.exe" "runemacs.exe" "rsvg-convert.exe" "recode-sr-latin.exe" "rdjpgcom.exe" "raw2tiff.exe" "pzstd.exe" "psktool.exe" "psicc.exe" "ppm2tiff.exe" "pnm2png.exe" "pnm2png-static.exe" "pngfix.exe" "png2pnm.exe" "png2pnm-static.exe" "png-fix-itxt.exe" "pkcs1-conv.exe" "pango-view.exe" "pango-list.exe" "pal2rgb.exe" "p11tool.exe" "p11-kit.exe" "ocsptool.exe" "ngettext.exe" "nettle-pbkdf2.exe" "nettle-lfib-stream.exe" "nettle-hash.exe" "msguniq.exe" "msgunfmt.exe" "msgmerge.exe" "msginit.exe" "msggrep.exe" "msgfmt.exe" "msgfilter.exe" "msgexec.exe" "msgen.exe" "msgconv.exe" "msgcomm.exe" "msgcmp.exe" "msgcat.exe" "msgattrib.exe" "lzmainfo.exe" "lzmadec.exe" "linkicc.exe" "libzstd.dll" "libXpm-noX4.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libturbojpeg.dll" "libtre-5.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libthai-0.dll" "libtasn1-6.dll" "libsystre-0.dll" "libstdc++-6.dll" "libssp-0.dll" "librsvg-2-2.dll" "libquadmath-0.dll" "libpng16-config" "libpng16-16.dll" "libpng-config" "libpixman-1-0.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-7.dll" "liblzo2-2.dll" "liblzma-5.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjasper-4.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-5.dll" "libharfbuzz-subset-0.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmpxx-4.dll" "libgmp-10.dll" "libgif-7.dll" "libgettextsrc-0-19-8-1.dll" "libgettextpo-0.dll" "libgettextlib-0-19-8-1.dll" "libgdk_pixbuf-2.0-0.dll" "libgcc_s_dw2-1.dll" "libfribidi-0.dll" "libfreetype-6.dll" "libfreeglut.dll" "libfontconfig-1.dll" "libffi-6.dll" "libexpat-1.dll" "libdatrie-1.dll" "libcroco-0.6-3.dll" "libcharset-1.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libatomic-1.dll" "libasprintf-0.dll" "jpgicc.exe" "jpegtran.exe" "jasper.exe" "imginfo.exe" "imgcmp.exe" "idn2.exe" "i686-w64-mingw32-agrep.exe" "hb-view.exe" "hb-subset.exe" "hb-shape.exe" "hb-ot-shape-closure.exe" "gr2fonttest.exe" "gnutls-serv.exe" "gnutls-cli.exe" "gnutls-cli-debug.exe" "giftool.exe" "giftext.exe" "giffix.exe" "gifclrmp.exe" "gifbuild.exe" "gif2rgb.exe" "gettextize" "gettext.sh" "gettext.exe" "gdk-pixbuf-thumbnailer.exe" "gdk-pixbuf-query-loaders.exe" "gdk-pixbuf-pixdata.exe" "gdk-pixbuf-csource.exe" "fribidi.exe" "freetype-config" "fc-validate.exe" "fc-scan.exe" "fc-query.exe" "fc-pattern.exe" "fc-match.exe" "fc-list.exe" "fc-conflist.exe" "fc-cat.exe" "fc-cache.exe" "fax2tiff.exe" "fax2ps.exe" "etags.exe" "envsubst.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-28.0.50.exe" "ebrowse.exe" "djpeg.exe" "cxpm-noX.exe" "ctags.exe" "csslint-0.6.exe" "croco-0.6-config" "cjpeg.exe" "certtool.exe" "bzmore" "bzless" "bzip2recover.exe" "bzip2.exe" "bzgrep" "bzfgrep" "bzegrep" "bzdiff" "bzcmp" "bzcat.exe" "bunzip2.exe" "autopoint" "asn1Parser.exe" "asn1Decoding.exe" "asn1Coding.exe" "addpm.exe" "../" "./")
+
+ ("c:/Users/Andre/Documents/Ray-Tracer/weekdn/" (24577 45113 0 0) "src/" "Raytracer.vcxproj.user" "Raytracer.vcxproj.filters" "Raytracer.vcxproj" "Raytracer.sln" "Debug/" "build/" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/fivestarenterprises/site/" (24586 26877 0 0) "index.html" "../" "./")
+
+ ("c:/Users/Andre/Documents/MalBot/" (24590 38892 0 0) "../" "./")
+
+ ("c:/Users/Andre/Documents/BrainF#ck/BrainF#ck/" (24575 6912 0 0) "sample.bf" "Program.fs" "obj/" "BrainF#ck.fsproj" "bin/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Ray-Tracer/weekdn/build/" (24574 40555 0 0) "ray.pdb" "ray.obj" "ray.ilk" "ray.exe" "image.ppm" ".vs/" "../" "./")
+
+ ("c:/Users/Andre/Documents/fivestartenterprise/Site/content/posts/" (24576 6211 0 0) "../" "./")
+
+ ("c:/Users/Andre/Documents/fivestartenterprise/Site/content/" (24576 3269 0 0) "../" "./")
+
+ ("c:/Users/Andre/Documents/fivestartenterprise/Site/" (24576 4049 0 0) "themes/" "static/" "layouts/" "data/" "content/" "config.toml" "archetypes/" ".gitmodules" ".git/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Ray-Tracer/src/" (24573 24051 0 0) "stb_image_write.h" "math.h" "bmpimage.h" "../" "./")
+
+ ("c:/Users/Andre/Documents/Lox/clox/" (24569 53141 0 0) "src/" "build/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Go_Workspace/src/Thief/" (24562 43757 0 0) "RabinKarp.go" "RabinKarp.exe" "bloom.go" "../" "./")
+
+ ("c:/Users/Andre/Documents/Lox/clox/src/" (24569 54074 0 0) "virtual_machine.h" "virtual_machine.c" "value.h" "value.c" "main.c" "debug.h" "debug.c" "bytecode_chunk.h" "bytecode_chunk.c" "build.bat" "../" "./")
+
+ ("c:/Users/Andre/Documents/rend/build/" (24554 58105 0 0) "tgaimage.obj" "output.tga" "model.obj" "main.pdb" "main.obj" "main.ilk" "main.exe" "../" "./")
+
+ ("c:/Users/Andre/Documents/Ray-Tracer/copy/src/" (24554 1017 0 0) "Vec3.h" "Ray.h" "ray" "out.ppm" "Makefile" "main.cpp" "Colour.h" "../" "./")
+
+ ("c:/Users/Andre/Documents/fivestartenterprise/src/" (24544 4420 0 0) "style.css" "index.html" "../" "./")
+
+ ("c:/Users/Andre/Documents/Ray-Tracer/rayt/src/" (24554 631 0 0) "../" "./")
+
+ ("c:/Users/Andre/Documents/rend/" (24540 40279 0 0) "src/" "obj/" "build/" "../" "./")
+
+ ("c:/Users/Andre/Documents/rend/obj/" (24540 40294 0 0) "teapot.obj" "../" "./")
+
+ ("c:/Users/Andre/Documents/AOC/2/" (24538 60889 0 0) "input.txt" "day2.c" "day2/" "a.out" "../" "./")
+
+ ("c:/Users/Andre/Documents/BrainF#ck/" (24538 54575 0 0) "BrainF#ck/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Ray-Tracer/pbrt-v3/src/core/" (24531 28440 0 0) "transform.h" "transform.cpp" "texture.h" "texture.cpp" "stringprint.h" "stats.h" "stats.cpp" "spectrum.h" "spectrum.cpp" "sobolmatrices.h" "sobolmatrices.cpp" "shape.h" "shape.cpp" "scene.h" "scene.cpp" "sampling.h" "sampling.cpp" "sampler.h" "sampler.cpp" "rng.h" "reflection.h" "reflection.cpp" "quaternion.h" "quaternion.cpp" "progressreporter.h" "progressreporter.cpp" "primitive.h" "primitive.cpp" "pbrt.h" "parser.h" "parser.cpp" "paramset.h" "paramset.cpp" "parallel.h" "parallel.cpp" "mipmap.h" "microfacet.h" "microfacet.cpp" "memory.h" "memory.cpp" "medium.h" "medium.cpp" "material.h" "material.cpp" "lowdiscrepancy.h" "lowdiscrepancy.cpp" "lightdistrib.h" "lightdistrib.cpp" "light.h" "light.cpp" "interpolation.h" "interpolation.cpp" "interaction.h" "interaction.cpp" "integrator.h" "integrator.cpp" "imageio.h" "imageio.cpp" "geometry.h" "geometry.cpp" "floatfile.h" "floatfile.cpp" "filter.h" "filter.cpp" "film.h" "film.cpp" "fileutil.h" "fileutil.cpp" "error.h" "error.cpp" "efloat.h" "efloat.cpp" "camera.h" "camera.cpp" "bssrdf.h" "bssrdf.cpp" "api.h" "api.cpp" "../" "./")
+
+ ("c:/Users/Andre/Documents/startpage/" (24536 56383 0 0) "style.css" "startpage.js" "index.html" "../" "./")
+
+ ("c:/Users/Andre/Documents/Lispy/py/calculator/" (24537 52785 0 0) "../" "./")
+
+ ("c:/Users/Andre/Packages/Emacs/x86_64/bin/" (24519 636 0 0) "zstd.exe" "zlib1.dll" "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec.exe" "xzcmp" "xzcat.exe" "xz.exe" "xmlwf.exe" "xmllint.exe" "xmlcatalog.exe" "xml2-config" "xgettext.exe" "x86_64-w64-mingw32-agrep.exe" "wrjpgcom.exe" "unxz.exe" "trust.exe" "trietool.exe" "trietool-0.2.exe" "transicc.exe" "tjbench.exe" "tificc.exe" "tiffsplit.exe" "tiffset.exe" "tiffmedian.exe" "tiffinfo.exe" "tiffdump.exe" "tiffdither.exe" "tiffcrop.exe" "tiffcp.exe" "tiffcmp.exe" "tiff2rgba.exe" "tiff2ps.exe" "tiff2pdf.exe" "tiff2bw.exe" "srptool.exe" "sexp-conv.exe" "runemacs.exe" "rsvg-convert.exe" "recode-sr-latin.exe" "rdjpgcom.exe" "raw2tiff.exe" "pzstd.exe" "psktool.exe" "psicc.exe" "ppm2tiff.exe" "pnm2png.exe" "pnm2png-static.exe" "pngfix.exe" "png2pnm.exe" "png2pnm-static.exe" "png-fix-itxt.exe" "pkcs1-conv.exe" "pcretest.exe" "pcregrep.exe" "pcre-config" "pango-view.exe" "pango-list.exe" "pal2rgb.exe" "p11tool.exe" "p11-kit.exe" "ocsptool.exe" "ngettext.exe" "nettle-pbkdf2.exe" "nettle-lfib-stream.exe" "nettle-hash.exe" "msguniq.exe" "msgunfmt.exe" "msgmerge.exe" "msginit.exe" "msggrep.exe" "msgfmt.exe" "msgfilter.exe" "msgexec.exe" "msgen.exe" "msgconv.exe" "msgcomm.exe" "msgcmp.exe" "msgcat.exe" "msgattrib.exe" "lzmainfo.exe" "lzmadec.exe" "linkicc.exe" "libzstd.dll" "libXpm-noX4.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libturbojpeg.dll" "libtre-5.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libthai-0.dll" "libtasn1-6.dll" "libsystre-0.dll" "libstdc++-6.dll" "libssp-0.dll" "librsvg-2-2.dll" "libquadmath-0.dll" "libpng16-config" "libpng16-16.dll" "libpng-config" "libpixman-1-0.dll" "libpcreposix-0.dll" "libpcrecpp-0.dll" "libpcre32-0.dll" "libpcre16-0.dll" "libpcre-1.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-7.dll" "liblzo2-2.dll" "liblzma-5.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjasper-4.dll" "libjansson-4.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-5.dll" "libharfbuzz-subset-0.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgthread-2.0-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmpxx-4.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgettextsrc-0-19-8-1.dll" "libgettextpo-0.dll" "libgettextlib-0-19-8-1.dll" "libgdk_pixbuf-2.0-0.dll" "libgcc_s_seh-1.dll" "libfribidi-0.dll" "libfreetype-6.dll" "libfreeglut.dll" "libfontconfig-1.dll" "libffi-6.dll" "libexpat-1.dll" "libdatrie-1.dll" "libcroco-0.6-3.dll" "libcharset-1.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libatomic-1.dll" "libasprintf-0.dll" "jpgicc.exe" "jpegtran.exe" "jasper.exe" "imginfo.exe" "imgcmp.exe" "idn2.exe" "hb-view.exe" "hb-subset.exe" "hb-shape.exe" "hb-ot-shape-closure.exe" "gtester-report.exe" "gtester-report-script.py" "gspawn-win64-helper.exe" "gspawn-win64-helper-console.exe" "gsettings.exe" "gresource.exe" "gr2fonttest.exe" "gobject-query.exe" "gnutls-serv.exe" "gnutls-cli.exe" "gnutls-cli-debug.exe" "glib-mkenums.exe" "glib-mkenums-script.py" "glib-gettextize" "glib-genmarshal.exe" "glib-genmarshal-script.py" "glib-compile-schemas.exe" "glib-compile-resources.exe" "gio.exe" "gio-querymodules.exe" "giftool.exe" "giftext.exe" "giffix.exe" "gifclrmp.exe" "gifbuild.exe" "gif2rgb.exe" "gettextize" "gettext.sh" "gettext.exe" "gdk-pixbuf-thumbnailer.exe" "gdk-pixbuf-query-loaders.exe" "gdk-pixbuf-pixdata.exe" "gdk-pixbuf-csource.exe" "gdbus.exe" "gdbus-codegen.exe" "gdbus-codegen-script.py" "fribidi.exe" "freetype-config" "fc-validate.exe" "fc-scan.exe" "fc-query.exe" "fc-pattern.exe" "fc-match.exe" "fc-list.exe" "fc-conflist.exe" "fc-cat.exe" "fc-cache.exe" "fax2tiff.exe" "fax2ps.exe" "etags.exe" "envsubst.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-27.1.exe" "edit_test_dll.exe" "edit_test.exe" "edit.dll" "ebrowse.exe" "djpeg.exe" "cxpm-noX.exe" "ctags.exe" "csslint-0.6.exe" "croco-0.6-config" "cjpeg.exe" "certtool.exe" "bzmore" "bzless" "bzip2recover.exe" "bzip2.exe" "bzgrep" "bzfgrep" "bzegrep" "bzdiff" "bzcmp" "bzcat.exe" "bunzip2.exe" "autopoint" "asn1Parser.exe" "asn1Decoding.exe" "asn1Coding.exe" "addpm.exe" "../" "./")
+
+ ("c:/Users/Andre/Documents/AOC/3/" (24524 37163 0 0) "map.txt" "day3.obj" "day3.exe" "day3.cpp" "a.out" "../" "./")
+
+ ("c:/Users/Andre/Documents/AOC/4/" (24521 51525 0 0) "passports.txt" "day4.c" "../" "./")
+
+ ("c:/Users/Andre/Documents/BrainFrick/" (24521 54124 0 0) "FSharpApp/" "../" "./")
 
  ("c:/Users/Andre/Documents/Stuff/" (24520 30109 0 0) "Kaleidoscope/" "hello_world/" "Game_Of_Life/" ".git/" "../" "./")
-
- ("c:/Users/Andre/OneDrive/Desktop/" (24520 32151 0 0) "Xming.lnk" "writeup.pdf" "Untitled.png" "SumatraPDF.lnk" "Start Tor Browser.lnk" "Spotify.lnk" "Screenshot 2020-11-18 151338.png" "SAS-Guidev.2-1.pdf" "problem2.png" "overflow.png" "OCaml64.lnk" "MASM32 Editor.lnk" "Machine_Perception-Exam 2020S2_Student(5).pdf" "Helltaker.url" "Fallout New Vegas.url" "desktop.ini" "Cygwin64 Terminal.lnk" "bof.getenv.txt" "BAS_October.png" "assessment-secure-java.zip" "Annotation 2020-09-08 135410.png" "2020_TFCS_Test_2.pdf" "2020 Assignment Test 2 Clean.pdf" "2020 Assignment Test 2 Clean.docx" "2020 Assignment Test 1 Clean v2.docx" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24519 17925 0 0) "transient/" "snippets/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "fuckall-theme.el" "eshell/" "elpy/" "elpa/" "default-black-theme.el" "def.el" "custom.el" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
-
- ("c:/Users/Andre/Documents/AOC/2/" (24519 17730 0 0) "input.txt" "day2.c" "day2/" "a.out" "../" "./")
 
  ("c:/Users/Andre/Documents/MP/" (24500 37297 0 0) "the_bigg_cheg.pdf" "tests/" "String_Match.pdf" "nested_func.py" "Labs/" "Extras/" "Assignment2/" "Assignment/" "../" "./")
 
@@ -146,8 +315,6 @@
  ("c:/Users/Andre/Documents/TFCS/Assignment/" (24510 22109 0 0) "Part_Two.txt" "Part_Three.txt" "Notes.org" "2020 Assignment Part 3.pdf" "2020 Assignment Part 2.pdf" "2020 Assignment Part 1.pdf" "../" "./")
 
  ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/xah-fly-keys-20191226.2348/" (24518 40077 0 0) "xah-fly-keys.el~" "xah-fly-keys.elc" "xah-fly-keys.el" "xah-fly-keys-pkg.el" "xah-fly-keys-autoloads.el" "../" "./")
-
- ("c:/Users/Andre/Documents/Ray-Tracer/copy/src/" (24501 4533 0 0) "Vec3.h" "Ray.h" "ray" "out.ppm" "Makefile" "main.cpp" "Colour.h" "../" "./")
 
  ("c:/Users/Andre/Documents/MP/Assignment2/home/student/andrew_li_19460677/" (24490 5280 0 0) "training.py" "task.sh" "scratch.txt" "Report.pdf" "Report-19460677.pdf" "output/" "main.py" "Assignment.zip" "../" "./")
 
@@ -168,164 +335,6 @@
  ("c:/Users/Andre/Documents/CCSEP/Pracs/P9/lab-9/numeric-overflow/" (24472 15879 0 0) "test/" "src/" "Readme.adoc" "Makefile" "LICENSE" "Dockerfile" "CONTRIBUTING.adoc" "build.gradle" ".gitlab-ci.yml" ".gitignore" "../" "./")
 
  ("c:/Users/Andre/Documents/CCSEP/Pracs/P9/lab-9/" (24472 15879 0 0) "numeric-overflow/" "numeric-imprecision/" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Pracs/P9/" (24472 15876 0 0) "lab-9/" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Pracs/" (24399 30503 0 0) "P9/" "P8/" "P7/" "P6/" "P5/" "P4/" "P3/" "P2/" "P10/" "P1/" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/" (24440 14968 0 0) "Pracs/" "Assignment/" "ASM/" "19460677.tar.gz" "19460677.tar" "19460677/" "../" "./")
-
- ("c:/Users/Andre/OneDrive/" (24456 20243 0 0) "Pictures/" "Getting started with OneDrive.docx" "Documents/" "desktop.ini" "Desktop/" "Attachments/" ".849C9593-D756-4E56-8D6E-42412F2A707B" "../" "./")
-
- ("c:/Users/Andre/" (24471 53879 0 0) "Videos/" "Tor Browser/" "Templates/" "Start Menu/" "source/" "SendTo/" "Searches/" "Saved Games/" "Recent/" "PrintHood/" "Packages/" "OneDrive/" "ntuser.ini" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000002.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TMContainer00000000000000000001.regtrans-ms" "NTUSER.DAT{53b39e88-18c4-11ea-a811-000d3aa4692b}.TM.blf" "ntuser.dat.LOG2" "ntuser.dat.LOG1" "NTUSER.DAT" "NetHood/" "nand2tetris/" "My Documents/" "Music/" "MicrosoftEdgeBackups/" "Local Settings/" "Links/" "hi" "Favorites/" "Downloads/" "Documents/" "Desktop/" "Cookies/" "Contacts/" "Application Data/" "AppData/" "AndroidStudioProjects/" "3D Objects/" ".vscode/" ".VirtualBox/" ".tooling/" ".templateengine/" ".ssh/" ".rustup/" ".packettracer" ".nuget/" ".idlerc/" ".gradle/" ".gitconfig" ".emulator_console_auth_token" ".emacs.d/" ".dotnet/" ".dia/" ".deno/" ".cisco/" ".cargo/" ".cache/" ".babel.7.8.4.production.json" ".AndroidStudio3.4/" ".android/" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Pracs/P8/" (24462 43254 0 0) "string_m_internal.h" "string_m.h" "patchme_static_assert.c" "patchme_orig.c" "patchme.c" "patchme.bin" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab7/Prac 7/" (24449 52596 0 0) "task_1.py" "SC3.jpg" "SC2.jpg" "SC1.jpg" "Sam_s OCR Challenge.pdf" "Sam_s OCR Challenge.docx" "debug.log" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab7/" (24448 29535 0 0) "Prac 7(1).zip" "Prac 7/" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/" (24448 29581 0 0) "Lab7/" "Lab6/" "Lab5/" "Lab4/" "Lab3/" "Lab2/" "Lab1/" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Assignment2/home/" (24446 56980 0 0) "student/" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Assignment2/home/student/val_updated/" (24449 42894 0 0) "val06.jpg" "val05.jpg" "val04.jpg" "val03.jpg" "val02.jpg" "val01.jpg" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Assignment/assignment/src/big_demo/" (24432 46336 0 0) "user_t.h" "task_t.h" "task_manager.h" "task_manager.c" "Makefile" "main.h" "main.c" "file_manager.h" "file_manager.c" ".gitkeep" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Assignment/" (24425 36915 0 0) "src/" "report/" "DeclarationOfOriginality_v1.1(2).pdf" "data/" "Assignment1_MP_2020S2 (002)(1).pdf" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab5/" (24423 28311 0 0) "segmentation.py" "prac05ex02img01.png" "k_means.py" "digits.png" "../" "./")
-
- ("c:/Users/Andre/Documents/malock/" (24416 28817 0 0) "malock.c" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Pracs/P6/" (24417 35326 0 0) "sum.o" "sum.asm" "sum" "shell.o" "shell.asm" "shell" "fizzbuzz.asm" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab1/" (24419 5953 0 0) "wallpaper.jpg" "rotate_image.png" "prac01ex04img01.png" "prac01ex02img01.png" "prac01ex02crop.txt" "prac01ex01img05.png" "prac01ex01img04.png" "prac01ex01img03.png" "prac01ex01img02.png" "prac01ex01img01.png" "License_Plate.png" "hist.py" "exercise_three.py" "exercise_four.py" "contours.py" "contoured_image.png" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Assignment/assignment/src/" (24413 56602 0 0) "Readme.adoc" "big_demo/" "basic_demo/" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Assignment/assignment/" (24413 56602 0 0) "test/" "src/" "Readme.adoc" "Makefile" "LICENSE" "Dockerfile" ".gitignore" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Assignment/" (24413 56596 0 0) "assignment/" "../" "./")
-
- ("c:/Users/Andre/Downloads/glibc/glibc-2.25/malloc/" (24399 15829 0 0) "Versions" "tst-valloc.c" "tst-trim1.c" "tst-scratch_buffer.c" "tst-realloc.c" "tst-pvalloc.c" "tst-posix_memalign.c" "tst-obstack.c" "tst-mtrace.sh" "tst-mtrace.c" "tst-memalign.c" "tst-mcheck.c" "tst-mallopt.c" "tst-mallocstate.c" "tst-mallocfork2.c" "tst-mallocfork.c" "tst-malloc.c" "tst-malloc-usable.c" "tst-malloc-usable-tunables.c" "tst-malloc-usable-static.c" "tst-malloc-usable-static-tunables.c" "tst-malloc-thread-fail.c" "tst-malloc-thread-exit.c" "tst-malloc-fork-deadlock.c" "tst-malloc-backtrace.c" "tst-interpose-thread.c" "tst-interpose-static-thread.c" "tst-interpose-static-nothread.c" "tst-interpose-skeleton.c" "tst-interpose-nothread.c" "tst-interpose-aux.h" "tst-interpose-aux.c" "tst-interpose-aux-thread.c" "tst-interpose-aux-nothread.c" "tst-calloc.c" "thread-freeres.c" "set-freeres.c" "scratch_buffer_set_array_size.c" "scratch_buffer_grow_preserve.c" "scratch_buffer_grow.c" "obstack.h" "obstack.c" "mtrace.pl" "mtrace.c" "morecore.c" "memusagestat.c" "memusage.sh" "memusage.c" "mcheck.h" "mcheck.c" "mcheck-init.c" "mallocbug.c" "malloc.h" "malloc.c" "malloc-internal.h" "malloc-hooks.h" "Makefile" "hooks.c" "Depend" "arena.c" "../" "./")
-
- ("c:/Users/Andre/Downloads/glibc/glibc-2.25/" (22679 17579 0 0) "WUR-REPORT" "wctype/" "wcsmbs/" "version.h" "timezone/" "time/" "test-skeleton.c" "termios/" "sysvipc/" "sysdeps/" "support/" "sunrpc/" "string/" "streams/" "stdlib/" "stdio-common/" "soft-fp/" "socket/" "signal/" "shlib-versions" "shadow/" "setjmp/" "scripts/" "Rules" "rt/" "resource/" "resolv/" "README.tunables" "README.pretty-printers" "README" "pwd/" "posix/" "po/" "o-iterator.mk" "nss/" "nscd/" "nptl_db/" "nptl/" "nis/" "NEWS" "NAMESPACE" "misc/" "mathvec/" "math/" "manual/" "malloc/" "Makerules" "Makefile.in" "Makefile" "Makeconfig" "mach/" "login/" "localedata/" "locale/" "LICENSES" "libio/" "libidn/" "libc-abis" "io/" "intl/" "INSTALL" "inet/" "include/" "iconvdata/" "iconv/" "hurd/" "hesiod/" "gshadow/" "grp/" "gnulib/" "gmon/" "gen-locales.mk" "extra-modules.mk" "extra-lib.mk" "elf/" "dlfcn/" "dirent/" "debug/" "ctype/" "csu/" "crypt/" "cppflags-iterator.mk" "COPYING.LIB" "COPYING" "CONFORMANCE" "conform/" "configure.ac" "configure" "config.make.in" "config.h.in" "ChangeLog.old-ports-tile" "ChangeLog.old-ports-powerpc" "ChangeLog.old-ports-mips" "ChangeLog.old-ports-microblaze" "ChangeLog.old-ports-m68k" "ChangeLog.old-ports-linux-generic" "ChangeLog.old-ports-ia64" "ChangeLog.old-ports-hppa" "ChangeLog.old-ports-cris" "ChangeLog.old-ports-arm" "ChangeLog.old-ports-am33" "ChangeLog.old-ports-alpha" "ChangeLog.old-ports-aix" "ChangeLog.old-ports-aarch64" "ChangeLog.old-ports" "ChangeLog.9" "ChangeLog.8" "ChangeLog.7" "ChangeLog.6" "ChangeLog.5" "ChangeLog.4" "ChangeLog.3" "ChangeLog.2" "ChangeLog.17" "ChangeLog.16" "ChangeLog.15" "ChangeLog.14" "ChangeLog.13" "ChangeLog.12" "ChangeLog.11" "ChangeLog.10" "ChangeLog.1" "ChangeLog" "catgets/" "BUGS" "bits/" "benchtests/" "assert/" "argp/" "aclocal.m4" "abi-tags" ".gitignore" ".gitattributes" "../" "./")
-
- ("c:/Users/Andre/Downloads/glibc/" (24399 15387 0 0) "pax_global_header" "glibc-2.25.tar" "glibc-2.25/" "../" "./")
-
- ("c:/Users/Andre/Downloads/" (24414 54321 0 0) "Xming-fonts-7-7-0-10-setup.exe" "Xming-6-9-0-31-setup.exe" "winsdksetup.exe" "watch.html" "W6-RemoteData.zip" "vs_emulatorsetup.exe" "vs_Community.exe" "VSCodeUserSetup-x64-1.44.2.exe" "VMware-player-15.5.1-15018445.exe" "VMware-Horizon-Client-5.4.0-15805437.exe" "vlc-3.0.8-win64.exe" "tush.zip" "tush/" "thing.jpg" "texstudio-2.12.16-win-qt5.exe" "sunflowers.jpg" "SteamSetup.exe" "ssl/" "SpotifySetup.exe" "snes9x-1.60-win32-x64.zip" "snaps/" "SimSkylines-master.zip" "share/" "SDL2.dll" "sav/" "sam-20090407.zip" "sam-20090407/" "rustup-init.exe" "RRoboto_Mono/" "Roboto_Mono.zip" "Ripcord_Win_0.4.25.zip" "Ripcord/" "RemoteServer/" "Remote/" "radeon-software-adrenalin-2020-19.12.2-minimalsetup-191212_64bit.exe" "prac04(1).zip" "pgconfig/" "palettes/" "PacketTracer-7.2.2-win64-setup.exe" "os-notes-full.pdf" "OpenJDK11U-jdk_x64_windows_hotspot_11.0.4_11(1).msi" "OBS-Studio-25.0.8-Full-Installer-x64.exe" "nvse_5_1_beta6.7z" "nvse/" "no$gba-w.zip" "no$gba/" "Ninite 7Zip FileZilla Java AdoptOpenJDK x64 8 Installer.exe" "nand2tetris.zip" "MSERT.exe" "Mobile-Application-Development-Assignment-2019S2-master.zip" "Mobile-Application-Development-Assignment-2019S2-master/" "MobaXterm_Portable_v20.2.zip" "MobaXterm_Personal_20.2.exe" "MobaXterm.ini" "MobaXterm backup.zip" "mcs/" "mcm/" "lips102.zip" "linuxmint-19.2-xfce-64bit.iso" "libexec/" "Liberation_Mono/" "liberation-mono.zip" "lib/" "KeePassXC-2.5.3-Win64-portable.zip" "KeePassXC/" "Install VALORANT.exe" "include/" "ideaIC-2020.1.exe" "hwi_620.exe" "grep" "go1.14.4.windows-amd64.msi" "glibc-2.25.tar.bz2" "glibc/" "glfw-3.3.2.bin.WIN32.zip" "glfw-3.3.2.bin.WIN32/" "Git-2.25.1-64-bit.exe" "FLCL_Screenshot_0246.jpg" "firmware/" "FileZilla_3.48.0_win64-setup.exe" "Fedora-KDE-Live-x86_64-32-1.6.iso" "Fantastique_Sans_Mono/" "etc/" "dxwebsetup.exe" "desktop.ini" "Design Patterns/" "dejavu-fonts-ttf-2.37.zip" "dejavu-fonts-ttf-2.37/" "CygUtils.plugin" "Copy of MP-VM.ova" "code/" "cheats/" "CCSEP.ova" "Cass Barks.esp-64105-.zip" "blunderbuss/" "bin/" "basic-miktex-2.9.7152-x64.exe" "asar171.zip" "apache-ant-1.10.7-bin.zip" "apache-ant-1.10.7/" "anyconnect-win-4.7.04056-core-vpn-webdeploy-k9.exe" "android-studio-ide-183.5692245-windows.exe" "acme-0.13/" "7z1900-x64.msi" "7z1900-x64.exe" "../" "./")
-
- ("c:/Users/Andre/Documents/OS/Assignment/" (24406 15951 0 0) "Report.pdf" "Report.docx" "README.txt" "README.md" "Lift_Sim_B/" "Lift_Sim_A/" "DeclarationOfOriginality.jpg" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/Assignment/" (24406 15750 0 0) "src/" "resources/" "README.txt" "document.pdf" "document.docx" "dist/" "Diagram1.png" "Declaration.jpg" "build.xml" "build/" "Assignment.zip" "../" "./")
-
- ("c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_A/src/" (24413 55405 0 0) "thread_info.h" "sim_output" "sim_input" "scheduler.c" "queue.h" "queue.c" "queue" "Makefile" "logger.h" "logger.c" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab3/" (24408 43621 0 0) "shi_tomasi.py" "prac03ex04img03.png" "prac03ex04img02.png" "prac03ex04img01.png" "prac03ex03img02.jpg" "prac03ex03img01.png" "prac03ex02img01.jpg" "prac03ex01img03.png" "prac03ex01img02.png" "prac03ex01img01.png" "hough_detection.py" "harrison.py" "edge_detection_v1.py" "canny_process.py" "Blob.py" "1576942093962.jpg" "1560822170903.png" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab2/" (24411 32750 0 0) "Prewitt_Y_Filtered.jpg" "Prewitt_X_Filtered.jpg" "prac02ex06img02.png" "prac02ex06img01.png" "prac02ex05img01.png" "prac02ex04img01.png" "prac02ex03img01.jpg" "prac02ex02img02.jpg" "prac02ex02img01.jpg" "prac02ex01img01.jpg" "morph.png" "LUV.jpg" "Laplacian filter_screenshot_17.08.2020.png" "LAB.jpg" "HSV.jpg" "Grey_Scale.jpg" "exercise_two.py" "exercise_three.py" "exercise_six.py" "exercise_one.py" "exercise_four.py" "exercise_five.py" "exercise4_result.png" "BGR_Trackbar.py" "../" "./")
-
- ("c:/Users/Andre/Documents/MP/Labs/Lab4/" (24402 17755 0 0) "sift.py" "prac04ex02img01.png" "prac04ex01img02.png" "prac04ex01img01.png" "prac04(1).zip" "CCL.py" "CCL.png" "../" "./")
-
- ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/RBTree/" (24399 44909 0 0) "RBTreeTest.go" "RBTree.go" "../" "./")
-
- ("c:/Users/Andre/Documents/Ray-Tracer/Itch/" (24400 62791 0 0) "ray.cpp" "../" "./")
-
- ("c:/Users/Andre/Packages/Emacs/bin/" (24072 14381 0 0) "zlib1.dll" "xzmore" "xzless" "xzgrep" "xzfgrep" "xzegrep" "xzdiff" "xzdec.exe" "xzcmp" "xzcat.exe" "xz.exe" "xmlwf.exe" "xmllint.exe" "xmlcatalog.exe" "xml2-config" "xgettext.exe" "x86_64-w64-mingw32-tset.exe" "x86_64-w64-mingw32-tput.exe" "x86_64-w64-mingw32-toe.exe" "x86_64-w64-mingw32-tic.exe" "x86_64-w64-mingw32-tabs.exe" "x86_64-w64-mingw32-reset.exe" "x86_64-w64-mingw32-infotocap.exe" "x86_64-w64-mingw32-infocmp.exe" "x86_64-w64-mingw32-clear.exe" "x86_64-w64-mingw32-captoinfo.exe" "x86_64-w64-mingw32-agrep.exe" "wrjpgcom.exe" "wish86.exe" "wish.exe" "update-ca-trust" "unxz.exe" "trust.exe" "transicc.exe" "tk86.dll" "tjbench.exe" "tificc.exe" "tiffsplit.exe" "tiffset.exe" "tiffmedian.exe" "tiffinfo.exe" "tiffdump.exe" "tiffdither.exe" "tiffcrop.exe" "tiffcp.exe" "tiffcmp.exe" "tiff2rgba.exe" "tiff2ps.exe" "tiff2pdf.exe" "tiff2bw.exe" "tclsh86.exe" "tclsh.exe" "tcl86.dll" "ssleay32.dll" "srptool.exe" "sqlite3_analyzer.sh" "sexp-conv.exe" "runemacs.exe" "rsvg-view-3.exe" "rsvg-convert.exe" "recode-sr-latin.exe" "rdjpgcom.exe" "raw2tiff.exe" "python2w.exe" "python2.exe" "python2.7.exe" "python2.7-config" "python2-config" "python.exe" "python-config.sh" "python-config-u.sh" "python-config" "pydoc" "psktool.exe" "psicc.exe" "ppm2tiff.exe" "pngfix.exe" "png-fix-itxt.exe" "pkcs1-conv.exe" "pcretest.exe" "pcregrep.exe" "pcre-config" "pango-view.exe" "pal2rgb.exe" "p11tool.exe" "p11-kit.exe" "openssl.exe" "ocsptool.exe" "ngettext.exe" "nettle-pbkdf2.exe" "nettle-lfib-stream.exe" "nettle-hash.exe" "ncursesw6-config" "msguniq.exe" "msgunfmt.exe" "msgmerge.exe" "msginit.exe" "msggrep.exe" "msgfmt.exe" "msgfilter.exe" "msgexec.exe" "msgen.exe" "msgconv.exe" "msgcomm.exe" "msgcmp.exe" "msgcat.exe" "msgattrib.exe" "minizip.exe" "miniunzip.exe" "lzmainfo.exe" "lzmadec.exe" "linkicc.exe" "libXpm-noX4.dll" "libxml2-2.dll" "libwinpthread-1.dll" "libunistring-2.dll" "libturbojpeg-0.dll" "libtre-5.dll" "libtiffxx-5.dll" "libtiff-5.dll" "libtermcap-0.dll" "libtasn1-6.dll" "libsystre-0.dll" "libstdc++-6.dll" "libssp-0.dll" "librsvg-2-2.dll" "libreadline7.dll" "libquadmath-0.dll" "libpython2.7.dll" "libpng16-config" "libpng16-16.dll" "libpng-config" "libpixman-1-0.dll" "libpcreposix-0.dll" "libpcrecpp-0.dll" "libpcre32-0.dll" "libpcre16-0.dll" "libpcre-1.dll" "libpangowin32-1.0-0.dll" "libpangoft2-1.0-0.dll" "libpangocairo-1.0-0.dll" "libpango-1.0-0.dll" "libp11-kit-0.dll" "libnettle-6.dll" "libminizip-1.dll" "liblzo2-2.dll" "liblzma-5.dll" "liblcms2-2.dll" "libjpeg-8.dll" "libjasper-4.dll" "libintl-8.dll" "libidn2-0.dll" "libiconv-2.dll" "libhogweed-4.dll" "libhistory7.dll" "libharfbuzz-icu-0.dll" "libharfbuzz-gobject-0.dll" "libharfbuzz-0.dll" "libgthread-2.0-0.dll" "libgraphite2.dll" "libgomp-1.dll" "libgobject-2.0-0.dll" "libgnutlsxx-28.dll" "libgnutls-30.dll" "libgmpxx-4.dll" "libgmp-10.dll" "libgmodule-2.0-0.dll" "libglib-2.0-0.dll" "libgio-2.0-0.dll" "libgif-7.dll" "libgettextsrc-0-19-8-1.dll" "libgettextpo-0.dll" "libgettextlib-0-19-8-1.dll" "libgdk_pixbuf-2.0-0.dll" "libgdbm-4.dll" "libgcc_s_seh-1.dll" "libfreetype-6.dll" "libfreeglut.dll" "libfontconfig-1.dll" "libffi-6.dll" "libexpat-1.dll" "libeay32.dll" "libcroco-0.6-3.dll" "libcharset-1.dll" "libcairo-script-interpreter-2.dll" "libcairo-gobject-2.dll" "libcairo-2.dll" "libbz2-1.dll" "libatomic-1.dll" "libasprintf-0.dll" "jpgicc.exe" "jpegtran.exe" "jasper.exe" "imginfo.exe" "imgcmp.exe" "idn2.exe" "idle" "hb-view.exe" "hb-shape.exe" "hb-ot-shape-closure.exe" "gspawn-win64-helper.exe" "gspawn-win64-helper-console.exe" "gsettings.exe" "gresource.exe" "gr2fonttest.exe" "gobject-query.exe" "gnutls-serv.exe" "gnutls-cli.exe" "gnutls-cli-debug.exe" "glib-mkenums.exe" "glib-mkenums-script.py" "glib-gettextize" "glib-genmarshal.exe" "glib-genmarshal-script.py" "glib-compile-schemas.exe" "glib-compile-resources.exe" "gio.exe" "gio-querymodules.exe" "gettextize" "gettext.sh" "gettext.exe" "gdk-pixbuf-thumbnailer.exe" "gdk-pixbuf-query-loaders.exe" "gdk-pixbuf-pixdata.exe" "gdk-pixbuf-csource.exe" "gdbus.exe" "gdbus-codegen.exe" "gdbus-codegen-script.py" "gdbm_load.exe" "gdbm_dump.exe" "gdbmtool.exe" "freetype-config" "fc-validate.exe" "fc-scan.exe" "fc-query.exe" "fc-pattern.exe" "fc-match.exe" "fc-list.exe" "fc-cat.exe" "fc-cache.exe" "fax2tiff.exe" "fax2ps.exe" "etags.exe" "envsubst.exe" "emacsclientw.exe" "emacsclient.exe" "emacs.exe" "emacs-26.3.exe" "edit_test_dll.exe" "edit_test.exe" "edit.dll" "ebrowse.exe" "djpeg.exe" "cxpm-noX.exe" "ctags.exe" "csslint-0.6.exe" "croco-0.6-config" "cjpeg.exe" "certtool.exe" "bzmore" "bzless" "bzip2recover.exe" "bzip2.exe" "bzgrep" "bzfgrep" "bzegrep" "bzdiff" "bzcmp" "bzcat.exe" "bunzip2.exe" "autopoint" "asn1Parser.exe" "asn1Decoding.exe" "asn1Coding.exe" "addpm.exe" "2to3" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/P5/" (24394 1910 0 0) "hello_world.o" "hello_world.asm" "hello_world" "../" "./")
-
- ("c:/Users/Andre/OneDrive/Desktop/ray/" (24394 4803 0 0) "ray.java" "ray.class" "ray$Vec.class" "ray$Sphere.class" "ray$Scene.class" "ray$Ray.class" "ray$Hit.class" "ray$Group.class" "out.ppm" "../" "./")
-
- ("c:/Users/Andre/Documents/Ray-Tracer/src/" (24387 40577 0 0) "Vec3.h" "Vec3.c" "ray" "out.ppm" "Makefile" "main.c" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/P2/" (24370 39783 0 0) "../" "./")
-
- ("c:/Users/Andre/Documents/Lox/jlox/" (24366 16556 0 0) "tree/" "TokenType.java" "TokenType.class" "Token.java" "Token.class" "Scanner.java" "Scanner.class" "Lox.java" "Lox.class" "GenerateAST.java" "GenerateAST.class" "../" "./")
-
- ("c:/Users/Andre/Documents/Lox/" (24365 31113 0 0) "jlox/" "../" "./")
-
- ("c:/Users/Andre/Documents/Go_Workspace/src/Thief/" (24335 8703 0 0) "RabinKarp.go" "RabinKarp.exe" "../" "./")
-
- ("c:/Users/Andre/Documents/Rust_Learning/" (24328 31729 0 0) "variables/" "hello_cargo/" "guessing_game/" "../" "./")
-
- ("c:/Users/Andre/Documents/Rust_Learning/guessing_game/src/" (24328 31610 0 0) "main.rs" "../" "./")
-
- ("c:/Users/Andre/Documents/Go_Workspace/src/Trees/AVLTree/" (24340 7750 0 0) "AVLTreeTest.go" "AVLTree.go" "../" "./")
-
- ("c:/Users/Andre/Documents/TFCS/Notes/" (24365 15755 0 0) "Lecture_1.tex" "Lecture_1.pdf" "Lecture_1.org" "Lecture_1.html" "../" "./")
-
- ("c:/Users/Andre/Documents/TFCS/" (24365 10145 0 0) "Notes/" "../" "./")
-
- ("c:/Users/Andre/Documents/Rust_Learning/guessing_game/" (24328 26020 0 0) "target/" "src/" "Cargo.toml" "Cargo.lock" ".gitignore" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/Rust_Learning/hello_cargo/src/" (24328 23817 0 0) "main.rs" "../" "./")
-
- ("c:/Users/Andre/Documents/Rust_Learning/hello_cargo/" (24328 23817 0 0) "src/" "Cargo.toml" ".gitignore" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/Go_Workspace/" (24326 37869 0 0) "src/" "pkg/" "bin/" "../" "./")
-
- ("c:/Users/Andre/Documents/Go_Workspace/src/" (24326 40616 0 0) "Thief/" "RSA/" "../" "./")
-
- ("c:/Users/Andre/Documents/Go_Workspace/src/RSA/" (24326 40671 0 0) "RSA.go" "../" "./")
-
- ("c:/Users/Andre/Documents/Stuff/Kaleidoscope/CPP/" (24316 47103 0 0) "README.txt" "Parser.h" "Parser.cpp" "Lexer.h" "Lexer.cpp" "AST.cpp" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/Exam/" (24304 59577 0 0) "QuestionTwo.java" "QuestionThree.java" "QuestionOne.java" "QuestionFour.java" "Answers.txt" "../" "./")
-
- ("c:/Users/Andre/nand2tetris/nand2tetris/projects/01/" (24319 16747 0 0) "Xor.tst" "Xor.out" "Xor.hdl" "Xor.cmp" "Or8Way.tst" "Or8Way.hdl" "Or8Way.cmp" "Or16.tst" "Or16.hdl" "Or16.cmp" "Or.tst" "Or.hdl" "Or.cmp" "Not16.tst" "Not16.hdl" "Not16.cmp" "Not.tst" "Not.hdl" "Not.cmp" "Mux8Way16.tst" "Mux8Way16.hdl" "Mux8Way16.cmp" "Mux4Way16.tst" "Mux4Way16.hdl" "Mux4Way16.cmp" "Mux16.tst" "Mux16.hdl" "Mux16.cmp" "Mux.tst" "Mux.hdl" "Mux.cmp" "DMux8Way.tst" "DMux8Way.hdl" "DMux8Way.cmp" "DMux4Way.tst" "DMux4Way.hdl" "DMux4Way.cmp" "DMux.tst" "DMux.hdl" "DMux.cmp" "And16.tst" "And16.hdl" "And16.cmp" "And.tst" "And.hdl" "And.cmp" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/yasnippet-snippets-20200425.1210/" (24242 5184 0 0) "yasnippet-snippets.elc" "yasnippet-snippets.el" "yasnippet-snippets-pkg.el" "yasnippet-snippets-autoloads.el" "snippets/" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/yasnippet-snippets-20200425.1210/snippets/" (24242 5176 0 0) "yaml-mode/" "web-mode/" "vhdl-mode/" "udev-mode/" "typescript-mode/" "typerex-mode/" "tuareg-mode/" "text-mode/" "terraform-mode/" "swift-mode/" "sql-mode/" "snippet-mode/" "sh-mode/" "scala-mode/" "rustic-mode/" "rust-mode/" "ruby-mode/" "rst-mode/" "rjsx-mode/" "reason-mode/" "racket-mode/" "python-mode/" "protobuf-mode/" "prog-mode/" "powershell-mode/" "php-mode/" "perl-mode/" "org-mode/" "octave-mode/" "nxml-mode/" "nsis-mode/" "nix-mode/" "nesc-mode/" "ned-mode/" "nasm-mode/" "markdown-mode/" "malabar-mode/" "makefile-mode/" "makefile-gmake-mode/" "makefile-bsdmake-mode/" "makefile-automake-mode/" "m4-mode/" "lua-mode/" "lisp-mode/" "lisp-interaction-mode/" "latex-mode/" "kotlin-mode/" "julia-mode/" "js3-mode/" "js2-mode/" "js-mode/" "java-mode/" "hy-mode/" "html-mode/" "haskell-mode/" "groovy-mode/" "go-mode/" "git-commit-mode/" "fish-mode/" "faust-mode/" "f90-mode/" "erlang-mode/" "erc-mode/" "ensime-mode/" "enh-ruby-mode/" "emacs-lisp-mode/" "elixir-mode/" "dockerfile-mode/" "dix-mode/" "dart-mode/" "d-mode/" "css-mode/" "csharp-mode/" "crystal-mode/" "cpp-omnet-mode/" "cperl-mode/" "coq-mode/" "conf-unix-mode/" "cmake-mode/" "clojure-mode/" "cider-repl-mode/" "chef-mode/" "cc-mode/" "c-mode/" "c-lang-common/" "c++-mode/" "bibtex-mode/" "bazel-mode/" "applescript-mode/" "apples-mode/" "antlr-mode/" ".nosearch" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/yasnippet-snippets-20200425.1210/snippets/go-mode/" (24242 5127 0 0) "var(" "var" "type" "testmain" "test" "switch" "select" "printf" "parallel_benchmark" "method" "map" "main" "lambda" "init" "import(" "import" "iferr" "if" "func" "forrange" "for" "example" "error" "else" "default" "dd" "const(" "const" "benchmark" "../" "./")
-
- ("c:/Users/Andre/nand2tetris/nand2tetris/projects/00/" (22667 46158 0 0) "file.txt" "../" "./")
-
- ("c:/Users/Andre/nand2tetris/nand2tetris/projects/" (22667 46164 0 0) "demo/" "13/" "12/" "11/" "10/" "09/" "08/" "07/" "06/" "05/" "04/" "03/" "02/" "01/" "00/" "../" "./")
-
- ("c:/Users/Andre/nand2tetris/nand2tetris/" (22667 46164 0 0) "tools/" "projects/" "../" "./")
-
- ("c:/Users/Andre/nand2tetris/" (24319 15960 0 0) "nand2tetris/" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/" (24300 25623 0 0) "Practise/" "P08/" "P07/" "P06/" "P05/" "P04/" "P03/" "P02/" "P01/" "Mid-Sem/" "Exam/" "document.tex" "document.synctex.gz" "document.log" "document.aux" "Diagram1.dia~" "Diagram1.dia" "Assignment/" "../" "./")
-
- ("c:/Windows/" (24295 20284 0 0) "write.exe" "WMSysPr9.prx" "WinSxS/" "WinREDism.log" "winhlp32.exe" "WindowsUpdate.log" "WindowsShell.Manifest" "win.ini" "Web/" "WaaS/" "Vss/" "twain_32.dll" "twain_32/" "tracing/" "TextInput/" "Temp/" "Tasks/" "TAPI/" "SysWOW64/" "SystemResources/" "SystemApps/" "System32/" "system.ini" "System/" "splwow64.exe" "Speech_OneCore/" "Speech/" "SoftwareDistribution/" "SKB/" "ShellNew/" "ShellExperiences/" "ShellComponents/" "setuperr.log" "setupact.log" "Setup/" "servicing/" "ServiceState/" "ServiceProfiles/" "security/" "schemas/" "SchCache/" "SACmd/" "Resources/" "rescache/" "Registration/" "regedit.exe" "pyw.exe" "pyshellext.amd64.dll" "py.exe" "pss/" "Provisioning/" "PrintDialog/" "prefetch/" "PolicyDefinitions/" "PLA/" "PFRO.log" "Performance/" "Panther/" "Offline Web Pages/" "OCR/" "oa3keyid.bat" "oa3.xml" "notepad.exe" "msdownld.tmp/" "modules.log" "ModemLogs/" "Minidump/" "Migration/" "Microsoft.NET/" "mib.bin" "MFGSTAT.zip" "MEMORY.DMP" "Media/" "machineinfo.sav" "lsasetup.log" "Logs/" "LiveKernelReports/" "Lenovo/" "LanguageOverlayCache/" "L2Schemas/" "Installer/" "InputMethod/" "INF/" "ImmersiveControlPanel/" "IME/" "IdentityCRL/" "hh.exe" "HelpPane.exe" "Help/" "Globalization/" "GameBarPresenceWriter/" "Fonts/" "Favicon_ICON/" "explorer.exe" "en-us.log" "en-US/" "ELAMBKUP/" "DtcInstall.log" "DPINST.LOG" "Downloaded Program Files/" "DirectX.log" "DigitalLocker/" "DiagTrack/" "diagnostics/" "debug/" "CxSvc/" "Cursors/" "csup.txt" "CoreSingleLanguage.xml" "core.ver" "Containers/" "comsetup.log" "CbsTemp/" "Branding/" "bootstat.dat" "Boot/" "bfsvc.exe" "bcastdvr/" "assembly/" "AppReadiness/" "apppatch/" "appcompat/" "addins/" "../" "./")
-
- ("c:/Users/Andre/Documents/Stuff/Kaleidoscope/" (24293 60627 0 0) "README.md" "OCAML/" "CPP/" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/OpenCV/" (24283 37484 0 0) "test/" "houghlines3.jpg" "Houghie_Line.py" "gray.py" "circles.py" "../" "./")
-
- ("c:/Users/Andre/Documents/Stuff/Kaleidoscope/OCAML/" (24283 46451 0 0) "Lexer.ml" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/" (24291 2276 0 0) "Yandex/" "winscp.rnd" "Waterfox/" "vs_installershell/" "vstelemetry/" "VMware/" "Visual Studio Setup/" "Visual Studio Code/" "texstudio/" "SumatraPDF/" "Spotify/" "README.md" "Racket/" "NuGet/" "Notepad++/" "Mozilla/" "MiKTeX/" "Microsoft FxCop/" "Microsoft/" "Macromedia/" "KeePass/" "Kast/" "JetBrains/" "Google/" "FileZilla/" "Discord/" "com.RustyLake.SamsaraRoom/" "Code/" "Adobe/" "acme-home/" ".saves/" ".git/" ".emacs.d/" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/archives/melpa/" (24283 4590 0 0) "archive-contents" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/Assignment/src/Controller/" (24276 11468 0 0) "Shop_Loader_Strategy.java" "Shop_Backend.java" "ShopLoaderException.java" "Item_Factory.java" "Inventory_Backend.java" "Game_Setup.java" "File_Reader.java" "Entity_Factory.java" "Battle_Engine.java" "Assignment_Main.java" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/naysayer-theme-20191207.1936/" (24281 47898 0 0) "naysayer-theme.el" "naysayer-theme-pkg.el" "naysayer-theme-autoloads.el" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/Assignment/src/View/" (24276 10403 0 0) "Shop_Display.java" "Main_Display.java" "Inventory_Display.java" "Battle_Display.java" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/Assignment/src/Model/" (24275 63530 0 0) "Weapon_Enchanter.java" "Weapon.java" "Small_Damage_Enchantment.java" "Slime.java" "Shop.java" "Power_Enchantment.java" "Potion.java" "Player.java" "Ogre.java" "Large_Damage_Enchantment.java" "Item.java" "Goblin.java" "Fire_Enchantment.java" "Entity.java" "Enemy.java" "Dragon.java" "Base_Weapon.java" "Armour.java" "../" "./")
-
- ("c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_B/src/" (24272 43722 0 0) "sim_input" "scheduler.h" "scheduler.c" "queue.h" "queue.c" "Process_Info.h" "Makefile" "Logger.h" "Logger.c" "../" "./")
-
- ("c:/Users/Andre/Documents/goof/" (24250 42933 0 0) "queue.h" "queue.c" "../" "./")
-
- ("c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_A/src/goof/" (24249 17474 0 0) "queue_drive.c" "queue.h" "queue.c" ".#queue.c" "../" "./")
-
- ("c:/Users/Andre/Documents/OS/Assignment/Lift_Sim_A/" (24246 20857 0 0) "src/" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/elpa/yasnippet-snippets-20200425.1210/snippets/java-mode/" (24242 14930 0 0) "while" "value" "try" "toString" "this" "testClass" "test" "return" "println" "printf" "param" "override" "new" "method" "main_class" "main" "lambda" "javadoc" "iterator" "import" "ife" "if" "getter" "fori" "for" "file_class" "equals" "doc" "define test method" "constructor" "cls" "assertEquals" "assert" "apr_assert" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/Practise/" (24232 18075 0 0) "Pay_By_Credit_Card.java" "Payment_Strategy.java" "Payment_Processor.java" "../" "./")
-
- ("c:/Users/Andre/Documents/OOSE/P03/AddressBook/src/Model/" (24237 35678 0 0) "Entry.java" "AddressBook.java" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

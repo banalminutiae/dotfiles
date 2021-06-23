@@ -1,42 +1,52 @@
-;;;; Emacs Bookmark Format Version 1 ;;;; -*- coding: utf-8-emacs -*- 
+;;;; Emacs Bookmark Format Version 1;;;; -*- coding: utf-8-emacs; mode: lisp-data -*-
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("AOC"
- (filename . "c:/Users/Andre/Documents/AOC/")
- (front-context-string . "1\n  drwxrwxrwx  ")
- (rear-context-string . "096 12-02 03:20 ")
- (position . 221))
-("def.el"
- (filename . "~/.emacs.d/def.el")
- (front-context-string . "(defalias 'eb 'e")
+(("Renderer_Win32.cpp"
+ (filename . "c:/Users/Andre/Documents/Graphics/Renderer/Renderer/Renderer_Win32.cpp")
+ (front-context-string . "#include <Window")
  (rear-context-string)
  (position . 1))
-("TFCS"
- (filename . "c:/Users/Andre/Documents/TFCS/")
- (front-context-string . "Assignment\n  drw")
- (rear-context-string . "  0 09-01 13:04 ")
+("ami"
+ (filename . "c:/Users/Andre/Documents/ami/")
+ (front-context-string)
+ (rear-context-string . "220 06-08 13:30 ")
+ (position . 220))
+("2021-03-interactive-study-planner"
+ (filename . "c:/Capstone/2021-03-interactive-study-planner/")
+ (front-context-string . "bitbucket-pipeli")
+ (rear-context-string . "147 05-25 18:20 ")
+ (position . 238))
+("DC"
+ (filename . "c:/Users/Andre/Documents/DC/")
+ (front-context-string . "..\n  drwxrwxrwx ")
+ (rear-context-string . "192 03-28 14:27 ")
+ (position . 128))
+("Registry"
+ (filename . "c:/Users/Andre/Documents/DC/Assignment/Registry/")
+ (front-context-string . "App_Data\n  drwxr")
+ (rear-context-string . "  0 04-01 10:30 ")
+ (position . 243))
+("HandmadeMath.h"
+ (filename . "c:/Users/Andre/Documents/Handmade-Math-1.11.1/HandmadeMath.h")
+ (front-context-string . "/*\n  HandmadeMat")
+ (rear-context-string)
+ (position . 1))
+("rend"
+ (filename . "c:/Users/Andre/Documents/rend/")
+ (front-context-string . "build\n  drwxrwxr")
+ (rear-context-string . "  0 12-18 18:42 ")
  (position . 222))
 ("Ray-Tracer"
  (filename . "c:/Users/Andre/Documents/Ray-Tracer/")
  (front-context-string . "code\n  -rw-rw-rw")
  (rear-context-string . "  0 2019-02-27  ")
  (position . 231))
-("Rust_Learning"
- (filename . "c:/Users/Andre/Documents/Rust_Learning/")
- (front-context-string . "..\n  drwxrwxrwx ")
- (rear-context-string . "192 07-10 20:01 ")
- (position . 142))
 ("xah-fly-keys-20191226.2348"
  (filename . "~/.emacs.d/elpa/xah-fly-keys-20191226.2348/")
  (front-context-string . "xah-fly-keys-aut")
  (rear-context-string . "585 01-13 14:34 ")
  (position . 272))
-("snippets"
- (filename . "~/.emacs.d/elpa/yasnippet-snippets-20200425.1210/snippets/")
- (front-context-string . "java-mode\n  drwx")
- (rear-context-string . "192 05-06 09:34 ")
- (position . 2527))
 ("Documents"
  (filename . "c:/Users/Andre/Documents/")
  (front-context-string . "Books\n  drwxrwxr")
