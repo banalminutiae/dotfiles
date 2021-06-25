@@ -155,10 +155,9 @@ Version 2019-02-26"
 (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
 (set-face-attribute 'font-lock-constant-face nil :foreground "#F0F0F0")
 (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-;; (set-face-attribute 'font-lock-function-name-face nil :foreground "#D4D2C8")
-(set-face-attribute 'font-lock-function-name-face nil :foreground "#D6AF2A")
+(set-face-attribute 'font-lock-function-name-face nil :foreground "#508C83")
 (set-face-attribute 'font-lock-keyword-face nil :foreground "#D6AF2A")
-(set-face-attribute 'font-lock-string-face nil :foreground "#F0F0F0")
+(set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-type-face nil :foreground "burlywood3")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "#D4D2C8")
  

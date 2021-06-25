@@ -7,11 +7,6 @@
  (front-context-string . "#include <Window")
  (rear-context-string)
  (position . 1))
-("ami"
- (filename . "c:/Users/Andre/Documents/ami/")
- (front-context-string)
- (rear-context-string . "220 06-08 13:30 ")
- (position . 220))
 ("2021-03-interactive-study-planner"
  (filename . "c:/Capstone/2021-03-interactive-study-planner/")
  (front-context-string . "bitbucket-pipeli")
