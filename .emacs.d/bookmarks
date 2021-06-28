@@ -32,11 +32,6 @@
  (front-context-string . "/*\n  HandmadeMat")
  (rear-context-string)
  (position . 1))
-("rend"
- (filename . "c:/Users/Andre/Documents/rend/")
- (front-context-string . "build\n  drwxrwxr")
- (rear-context-string . "  0 12-18 18:42 ")
- (position . 222))
 ("Ray-Tracer"
  (filename . "c:/Users/Andre/Documents/Ray-Tracer/")
  (front-context-string . "code\n  -rw-rw-rw")
