@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("Renderer_Win32.cpp"
+(("front_end"
+ (filename . "c:/Capstone/2021-03-interactive-study-planner/front_end/")
+ (front-context-string)
+ (rear-context-string . "06-27 14:19 src\n")
+ (position . 614))
+("Renderer_Win32.cpp"
  (filename . "c:/Users/Andre/Documents/Graphics/Renderer/Renderer/Renderer_Win32.cpp")
  (front-context-string . "#include <Window")
  (rear-context-string)

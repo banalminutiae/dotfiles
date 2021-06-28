@@ -68,6 +68,8 @@
 
 ;; ----- ido-work-directory-list -----
 (
+ "c:/Capstone/2021-03-interactive-study-planner/front_end/src/"
+ "c:/Capstone/2021-03-interactive-study-planner/front_end/"
  "c:/Users/Andre/Documents/rend/src/"
  "c:/Users/Andre/Documents/Graphics/Renderer/Renderer/"
  "c:/Users/Andre/Documents/Handmade-Math-1.11.1/"
@@ -116,12 +118,12 @@
  "c:/Users/Andre/Documents/AOC/4/"
  "c:/Users/Andre/Documents/AOC/3/"
  "c:/Users/Andre/Documents/AOC/2/"
- "c:/Users/Andre/AppData/Roaming/.emacs.d/"
- "c:/Users/Andre/Documents/TFCS/exam/"
 )
 
 ;; ----- ido-work-file-list -----
 (
+ "NavBar.js"
+ ".env.development"
  "tgaimage.h"
  "main.cpp"
  "Renderer.h"
@@ -130,23 +132,27 @@
  "README.txt"
  "MainWindow.xaml.cs"
  "garbage.xml"
- "AMI-Exam-Answer-Template.txt"
- "table.txt"
 )
 
 ;; ----- ido-dir-file-cache -----
 (
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24792 21809 0 0) "transient/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
+
+ ("c:/Capstone/2021-03-interactive-study-planner/front_end/" (24792 20667 0 0) "src/" "README.md" "public/" "package.json" "package-lock.json" "node_modules/" ".gitignore" ".env.development" "../" "./")
+
+ ("c:/Capstone/2021-03-interactive-study-planner/front_end/src/" (24792 25249 0 0) "setupTests.js" "reportWebVitals.js" "pages/" "index.js" "index.css" "idea.png" "dream_jobs.jpg" "curtin_university_logo.png" "assets/" "App.test.js" "App.js" "App.css" "../" "./")
+
+ ("c:/Users/Andre/Documents/DC/Assignment2/" (24787 4268 0 0) "XSS/" "README.md" "Cover Sheet.docx" "Assignment Report.docx" "8/" "7/" "6/" "5/" "4/" "3/" "2/" "1/" ".git/" "../" "./")
+
+ ("c:/Users/Andre/Documents/" (24785 50110 0 0) "SNES/" "SET/" "rend/" "read-list-textbook-3rd-edition.pdf" "Ray-Tracer/" "prac_answers/" "My Videos/" "My Pictures/" "My Music/" "msdev.bat" "MP/" "masm32v11r.zip" "Handmade-Math-1.11.1/" "Hacker's Delight Exercises/" "Graphics/" "Go_Workspace/" "fivestarenterprises/" "DC/" "Cover Sheet.docx" "Capstone/" "Books/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Graphics/Renderer/" (24791 60894 0 0) "Renderer.sln" "Renderer/" "README.md" "Debug/" ".vs/" ".git/" "../" "./")
+
+ ("c:/Users/Andre/Documents/Graphics/Renderer/Renderer/" (24791 64138 0 0) "Renderer_Win32.cpp" "Renderer.vcxproj.user" "Renderer.vcxproj.filters" "Renderer.vcxproj" "Renderer.h" "Debug/" "../" "./")
+
  ("c:/Users/Andre/Documents/rend/src/" (24785 45661 0 0) "tgaimage.h" "tgaimage.cpp" "stb_image_write.h" "model.h" "model.cpp" "math.h" "main.cpp" "build.bat" "../" "./")
 
- ("c:/Users/Andre/Documents/Graphics/Renderer/" (24785 44816 0 0) "Renderer.sln" "Renderer/" "Debug/" ".vs/" ".git/" "../" "./")
-
- ("c:/Users/Andre/Documents/Graphics/Renderer/Renderer/" (24785 44816 0 0) "Renderer_Win32.cpp" "Renderer.vcxproj.user" "Renderer.vcxproj.filters" "Renderer.vcxproj" "Renderer.h" "Debug/" "../" "./")
-
  ("c:/Users/Andre/Documents/Handmade-Math-1.11.1/" (24622 17269 0 0) "test/" "README.md" "LICENSE" "HandmadeMath.h" "CONTRIBUTING.md" ".travis.yml" ".gitmodules" ".gitignore" ".editorconfig" "../" "./")
-
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24785 41853 0 0) "transient/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
-
- ("c:/Users/Andre/Documents/" (24781 41045 0 0) "SNES/" "SET/" "rend/" "read-list-textbook-3rd-edition.pdf" "Ray-Tracer/" "My Videos/" "My Pictures/" "My Music/" "msdev.bat" "MP/" "masm32v11r.zip" "Handmade-Math-1.11.1/" "Hacker's Delight Exercises/" "Graphics/" "Go_Workspace/" "fivestarenterprises/" "DC/" "Cover Sheet.docx" "Books/" "../" "./")
 
  ("c:/Users/Andre/Documents/DC/Assignment2/8/Tutorial_8/ClientLibrary/" (24746 18959 0 0) "Properties/" "obj/" "ClientList.cs" "ClientLibrary.csproj" "Client.cs" "bin/" "../" "./")
 
@@ -193,8 +199,6 @@
  ("c:/Users/Andre/Documents/Books/AI/" (24733 14360 0 0) "SzeliskiBook_20100903_draft.pdf" "Patrick Henry Winston - Artificial intelligence-Addison-Wesley Pub. Co (1992).djvu" "Artificial Intelligence A Modern Approach - Solutions.pdf" "ami300-exam-2014-complete.pdf" "ami251-exam-2017-cleaned.pdf" "a154ffbcec538a4161a406abf62f5b76-original.pdf" "2018_Book_NeuralNetworksAndDeepLearning.pdf" "2018 S2 COMP3006 Exam for Release.pdf" "2017_Book_AnIntroductionToMachineLearnin.pdf" "../" "./")
 
  ("c:/Users/Andre/Documents/DC/Assignment2/4/Tutorial_4/Tutorial_4_Data_Tier/Controllers/" (24741 11580 0 0) "UserController.cs" "TransactionController.cs" "HomeController.cs" "AdminController.cs" "AccountController.cs" "../" "./")
-
- ("c:/Users/Andre/Documents/DC/Assignment2/" (24746 26285 0 0) "XSS/" "Cover Sheet.docx" "Assignment Report.docx" "8/" "7/" "6/" "5/" "4/" "3/" "2/" "1/" "../" "./")
 
  ("c:/Users/Andre/Documents/DC/Assignment2/3/Tutorial_3/WebApp/Controllers/" (24728 49576 0 0) "SearchController.cs" "MiscApiController.cs" "HomeController.cs" "GetValuesController.cs" "../" "./")
 
@@ -331,10 +335,6 @@
  ("c:/Users/Andre/Documents/MP/Assignment/data/" (24468 7182 0 0) "tr01_CCL_stats.txt" "tr01_bounded_CCL99.jpg" "tr01_bounded_CCL98.jpg" "tr01_bounded_CCL97.jpg" "tr01_bounded_CCL96.jpg" "tr01_bounded_CCL95.jpg" "tr01_bounded_CCL94.jpg" "tr01_bounded_CCL93.jpg" "tr01_bounded_CCL92.jpg" "tr01_bounded_CCL91.jpg" "tr01_bounded_CCL90.jpg" "tr01_bounded_CCL9.jpg" "tr01_bounded_CCL89.jpg" "tr01_bounded_CCL88.jpg" "tr01_bounded_CCL87.jpg" "tr01_bounded_CCL86.jpg" "tr01_bounded_CCL85.jpg" "tr01_bounded_CCL84.jpg" "tr01_bounded_CCL83.jpg" "tr01_bounded_CCL82.jpg" "tr01_bounded_CCL81.jpg" "tr01_bounded_CCL80.jpg" "tr01_bounded_CCL8.jpg" "tr01_bounded_CCL79.jpg" "tr01_bounded_CCL78.jpg" "tr01_bounded_CCL77.jpg" "tr01_bounded_CCL76.jpg" "tr01_bounded_CCL75.jpg" "tr01_bounded_CCL74.jpg" "tr01_bounded_CCL73.jpg" "tr01_bounded_CCL72.jpg" "tr01_bounded_CCL71.jpg" "tr01_bounded_CCL70.jpg" "tr01_bounded_CCL7.jpg" "tr01_bounded_CCL69.jpg" "tr01_bounded_CCL68.jpg" "tr01_bounded_CCL67.jpg" "tr01_bounded_CCL66.jpg" "tr01_bounded_CCL65.jpg" "tr01_bounded_CCL64.jpg" "tr01_bounded_CCL63.jpg" "tr01_bounded_CCL62.jpg" "tr01_bounded_CCL61.jpg" "tr01_bounded_CCL60.jpg" "tr01_bounded_CCL6.jpg" "tr01_bounded_CCL59.jpg" "tr01_bounded_CCL58.jpg" "tr01_bounded_CCL57.jpg" "tr01_bounded_CCL56.jpg" "tr01_bounded_CCL55.jpg" "tr01_bounded_CCL54.jpg" "tr01_bounded_CCL53.jpg" "tr01_bounded_CCL52.jpg" "tr01_bounded_CCL51.jpg" "tr01_bounded_CCL50.jpg" "tr01_bounded_CCL5.jpg" "tr01_bounded_CCL49.jpg" "tr01_bounded_CCL48.jpg" "tr01_bounded_CCL47.jpg" "tr01_bounded_CCL46.jpg" "tr01_bounded_CCL45.jpg" "tr01_bounded_CCL44.jpg" "tr01_bounded_CCL43.jpg" "tr01_bounded_CCL42.jpg" "tr01_bounded_CCL41.jpg" "tr01_bounded_CCL40.jpg" "tr01_bounded_CCL4.jpg" "tr01_bounded_CCL39.jpg" "tr01_bounded_CCL38.jpg" "tr01_bounded_CCL37.jpg" "tr01_bounded_CCL36.jpg" "tr01_bounded_CCL35.jpg" "tr01_bounded_CCL34.jpg" "tr01_bounded_CCL33.jpg" "tr01_bounded_CCL32.jpg" "tr01_bounded_CCL31.jpg" "tr01_bounded_CCL30.jpg" "tr01_bounded_CCL3.jpg" "tr01_bounded_CCL29.jpg" "tr01_bounded_CCL28.jpg" "tr01_bounded_CCL27.jpg" "tr01_bounded_CCL26.jpg" "tr01_bounded_CCL25.jpg" "tr01_bounded_CCL24.jpg" "tr01_bounded_CCL23.jpg" "tr01_bounded_CCL22.jpg" "tr01_bounded_CCL21.jpg" "tr01_bounded_CCL20.jpg" "tr01_bounded_CCL2.jpg" "tr01_bounded_CCL19.jpg" "tr01_bounded_CCL18.jpg" "tr01_bounded_CCL17.jpg" "tr01_bounded_CCL16.jpg" "tr01_bounded_CCL15.jpg" "tr01_bounded_CCL14.jpg" "tr01_bounded_CCL138.jpg" "tr01_bounded_CCL137.jpg" "tr01_bounded_CCL136.jpg" "tr01_bounded_CCL135.jpg" "tr01_bounded_CCL134.jpg" "tr01_bounded_CCL133.jpg" "tr01_bounded_CCL132.jpg" "tr01_bounded_CCL131.jpg" "tr01_bounded_CCL130.jpg" "tr01_bounded_CCL13.jpg" "tr01_bounded_CCL129.jpg" "tr01_bounded_CCL128.jpg" "tr01_bounded_CCL127.jpg" "tr01_bounded_CCL126.jpg" "tr01_bounded_CCL125.jpg" "tr01_bounded_CCL124.jpg" "tr01_bounded_CCL123.jpg" "tr01_bounded_CCL122.jpg" "tr01_bounded_CCL121.jpg" "tr01_bounded_CCL120.jpg" "tr01_bounded_CCL12.jpg" "tr01_bounded_CCL119.jpg" "tr01_bounded_CCL118.jpg" "tr01_bounded_CCL117.jpg" "tr01_bounded_CCL116.jpg" "tr01_bounded_CCL115.jpg" "tr01_bounded_CCL114.jpg" "tr01_bounded_CCL113.jpg" "tr01_bounded_CCL112.jpg" "tr01_bounded_CCL111.jpg" "tr01_bounded_CCL110.jpg" "tr01_bounded_CCL11.jpg" "tr01_bounded_CCL109.jpg" "tr01_bounded_CCL108.jpg" "tr01_bounded_CCL107.jpg" "tr01_bounded_CCL106.jpg" "tr01_bounded_CCL105.jpg" "tr01_bounded_CCL104.jpg" "tr01_bounded_CCL103.jpg" "tr01_bounded_CCL102.jpg" "tr01_bounded_CCL101.jpg" "tr01_bounded_CCL100.jpg" "tr01_bounded_CCL10.jpg" "tr01_bounded_CCL1.jpg" "tr01_bounded_CCL0.jpg" "tr01_bin_img.jpg" "k_means_DugongXYZ.jpg" "k_means_DugongHSV.jpg" "k_means_DugongBGR.jpg" "k_means_Dugong.jpg" "k_means_diamondXYZ.png" "k_means_diamondHSV.png" "k_means_diamondBGR.png" "k_means_diamond.png" "key_points_Dugong_resized2.0.jpg" "key_points_Dugong_resized0.5.jpg" "key_points_Dugong.jpg" "key_points_diamond_rot45.png" "key_points_diamond_resized2.0_hist.png" "key_points_diamond_resized2.0.png" "key_points_diamond_resized1.25.png" "key_points_diamond_resized0.75.png" "key_points_diamond_resized0.5.png" "key_points_diamond_hist.png" "key_points_diamond.png" "image_desc_prac03ex01img01.png" "image_desc_Dugong_resized2.0.jpg" "image_desc_Dugong_resized0.5.jpg" "image_desc_Dugong.jpg" "image_desc_diamond_rot45.png" "image_desc_diamond_resized2.0.png" "image_desc_diamond_resized1.25.png" "image_desc_diamond_resized0.75.png" "image_desc_diamond_resized0.5.png" "image_desc_diamond.png" "Figure_1.png" "Dugong_rot90.jpg" "Dugong_rot45.jpg" "Dugong_rot180.jpg" "Dugong_resized2.0_harris.jpg" "Dugong_resized2.0.jpg" "Dugong_resized0.5_harris.jpg" "Dugong_resized0.5.jpg" "Dugong_harris.jpg" "Dugong_cluster2_disabled.png" "Dugong_cluster1_disabled.png" "Dugong_CCL_stats.txt" "Dugong_bounded_CCL9.jpg" "Dugong_bounded_CCL8.jpg" "Dugong_bounded_CCL7.jpg" "Dugong_bounded_CCL6.jpg" "Dugong_bounded_CCL5.jpg" "Dugong_bounded_CCL4.jpg" "Dugong_bounded_CCL3.jpg" "Dugong_bounded_CCL2.jpg" "Dugong_bounded_CCL1.jpg" "Dugong_bounded_CCL0.jpg" "Dugong_bin_img.jpg" "Dugong.jpg" "diamond_rot90.png" "diamond_rot45_hist.png" "diamond_rot45_harris.png" "diamond_rot45.png" "diamond_rot180.png" "diamond_resized2.0_harris.png" "diamond_resized2.0.png" "diamond_resized1.25_harris.png" "diamond_resized1.25.png" "diamond_resized0.75_harris.png" "diamond_resized0.75.png" "diamond_resized0.5_harris.png" "diamond_resized0.5.png" "diamond_harris_hist.png" "diamond_harris.png" "diamond_cluster2_disabled.png" "diamond_CCL_stats.txt" "diamond_bounded_CCL9.png" "diamond_bounded_CCL8.png" "diamond_bounded_CCL7.png" "diamond_bounded_CCL6.png" "diamond_bounded_CCL5.png" "diamond_bounded_CCL4.png" "diamond_bounded_CCL3.png" "diamond_bounded_CCL2.png" "diamond_bounded_CCL1.png" "diamond_bounded_CCL0.png" "diamond_bin_img.png" "diamond.png" "../" "./")
 
  ("c:/Users/Andre/Documents/MP/Assignment/src/" (24470 49922 0 0) "Task_4.py" "Task_3.py" "Task_2.py" "Task_1.py" "sift_Knn.py" "sift_BF.py" "rotate.py" "resizer.py" "HOG.py" "hist_maybe.py" "histogram_task_1.py" "histogram_of_oriented_gradients.py" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Pracs/P9/lab-9/numeric-overflow/" (24472 15879 0 0) "test/" "src/" "Readme.adoc" "Makefile" "LICENSE" "Dockerfile" "CONTRIBUTING.adoc" "build.gradle" ".gitlab-ci.yml" ".gitignore" "../" "./")
-
- ("c:/Users/Andre/Documents/CCSEP/Pracs/P9/lab-9/" (24472 15879 0 0) "numeric-overflow/" "numeric-imprecision/" ".git/" "../" "./")
 )
 
 ;; ----- ido-unc-hosts-cache -----

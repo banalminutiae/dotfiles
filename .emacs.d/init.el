@@ -147,7 +147,6 @@ Version 2019-02-26"
 (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(set-foreground-color "burlywood3")
 (set-background-color "#161616")
 (set-face-attribute 'fringe nil :background nil)
 (set-face-attribute 'default t :font "-outline-Inconsolata-normal-normal-normal-mono-12-*-*-*-c-*-iso8859-1" )
@@ -160,8 +159,6 @@ Version 2019-02-26"
 (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-type-face nil :foreground "burlywood3")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "#D4D2C8")
- 
-
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -194,22 +191,22 @@ Version 2019-02-26"
  '(global-command-log-mode t)
  '(go-mode-hook
    '((lambda nil
-	   (add-hook 'before-save-hook 'gofmt-before-save)
-	   (setq tab-width 4)
-	   (setq indent-tabs-mode nil))))
+       (add-hook 'before-save-hook 'gofmt-before-save)
+       (setq tab-width 4)
+       (setq indent-tabs-mode nil))))
  '(highlight-changes-colors '("#e5786d" "#834c98"))
  '(highlight-symbol-colors
    '("#55204c0039fc" "#3f0a4e4240dc" "#5a2849c746fd" "#3fd2334a42f4" "#426a4d5455d9" "#537247613a13" "#46c549b0535c"))
  '(highlight-symbol-foreground-color "#999891")
  '(highlight-tail-colors
    '(("#2f2f2e" . 0)
-	 ("#3d464c" . 20)
-	 ("#3b473c" . 30)
-	 ("#41434a" . 50)
-	 ("#4c4536" . 60)
-	 ("#4b4136" . 70)
-	 ("#4d3936" . 85)
-	 ("#2f2f2e" . 100)))
+     ("#3d464c" . 20)
+     ("#3b473c" . 30)
+     ("#41434a" . 50)
+     ("#4c4536" . 60)
+     ("#4b4136" . 70)
+     ("#4d3936" . 85)
+     ("#2f2f2e" . 100)))
  '(hl-bg-colors
    '("#4c4536" "#4b4136" "#504341" "#4d3936" "#3b313d" "#41434a" "#3b473c" "#3d464c"))
  '(hl-fg-colors
@@ -217,23 +214,23 @@ Version 2019-02-26"
  '(hl-paren-colors '("#7ec98f" "#e5c06d" "#a4b5e6" "#834c98" "#8ac6f2"))
  '(hl-todo-keyword-faces
    '(("HOLD" . "#cfdf30")
-	 ("TODO" . "#feacd0")
-	 ("NEXT" . "#b6a0ff")
-	 ("THEM" . "#f78fe7")
-	 ("PROG" . "#00d3d0")
-	 ("OKAY" . "#4ae8fc")
-	 ("DONT" . "#70c900")
-	 ("FAIL" . "#ff8059")
-	 ("BUG" . "#ff8059")
-	 ("DONE" . "#44bc44")
-	 ("NOTE" . "#f0ce43")
-	 ("KLUDGE" . "#eecc00")
-	 ("HACK" . "#eecc00")
-	 ("TEMP" . "#ffcccc")
-	 ("FIXME" . "#ff9977")
-	 ("XXX+" . "#f4923b")
-	 ("REVIEW" . "#6ae4b9")
-	 ("DEPRECATED" . "#bfd9ff")))
+     ("TODO" . "#feacd0")
+     ("NEXT" . "#b6a0ff")
+     ("THEM" . "#f78fe7")
+     ("PROG" . "#00d3d0")
+     ("OKAY" . "#4ae8fc")
+     ("DONT" . "#70c900")
+     ("FAIL" . "#ff8059")
+     ("BUG" . "#ff8059")
+     ("DONE" . "#44bc44")
+     ("NOTE" . "#f0ce43")
+     ("KLUDGE" . "#eecc00")
+     ("HACK" . "#eecc00")
+     ("TEMP" . "#ffcccc")
+     ("FIXME" . "#ff9977")
+     ("XXX+" . "#f4923b")
+     ("REVIEW" . "#6ae4b9")
+     ("DEPRECATED" . "#bfd9ff")))
  '(ibuffer-deletion-face 'modus-themes-mark-del)
  '(ibuffer-filter-group-name-face 'modus-themes-mark-symbol)
  '(ibuffer-marked-face 'modus-themes-mark-sel)
@@ -246,7 +243,7 @@ Version 2019-02-26"
    '("#ffb4ac" "#ddaa6f" "#e5c06d" "#3d464c" "#e3eaea" "#41434a" "#7ec98f" "#e5786d" "#834c98"))
  '(org-src-block-faces 'nil)
  '(package-selected-packages
-   '(solarized-theme yaml-mode modus-vivendi-theme eldoc magit xah-find ample-theme rust-mode toml-mode go-mode command-log-mode command-log dashboard xah-fly-keys which-key use-package try))
+   '(rjsx-mode solarized-theme yaml-mode modus-vivendi-theme eldoc magit xah-find ample-theme rust-mode toml-mode go-mode command-log-mode command-log dashboard xah-fly-keys which-key use-package try))
  '(pdf-view-midnight-colors '("#fdf4c1" . "#282828"))
  '(pos-tip-background-color "#2f2f2e")
  '(pos-tip-foreground-color "#999891")
@@ -258,23 +255,23 @@ Version 2019-02-26"
  '(vc-annotate-background-mode nil)
  '(vc-annotate-color-map
    '((20 . "#ffb4ac")
-	 (40 . "#f3a0bb068dbb")
-	 (60 . "#ecf0bdf57dd8")
-	 (80 . "#e5c06d")
-	 (100 . "#d1fcc2679b35")
-	 (120 . "#c551c35ab143")
-	 (140 . "#b610c464c727")
-	 (160 . "#a327c588dd05")
-	 (180 . "#8ac6f2")
-	 (200 . "#89fec7dad1d0")
-	 (220 . "#8863c85ec150")
-	 (240 . "#85eec8dcb0cf")
-	 (260 . "#82a3c956a041")
-	 (280 . "#7ec98f")
-	 (300 . "#9131c244b2d6")
-	 (320 . "#98acbe43c439")
-	 (340 . "#9f20ba15d58f")
-	 (360 . "#a4b5e6")))
+     (40 . "#f3a0bb068dbb")
+     (60 . "#ecf0bdf57dd8")
+     (80 . "#e5c06d")
+     (100 . "#d1fcc2679b35")
+     (120 . "#c551c35ab143")
+     (140 . "#b610c464c727")
+     (160 . "#a327c588dd05")
+     (180 . "#8ac6f2")
+     (200 . "#89fec7dad1d0")
+     (220 . "#8863c85ec150")
+     (240 . "#85eec8dcb0cf")
+     (260 . "#82a3c956a041")
+     (280 . "#7ec98f")
+     (300 . "#9131c244b2d6")
+     (320 . "#98acbe43c439")
+     (340 . "#9f20ba15d58f")
+     (360 . "#a4b5e6")))
  '(vc-annotate-very-old-color nil)
  '(weechat-color-list
    '(unspecified "#2a2a29" "#2f2f2e" "#504341" "#ffb4ac" "#3d464c" "#8ac6f2" "#4c4536" "#e5c06d" "#41434a" "#a4b5e6" "#4d3936" "#e5786d" "#3b473c" "#7ec98f" "#8d8b86" "#74736f"))
@@ -295,9 +292,4 @@ Version 2019-02-26"
 (setq gc-cons-threshold (* 2 1000 1000))
 
           
-(custom-set-faces
- ;; custom-set-faces was added by Custom.
- ;; If you edit it by hand, you could mess it up, so be careful.
- ;; Your init file should contain only one such instance.
- ;; If there is more than one, they won't work right.
- )
+
