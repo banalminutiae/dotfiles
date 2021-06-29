@@ -9,10 +9,11 @@
 	   gcs-done))
 (add-hook 'emacs-startup-hook #'efs/display-startup-time)
 
-
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (setq case-fold-search nil)
+(setq completion-ignore-case t)
+(setq read-buffer-completion-ignore-case t)
 ;; (global-subword-mode 1);;move through camel case
 
 ;; (setq scroll-conservatively 1)
@@ -29,22 +30,12 @@
 (setq search-whitespace-regexp "[-_ \t\n]+")
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
+(defadvice split-window (after move-point-to-new-window activate)
+  "Moves the point to the newly created window after splitting."
+  (other-window 1))
+
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "<f7>") 'kill-buffer-and-window)
-
-(defun xah-open-file-fast ()
-  "Prompt to open a file from bookmark `bookmark-bmenu-list'.
-This command is similar to `bookmark-jump', but use `ido-mode' interface, and ignore cursor position in bookmark.
-URL `http://ergoemacs.org/emacs/emacs_hotkey_open_file_fast.html'
-Version 2019-02-26"
-  (interactive)
-  (require 'bookmark)
-  (bookmark-maybe-load-default-file)
-  (let (($this-bookmark
-         (ido-completing-read "Open bookmark:" (mapcar (lambda ($x) (car $x)) bookmark-alist))))
-    (find-file (bookmark-get-filename $this-bookmark))
-    ;; (bookmark-jump $this-bookmark)
-    ))
 
 (setq-default select-enable-clipboard t)
 
@@ -52,8 +43,8 @@ Version 2019-02-26"
  
 ;; (show-paren-mode 1)
 
-;; (set-language-environment "UTF-8")
-;; (set-default-coding-systems 'utf-8)
+(set-language-environment "UTF-8")
+(set-default-coding-systems 'utf-8)
 
 ;; (setq-default indent-tabs-mode t)
 ;; (setq tab-width 4)
