@@ -1,6 +1,7 @@
 ;; -*- lexical-binding: t; -*-
-(setq gc-cons-threshold (* 50 1000 1000))
-
+(setq gc-cons-threshold 100000000)
+(add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 800000)))
+(add-hook 'focus-out-hook 'garbage-collect)
 (defun efs/display-startup-time ()
   (message "Emacs loaded in %s with %d garbage collections."
 	   (format "%.2f seconds"
@@ -46,20 +47,14 @@
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
 
-;; (setq-default indent-tabs-mode t)
-;; (setq tab-width 4)
-;; (setq-default tab-wdith 4)
-;; (setq c-basic-offset 4)
-;; (setq c-default-style
-;;       '((java-mode . "java")
-;;         (other . "linux")))
+(setq-default electric-indent-inhibit t)	
 
-;; ;;bracket matching
-;; (electric-pair-mode 1)
-;; (setq electric-pair-pairs
-;;       '(
-;;         (?\".?\")
-;;         (?\{.?\})))
+;;bracket matching
+(electric-pair-mode 1)
+(setq electric-pair-pairs
+      '(
+        (?\".?\")
+        (?\{.?\})))
 
 (cua-mode 1)
 ;; (ido-mode 1)
@@ -96,16 +91,17 @@
 (set-face-attribute 'font-lock-constant-face nil :foreground "#F0F0F0")
 (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
 (set-face-attribute 'font-lock-function-name-face nil :foreground "#508C83")
-(set-face-attribute 'font-lock-keyword-face nil :foreground "#D6AF2A")
+(set-face-attribute 'font-lock-keyword-face nil :foreground "#D4D2C8") ; "#D6AF2A"
 (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
-(set-face-attribute 'font-lock-type-face nil :foreground "burlywood3")
-(set-face-attribute 'font-lock-variable-name-face nil :foreground "#D4D2C8")
+(set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
+(set-face-attribute 'font-lock-variable-name-face nil :foreground "#burlywood2") ; "#D4D2C8"
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
+ '(c-basic-offset 4)
  '(menu-bar-mode nil)
  '(package-selected-packages
    '(yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode rjsx-mode pyvenv project parent-mode page-break-lines highlight-indentation go-mode git-commit company command-log-mode color-theme-sanityinc-tomorrow ample-theme))
@@ -117,5 +113,3 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
  ;; shitty custom variables. Edit only through the menu thingy
-;; ;;decrease threshold
-(setq gc-cons-threshold (* 2 1000 1000))

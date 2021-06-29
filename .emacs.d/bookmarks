@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("front_end"
+(("xah-fly-keys.el"
+ (filename . "~/.emacs.d/lisp/xah-fly-keys.el")
+ (front-context-string . ";;; xah-fly-keys")
+ (rear-context-string)
+ (position . 1))
+("front_end"
  (filename . "c:/Capstone/2021-03-interactive-study-planner/front_end/")
  (front-context-string)
  (rear-context-string . "06-27 14:19 src\n")
