@@ -1,7 +1,17 @@
-;; ;; -*- lexical-binding: t; -*-
+;; -*- lexical-binding: t; -*-
 (setq gc-cons-threshold (* 50 1000 1000))
- (menu-bar-mode -1)
- (tool-bar-mode -1)
+
+(defun efs/display-startup-time ()
+  (message "Emacs loaded in %s with %d garbage collections."
+	   (format "%.2f seconds"
+		   (float-time
+		    (time-subtract after-init-time before-init-time)))
+	   gcs-done))
+(add-hook 'emacs-startup-hook #'efs/display-startup-time)
+
+
+(menu-bar-mode -1)
+(tool-bar-mode -1)
 (setq case-fold-search nil)
 ;; (global-subword-mode 1);;move through camel case
 
@@ -60,7 +70,7 @@ Version 2019-02-26"
 ;;         (?\".?\")
 ;;         (?\{.?\})))
 
-;; (cua-mode 1)
+(cua-mode 1)
 ;; (ido-mode 1)
 
 ;;i-search with more intuitive controls
@@ -77,42 +87,18 @@ Version 2019-02-26"
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
-;;  ;;package manager
-;;  (require `package)
-;;  (setq package-enable-ar-startup nil)
-;;  (add-to-list `package-archives
-;;               `("melpa" . "https://melpa.org/packages/"))
-
-;; (setq package-enable-at-startup nil ; don't auto-initialize!
-;;       ;; this tells package.el not to add those pesky customized variable settings
-;;       ;; at the end of your init.el
-;;       package--init-file-ensured t)
-
-;;  `use-package;;install through init file
-;;  (unless (package-installed-p `use-package)
-;;    (package-refresh-contents)
-;;    (package-install `use-package))                                                        
-
-;; ;;try out a cool package  
-;; (use-package try
-;;   :ensure t
-;;   :defer 1)
-
-;; ;; (setq xah-fly-use-control-key nil)
- (require 'xah-fly-keys)
-;; ;; ;(use-package xah-fly-keys
-;; ;; ;  :ensure t
-;; ;; ;  :defer 1)
- (xah-fly-keys-set-layout "qwerty")
- (xah-fly-command-mode-activate);command mode on startups
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+(require 'xah-fly-keys)
+(xah-fly-keys-set-layout "qwerty")
+(xah-fly-keys 1)
 
 (setq-default truncate-lines t)
 ;; (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (set-background-color "#161616")
-(set-face-attribute 'fringe nil :background nil)
 (set-foreground-color "burlywood2")
+(set-face-attribute 'fringe nil :background nil)
 (set-face-attribute 'default t :font "-outline-Inconsolata-normal-normal-normal-mono-12-*-*-*-c-*-iso8859-1" )
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#D6AF2A")
 (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
@@ -124,8 +110,21 @@ Version 2019-02-26"
 (set-face-attribute 'font-lock-type-face nil :foreground "burlywood3")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "#D4D2C8")
 
+(custom-set-variables
+ ;; custom-set-variables was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(menu-bar-mode nil)
+ '(package-selected-packages
+   '(yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode rjsx-mode pyvenv project parent-mode page-break-lines highlight-indentation go-mode git-commit company command-log-mode color-theme-sanityinc-tomorrow ample-theme))
+ '(tool-bar-mode nil))
+(custom-set-faces
+ ;; custom-set-faces was added by Custom.
+ ;; If you edit it by hand, you could mess it up, so be careful.
+ ;; Your init file should contain only one such instance.
+ ;; If there is more than one, they won't work right.
+ '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+ ;; shitty custom variables. Edit only through the menu thingy
 ;; ;;decrease threshold
 (setq gc-cons-threshold (* 2 1000 1000))
-
-          
-
