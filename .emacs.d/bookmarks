@@ -2,16 +2,11 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("xah-fly-keys.el"
- (filename . "~/.emacs.d/lisp/xah-fly-keys.el")
- (front-context-string . ";;; xah-fly-keys")
- (rear-context-string)
- (position . 1))
-("front_end"
- (filename . "c:/Capstone/2021-03-interactive-study-planner/front_end/")
- (front-context-string)
- (rear-context-string . "06-27 14:19 src\n")
- (position . 614))
+(("General Frontend"
+ (filename . "c:/Capstone/2021-03-interactive-study-planner/General Frontend/")
+ (front-context-string . ".env.development")
+ (rear-context-string . " 82 07-01 14:58 ")
+ (position . 262))
 ("Renderer_Win32.cpp"
  (filename . "c:/Users/Andre/Documents/Graphics/Renderer/Renderer/Renderer_Win32.cpp")
  (front-context-string . "#include <Window")
@@ -22,31 +17,11 @@
  (front-context-string . "bitbucket-pipeli")
  (rear-context-string . "147 05-25 18:20 ")
  (position . 238))
-("DC"
- (filename . "c:/Users/Andre/Documents/DC/")
- (front-context-string . "..\n  drwxrwxrwx ")
- (rear-context-string . "192 03-28 14:27 ")
- (position . 128))
-("Registry"
- (filename . "c:/Users/Andre/Documents/DC/Assignment/Registry/")
- (front-context-string . "App_Data\n  drwxr")
- (rear-context-string . "  0 04-01 10:30 ")
- (position . 243))
 ("HandmadeMath.h"
  (filename . "c:/Users/Andre/Documents/Handmade-Math-1.11.1/HandmadeMath.h")
  (front-context-string . "/*\n  HandmadeMat")
  (rear-context-string)
  (position . 1))
-("Ray-Tracer"
- (filename . "c:/Users/Andre/Documents/Ray-Tracer/")
- (front-context-string . "code\n  -rw-rw-rw")
- (rear-context-string . "  0 2019-02-27  ")
- (position . 231))
-("xah-fly-keys-20191226.2348"
- (filename . "~/.emacs.d/elpa/xah-fly-keys-20191226.2348/")
- (front-context-string . "xah-fly-keys-aut")
- (rear-context-string . "585 01-13 14:34 ")
- (position . 272))
 ("Documents"
  (filename . "c:/Users/Andre/Documents/")
  (front-context-string . "Books\n  drwxrwxr")

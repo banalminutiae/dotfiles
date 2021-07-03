@@ -2,13 +2,6 @@
 (setq gc-cons-threshold 100000000)
 (add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 800000)))
 (add-hook 'focus-out-hook 'garbage-collect)
-(defun efs/display-startup-time ()
-  (message "Emacs loaded in %s with %d garbage collections."
-	   (format "%.2f seconds"
-		   (float-time
-		    (time-subtract after-init-time before-init-time)))
-	   gcs-done))
-(add-hook 'emacs-startup-hook #'efs/display-startup-time)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -20,29 +13,29 @@
 ;; (setq scroll-conservatively 1)
 ;; ;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
+(add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
+
+(load "~/.emacs.d/lisp/custom.el")
+
 (defalias 'eb 'eval-buffer)
-;; (defalias 'er 'eval-region)
+(defalias 'er 'eval-region)
 (defalias 'dk 'describe-key)
+(defalias 'dt 'disable-theme)
 
 (setq initial-major-mode 'fundamental-mode)
-;; (global-visual-line-mode t)
+(global-visual-line-mode t)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq search-whitespace-regexp "[-_ \t\n]+")
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
-(defadvice split-window (after move-point-to-new-window activate)
-  "Moves the point to the newly created window after splitting."
-  (other-window 1))
-
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
-(global-set-key (kbd "<f7>") 'kill-buffer-and-window)
 
 (setq-default select-enable-clipboard t)
 
 (setq backup-directory-alist `(("." . "~/.saves")))
  
-;; (show-paren-mode 1)
+(show-paren-mode 1)
 
 (set-language-environment "UTF-8")
 (set-default-coding-systems 'utf-8)
@@ -59,7 +52,7 @@
 (cua-mode 1)
 ;; (ido-mode 1)
 
-;;i-search with more intuitive controls
+;;i-search with more intuitive controls 
 (progn
   (define-key isearch-mode-map (kbd "<up>")`isearch-ring-retreat)
   (define-key isearch-mode-map (kbd "<down>")`isearch-ring-advance)
@@ -73,6 +66,11 @@
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . rjsx-mode))
+
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
@@ -82,19 +80,31 @@
 ;; (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
+(set-face-attribute 'fringe nil :background nil)
 (set-background-color "#161616")
 (set-foreground-color "burlywood2")
-(set-face-attribute 'fringe nil :background nil)
-(set-face-attribute 'default t :font "-outline-Inconsolata-normal-normal-normal-mono-12-*-*-*-c-*-iso8859-1" )
-(set-face-attribute 'font-lock-builtin-face nil :foreground "#D6AF2A")
+(set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
 (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-constant-face nil :foreground "#F0F0F0")
+(set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-function-name-face nil :foreground "#508C83")
-(set-face-attribute 'font-lock-keyword-face nil :foreground "#D4D2C8") ; "#D6AF2A"
+(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
+(set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3") 
 (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
-(set-face-attribute 'font-lock-variable-name-face nil :foreground "#burlywood2") ; "#D4D2C8"
+(set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
+
+;; (set-face-attribute 'fringe nil :background nil)
+;; (set-background-color "#1B2F3F")
+;; (set-foreground-color "burlywood2")
+;; (set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
+;; (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
+;; (set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
+;; (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
+;; (set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
+;; (set-face-attribute 'font-lock-keyword-face nil :foreground "white") 
+;; (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
+;; (set-face-attribute 'font-lock-type-face nil :foreground "goldenrod")
+;; (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2") 
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
@@ -104,7 +114,7 @@
  '(c-basic-offset 4)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode rjsx-mode pyvenv project parent-mode page-break-lines highlight-indentation go-mode git-commit company command-log-mode color-theme-sanityinc-tomorrow ample-theme))
+   '(yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode rjsx-mode go-mode git-commit company command-log-mode))
  '(tool-bar-mode nil))
 (custom-set-faces
  ;; custom-set-faces was added by Custom.

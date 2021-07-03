@@ -3,7 +3,7 @@
 ;; Copyright © 2013-2021, by Xah Lee
 
 ;; Author: Xah Lee ( http://xahlee.info/ )
-;; Version: 13.13.20210627144552
+;; Version: 13.14.20210630184456
 ;; Created: 10 Sep 2013
 ;; Package-Requires: ((emacs "24.1"))
 ;; Keywords: convenience, emulations, vim, ergoemacs
@@ -169,9 +169,11 @@ Version 2016-04-04"
 
 (defun xah-beginning-of-line-or-block ()
   "Move cursor to beginning of line or previous paragraph.
+
 • When called first time, move cursor to beginning of char in current line. (if already, move to beginning of line.)
 • When called again, move cursor backward by jumping over any sequence of whitespaces containing 2 blank lines.
 • if `visual-line-mode' is on, beginning of line means visual line.
+
 URL `http://ergoemacs.org/emacs/emacs_keybinding_design_beginning-of-line-or-block.html'
 Version 2018-06-04 2021-03-16"
   (interactive)
@@ -193,9 +195,11 @@ Version 2018-06-04 2021-03-16"
 
 (defun xah-end-of-line-or-block ()
   "Move cursor to end of line or next paragraph.
+
 • When called first time, move cursor to end of line.
 • When called again, move cursor forward by jumping over any sequence of whitespaces containing 2 blank lines.
 • if `visual-line-mode' is on, end of line means visual line.
+
 URL `http://ergoemacs.org/emacs/emacs_keybinding_design_beginning-of-line-or-block.html'
 Version 2018-06-04 2021-03-16"
   (interactive)
@@ -238,6 +242,7 @@ Version 2018-06-04 2021-03-16"
 (defun xah-forward-punct (&optional n)
   "Move cursor to the next occurrence of punctuation.
 The list of punctuations to jump to is defined by `xah-punctuation-regex'
+
 URL `http://ergoemacs.org/emacs/emacs_jump_to_punctuations.html'
 Version 2017-06-26"
   (interactive "p")
@@ -246,6 +251,7 @@ Version 2017-06-26"
 (defun xah-backward-punct (&optional n)
   "Move cursor to the previous occurrence of punctuation.
 See `xah-forward-punct'
+
 URL `http://ergoemacs.org/emacs/emacs_jump_to_punctuations.html'
 Version 2017-06-26"
   (interactive "p")
@@ -427,6 +433,7 @@ Version 2015-03-24"
   "Copy current line, or text selection.
 When called repeatedly, append copy subsequent lines.
 When `universal-argument' is called first, copy whole buffer (respects `narrow-to-region').
+
 URL `http://ergoemacs.org/emacs/emacs_copy_cut_current_line.html'
 Version 2019-10-30"
   (interactive)
@@ -462,6 +469,7 @@ Version 2019-10-30"
 (defun xah-cut-line-or-region ()
   "Cut current line, or text selection.
 When `universal-argument' is called first, cut whole buffer (respects `narrow-to-region').
+
 URL `http://ergoemacs.org/emacs/emacs_copy_cut_current_line.html'
 Version 2015-06-10"
   (interactive)
@@ -520,7 +528,9 @@ Version 2017-01-03"
 (defun xah-paste-or-paste-previous ()
   "Paste. When called repeatedly, paste previous.
 This command calls `yank', and if repeated, call `yank-pop'.
+
 When `universal-argument' is called first with a number arg, paste that many times.
+
 URL `http://ergoemacs.org/emacs/emacs_paste_or_paste_previous.html'
 Version 2017-07-25 2020-09-08"
   (interactive)
@@ -537,6 +547,7 @@ Version 2017-07-25 2020-09-08"
 
 (defun xah-show-kill-ring ()
   "Insert all `kill-ring' content in a new buffer named *copy history*.
+
 URL `http://ergoemacs.org/emacs/emacs_show_kill_ring.html'
 Version 2019-12-02"
   (interactive)
@@ -566,8 +577,11 @@ Version 2018-08-31"
 
 (defun xah-delete-backward-char-or-bracket-text ()
   "Delete backward 1 character, but if it's a \"quote\" or bracket ()[]{}【】「」 etc, delete bracket and the inner text, push the deleted text to `kill-ring'.
+
 What char is considered bracket or quote is determined by current syntax table.
+
 If `universal-argument' is called first, do not delete inner text.
+
 URL `http://ergoemacs.org/emacs/emacs_delete_backward_char_or_bracket_text.html'
 Version 2017-07-02"
   (interactive)
@@ -588,7 +602,7 @@ Version 2017-07-02"
      ((looking-back "\\s\"" 1)
       (if (nth 3 (syntax-ppss))
           (progn
-            (backward-char )
+            (backward-char)
             (xah-delete-forward-bracket-pairs (not current-prefix-arg)))
         (if current-prefix-arg
             (xah-delete-backward-bracket-pair)
@@ -598,8 +612,11 @@ Version 2017-07-02"
 
 (defun xah-delete-backward-bracket-text ()
   "Delete the matching brackets/quotes to the left of cursor, including the inner text.
+
 This command assumes the left of cursor is a right bracket, and there's a matching one before it.
+
 What char is considered bracket or quote is determined by current syntax table.
+
 URL `http://ergoemacs.org/emacs/emacs_delete_backward_char_or_bracket_text.html'
 Version 2017-09-21"
   (interactive)
@@ -610,9 +627,13 @@ Version 2017-09-21"
 
 (defun xah-delete-backward-bracket-pair ()
   "Delete the matching brackets/quotes to the left of cursor.
+
 After the command, mark is set at the left matching bracket position, so you can `exchange-point-and-mark' to select it.
+
 This command assumes the left of point is a right bracket, and there's a matching one before it.
+
 What char is considered bracket or quote is determined by current syntax table.
+
 URL `http://ergoemacs.org/emacs/emacs_delete_backward_char_or_bracket_text.html'
 Version 2017-07-02"
   (interactive)
@@ -629,9 +650,13 @@ Version 2017-07-02"
 (defun xah-delete-forward-bracket-pairs ( &optional @delete-inner-text-p)
   "Delete the matching brackets/quotes to the right of cursor.
 If @delete-inner-text-p is true, also delete the inner text.
+
 After the command, mark is set at the left matching bracket position, so you can `exchange-point-and-mark' to select it.
+
 This command assumes the char to the right of point is a left bracket or quote, and have a matching one after.
+
 What char is considered bracket or quote is determined by current syntax table.
+
 URL `http://ergoemacs.org/emacs/emacs_delete_backward_char_or_bracket_text.html'
 Version 2017-07-02"
   (interactive)
@@ -648,12 +673,16 @@ Version 2017-07-02"
 
 (defun xah-change-bracket-pairs ( @from-chars @to-chars)
   "Change bracket pairs from one type to another.
+
 For example, change all parenthesis () to square brackets [].
+
 Works on selected text, or current text block.
+
 When called in lisp program, @from-chars or @to-chars is a string of bracket pair. eg \"(paren)\",  \"[bracket]\", etc.
 The first and last characters are used. (the middle is for convenience in ido selection.)
 If the string contains “,2”, then the first 2 chars and last 2 chars are used, for example  \"[[bracket,2]]\".
 If @to-chars is equal to string “none”, the brackets are deleted.
+
 URL `http://ergoemacs.org/emacs/elisp_change_brackets.html'
 Version 2020-11-01"
   (interactive
@@ -790,6 +819,7 @@ Version 2020-11-01"
 (defun xah-toggle-letter-case ()
   "Toggle the letter case of current word or text selection.
 Always cycle in this order: Init Caps, ALL CAPS, all lower.
+
 URL `http://ergoemacs.org/emacs/modernization_upcase-word.html'
 Version 2020-06-26"
   (interactive)
@@ -835,6 +865,7 @@ Version 2015-12-22"
 
 (defun xah-upcase-sentence ()
   "Upcase first letters of sentences of current text block or selection.
+
 URL `http://ergoemacs.org/emacs/emacs_upcase_sentence.html'
 Version 2020-12-08 2020-12-24"
   (interactive)
@@ -882,6 +913,7 @@ Version 2020-12-08 2020-12-24"
 (defun xah-title-case-region-or-line (@begin @end)
   "Title case text between nearest brackets, or current line, or text selection.
 Capitalize first letter of each word, except words like {to, of, the, a, in, or, and, …}. If a word already contains cap letters such as HTTP, URL, they are left as is.
+
 When called in a elisp program, @begin @end are region boundaries.
 URL `http://ergoemacs.org/emacs/elisp_title_case_text.html'
 Version 2017-01-11 2021-03-30"
@@ -942,6 +974,7 @@ Version 2017-01-11 2021-03-30"
 
 (defun xah-delete-blank-lines ()
   "Delete all newline around cursor.
+
 URL `http://ergoemacs.org/emacs/emacs_shrink_whitespace.html'
 Version 2018-04-02"
   (interactive)
@@ -965,10 +998,12 @@ Version 2019-06-13"
 
 (defun xah-shrink-whitespaces ()
   "Remove whitespaces around cursor to just one, or none.
+
 Shrink any neighboring space tab newline characters to 1 or none.
 If cursor neighbor has space/tab, toggle between 1 or 0 space.
 If cursor neighbor are newline, shrink them to just 1.
 If already has just 1 whitespace, delete it.
+
 URL `http://ergoemacs.org/emacs/emacs_shrink_whitespace.html'
 Version 2019-06-13"
   (interactive)
@@ -1048,6 +1083,7 @@ Version 2019-01-30 2021-01-16"
 First call will break into multiple short lines. Repeated call toggles between short and long lines.
 When there is a text selection, act on the selection.
 This commands calls `fill-region' to do its work. Set `fill-column' for short line length.
+
 URL `http://ergoemacs.org/emacs/modernization_fill-paragraph.html'
 Version 2020-11-22"
   (interactive)
@@ -1080,6 +1116,7 @@ Version 2020-11-22"
 (defun xah-unfill-paragraph ()
   "Replace newline chars in current paragraph by single spaces.
 This command does the inverse of `fill-paragraph'.
+
 URL `http://ergoemacs.org/emacs/emacs_unfill-paragraph.html'
 Version 2016-07-13"
   (interactive)
@@ -1089,6 +1126,7 @@ Version 2016-07-13"
 (defun xah-unfill-region (@begin @end)
   "Replace newline chars in region by single spaces.
 This command does the inverse of `fill-region'.
+
 URL `http://ergoemacs.org/emacs/emacs_unfill-paragraph.html'
 Version 2016-07-13"
   (interactive "r")
@@ -1097,8 +1135,11 @@ Version 2016-07-13"
 
 (defun xah-reformat-lines ( &optional @length)
   "Reformat current text block or selection into short lines or 1 long line.
+
 When called for the first time, change to one long line. Second call change it to multiple short lines. Repeated call toggles.
+
 If `universal-argument' is called first, use the number value for min length of line. By default, it's 70.
+
 URL `http://ergoemacs.org/emacs/emacs_reformat_lines.html'
 Version 2020-11-14"
   (interactive)
@@ -1135,6 +1176,7 @@ Version 2020-11-14"
 
 (defun xah-reformat-whitespaces-to-one-space (@begin @end)
   "Replace whitespaces by one space.
+
 URL `http://ergoemacs.org/emacs/emacs_reformat_lines.html'
 Version 2017-01-11"
   (interactive "r")
@@ -1157,7 +1199,9 @@ Version 2017-01-11"
 (defun xah-reformat-to-multi-lines ( &optional @begin @end @min-length)
   "Replace spaces by a newline at places so lines are not long.
 When there is a text selection, act on the selection, else, act on a text block separated by blank lines.
+
 If `universal-argument' is called first, use the number value for min length of line. By default, it's 70.
+
 URL `http://ergoemacs.org/emacs/emacs_reformat_lines.html'
 Version 2018-12-16 2020-09-08"
   (interactive)
@@ -1192,6 +1236,7 @@ Version 2018-12-16 2020-09-08"
 (defun xah-reformat-to-sentence-lines ()
   "Break a long line or text block into multiple lines by ending period.
 Work on text selection if there is one, else the current text block.
+
 URL `http://ergoemacs.org/emacs/elisp_reformat_to_sentence_lines.html'
 Version 2020-12-02 2021-04-14"
   (interactive)
@@ -1216,6 +1261,7 @@ Version 2020-12-02 2021-04-14"
 (defun xah-space-to-newline ()
   "Replace space sequence to a newline char.
 Works on current block or selection.
+
 URL `http://ergoemacs.org/emacs/emacs_space_to_newline.html'
 Version 2017-08-19"
   (interactive)
@@ -1239,6 +1285,7 @@ Version 2017-08-19"
 
 (defun xah-comment-dwim ()
   "Like `comment-dwim', but toggle comment if cursor is not at end of line.
+
 URL `http://ergoemacs.org/emacs/emacs_toggle_comment_by_line.html'
 Version 2016-10-25"
   (interactive)
@@ -1259,19 +1306,27 @@ Version 2016-10-25"
 (defun xah-quote-lines ()
   "Change current text block's lines to quoted lines with comma or other separator char.
 When there is a text selection, act on the selection, else, act on a text block separated by blank lines.
+
 For example,
+
  cat
  dog
  cow
+
 becomes
+
  \"cat\",
  \"dog\",
  \"cow\",
+
 or
+
  (cat)
  (dog)
  (cow)
+
 If the delimiter is any left bracket, the end delimiter is automatically the matching bracket.
+
 URL `http://ergoemacs.org/emacs/emacs_quote_lines.html'
 Version 2020-06-26"
   (interactive)
@@ -1332,6 +1387,7 @@ Version 2020-06-26"
 (defun xah-escape-quotes (@begin @end)
   "Replace 「\"」 by 「\\\"」 in current line or text selection.
 See also: `xah-unescape-quotes'
+
 URL `http://ergoemacs.org/emacs/elisp_escape_quotes.html'
 Version 2017-01-11"
   (interactive
@@ -1348,6 +1404,7 @@ Version 2017-01-11"
 (defun xah-unescape-quotes (@begin @end)
   "Replace  「\\\"」 by 「\"」 in current line or text selection.
 See also: `xah-escape-quotes'
+
 URL `http://ergoemacs.org/emacs/elisp_escape_quotes.html'
 Version 2017-01-11"
   (interactive
@@ -1364,6 +1421,7 @@ Version 2017-01-11"
 (defun xah-dired-rename-space-to-underscore ()
   "In dired, rename current or marked files by replacing space to lowline _.
 If not in `dired', do nothing.
+
 URL `http://ergoemacs.org/emacs/elisp_dired_rename_space_to_underscore.html'
 Version 2020-03-03"
   (interactive)
@@ -1398,10 +1456,12 @@ Version 2019-11-24"
 (defun xah-cycle-hyphen-underscore-space ( &optional @begin @end )
   "Cycle {underscore, space, hyphen} chars in selection or inside quote/bracket or line.
 When called repeatedly, this command cycles the {“_”, “-”, “ ”} characters, in that order.
+
 The region to work on is by this order:
  ① if there's active region (text selection), use that.
  ② If cursor is string quote or any type of bracket, and is within current line, work on that region.
  ③ else, work on current line.
+
 URL `http://ergoemacs.org/emacs/elisp_change_space-hyphen_underscore.html'
 Version 2019-02-12"
   (interactive)
@@ -1473,8 +1533,11 @@ Version 2017-01-11"
   "Copy the current buffer's file path or dired path to `kill-ring'.
 Result is full path.
 If `universal-argument' is called first, copy only the dir path.
+
 If in dired, copy the file/dir cursor is on, or marked files.
+
 If a buffer is not file and not dired, copy value of `default-directory' (which is usually the “current” dir when that buffer was created)
+
 URL `http://ergoemacs.org/emacs/emacs_copy_file_path.html'
 Version 2018-06-18"
   (interactive "P")
@@ -1520,6 +1583,7 @@ Version 2018-06-18"
 (defun xah-delete-current-text-block ()
   "Delete the current text block or selection, and copy to `kill-ring'.
 A “block” is text between blank lines.
+
 URL `http://ergoemacs.org/emacs/emacs_delete_block.html'
 Version 2017-07-09"
   (interactive)
@@ -1538,6 +1602,7 @@ Version 2017-07-09"
 (defun xah-clear-register-1 ()
   "Clear register 1.
 See also: `xah-paste-from-register-1', `copy-to-register'.
+
 URL `http://ergoemacs.org/emacs/elisp_copy-paste_register_1.html'
 Version 2015-12-08"
   (interactive)
@@ -1548,6 +1613,7 @@ Version 2015-12-08"
 (defun xah-copy-to-register-1 ()
   "Copy current line or text selection to register 1.
 See also: `xah-paste-from-register-1', `copy-to-register'.
+
 URL `http://ergoemacs.org/emacs/elisp_copy-paste_register_1.html'
 Version 2017-01-23"
   (interactive)
@@ -1562,6 +1628,7 @@ Version 2017-01-23"
   "Append current line or text selection to register 1.
 When no selection, append current line, with newline char.
 See also: `xah-paste-from-register-1', `copy-to-register'.
+
 URL `http://ergoemacs.org/emacs/emacs_copy_append.html'
 Version 2015-12-08 2020-09-08"
   (interactive)
@@ -1602,6 +1669,7 @@ version 2016-07-17"
 Insert date in this format: yyyy-mm-dd.
 If `universal-argument' is called first, prompt for a format to use.
 If there's text selection, delete it first.
+
 URL `http://ergoemacs.org/emacs/elisp_insert-date-time.html'
 version 2020-09-07"
   (interactive)
@@ -1678,7 +1746,9 @@ version 2020-09-07"
 
 (defun xah-insert-bracket-pair (@left-bracket @right-bracket &optional @wrap-method)
   "Insert brackets around selection, word, at point, and maybe move cursor in between.
+
  @left-bracket and @right-bracket are strings. @wrap-method must be either 'line or 'block. 'block means between empty lines.
+
 • if there's a region, add brackets around region.
 • If @wrap-method is 'line, wrap around line.
 • If @wrap-method is 'block, wrap around block.
@@ -1687,6 +1757,7 @@ version 2020-09-07"
  xyz▮ → xyz(▮)
  xyz▮ → (xyz▮)       if in one of the lisp modes.
 • wrap brackets around word if any. e.g. xy▮z → (xyz▮). Or just (▮)
+
 URL `http://ergoemacs.org/emacs/elisp_insert_brackets_by_pair.html'
 Version 2017-01-17"
   (if (use-region-p)
@@ -1886,6 +1957,7 @@ Version 2021-01-05"
 
 (defun xah-select-current-block ()
   "Select the current block of text between blank lines.
+
 URL `http://ergoemacs.org/emacs/modernization_mark-word.html'
 Version 2017-07-02"
   (interactive)
@@ -1899,6 +1971,7 @@ Version 2017-07-02"
 (defun xah-select-block ()
   "Select the current/next block of text between blank lines.
 If region is active, extend selection downward by block.
+
 URL `http://ergoemacs.org/emacs/modernization_mark-word.html'
 Version 2019-12-26 2021-04-04"
   (interactive)
@@ -1945,10 +2018,13 @@ Version 2017-11-01 2021-03-19"
 (defun xah-extend-selection ()
   "Select the current word, bracket/quote expression, or expand selection.
 Subsequent calls expands the selection.
+
 when there's no selection,
 • if cursor is on a any type of bracket (including parenthesis, quotation mark), select whole bracketed thing including bracket
 • else, select current word.
+
 when there's a selection, the selection extension behavior is still experimental. But when cursor is on a any type of bracket (parenthesis, quote), it extends selection to outer bracket.
+
 URL `http://ergoemacs.org/emacs/modernization_mark-word.html'
 Version 2020-02-04"
   (interactive)
@@ -2047,8 +2123,11 @@ Version 2020-02-04"
   "Select text between the nearest left and right delimiters.
 Delimiters here includes the following chars: \"`<>(){}[]“”‘’‹›«»「」『』【】〖〗《》〈〉〔〕（）
 This command select between any bracket chars, does not consider nesting. For example, if text is
+
  (a(b)c▮)
+
  the selected char is “c”, not “a(b)c”.
+
 URL `http://ergoemacs.org/emacs/modernization_mark-word.html'
 Version 2020-11-24"
   (interactive)
@@ -2130,7 +2209,9 @@ Version 2016-06-19"
 (defun xah-new-empty-buffer ()
   "Create a new empty buffer.
 New buffer will be named “untitled” or “untitled<2>”, “untitled<3>”, etc.
+
 It returns the buffer (for elisp programing).
+
 URL `http://ergoemacs.org/emacs/emacs_new_empty_buffer.html'
 Version 2017-11-01"
   (interactive)
@@ -2151,11 +2232,14 @@ Version 2017-11-01"
 (declare-function org-edit-src-save "org-src" ())
 (defun xah-close-current-buffer ()
   "Close the current buffer.
+
 Similar to `kill-buffer', with the following addition:
+
 • Prompt user to save if the buffer has been modified even if the buffer is not associated with a file.
 • If the buffer is editing a source file in an org-mode file, prompt the user to save before closing.
 • If the buffer is a file, add the path to the list `xah-recently-closed-buffers'.
 • If it is the minibuffer, exit the minibuffer
+
 URL `http://ergoemacs.org/emacs/elisp_close_buffer_open_last_closed.html'
 Version 2018-06-11"
   (interactive)
@@ -2219,6 +2303,7 @@ Version 2016-06-19"
 (defun xah-open-file-fast ()
   "Prompt to open a file from bookmark `bookmark-bmenu-list'.
 This command is similar to `bookmark-jump', but use `ido-mode' interface, and ignore cursor position in bookmark.
+
 URL `http://ergoemacs.org/emacs/emacs_hotkey_open_file_fast.html'
 Version 2019-02-26"
   (interactive)
@@ -2238,6 +2323,7 @@ Input path can be {relative, full path, URL}.
 Path may have a trailing “:‹n›” that indicates line number, or “:‹n›:‹m›” with line and column number. If so, jump to that line number.
 If path does not have a file extension, automatically try with “.el” for elisp files.
 This command is similar to `find-file-at-point' but without prompting for confirmation.
+
 URL `http://ergoemacs.org/emacs/emacs_open_file_path_fast.html'
 Version 2020-10-17 2021-02-24"
   (interactive)
@@ -2368,7 +2454,7 @@ Version 2018-10-12"
  xah-run-current-file-map
  '(
    ("php" . "php")
-   ("pl" . "d:/Strawberry/perl/bin/perl.exe")
+   ("pl" . "perl")
    ("py" . "python")
    ("py2" . "python2")
    ("py3" . "python3")
@@ -2380,7 +2466,7 @@ Version 2018-10-12"
    ("tsx" . "tsc")
    ("mjs" . "node --experimental-modules ")
    ("sh" . "bash")
-   ("clj" . "java -cp ~/apps/clojure-1.6.0/clojure-1.6.0.jar clojure.main")
+   ("clj" . "clj")
    ("rkt" . "racket")
    ("ml" . "ocaml")
    ("vbs" . "cscript")
@@ -2395,7 +2481,9 @@ Version 2018-10-12"
 For example, if the current buffer is x.py, then it'll call 「python x.py」 in a shell.
 Output is printed to buffer “*xah-run output*”.
 File suffix is used to determine which program to run, set in the variable `xah-run-current-file-map'.
+
 If the file is modified or not saved, save it automatically before run.
+
 URL `http://ergoemacs.org/emacs/elisp_run_current_file.html'
 Version 2020-09-24 2021-01-21"
   (interactive)
@@ -2434,6 +2522,7 @@ Version 2020-09-24 2021-01-21"
 (defun xah-clean-empty-lines ()
   "Replace repeated blank lines to just 1.
 Works on whole buffer or text selection, respects `narrow-to-region'.
+
 URL `http://ergoemacs.org/emacs/elisp_compact_empty_lines.html'
 Version 2017-09-22 2020-09-08"
   (interactive)
@@ -2453,6 +2542,7 @@ Version 2017-09-22 2020-09-08"
   "Delete trailing whitespace, and replace repeated blank lines to just 1.
 Only space and tab is considered whitespace here.
 Works on whole buffer or text selection, respects `narrow-to-region'.
+
 URL `http://ergoemacs.org/emacs/elisp_compact_empty_lines.html'
 Version 2017-09-22 2020-09-08"
   (interactive)
@@ -2485,6 +2575,7 @@ The backup file name is in this format
  The last part is hour, minutes, seconds.
 in the same dir. If such a file already exist, it's overwritten.
 If the current buffer is not associated with a file, nothing's done.
+
 URL `http://ergoemacs.org/emacs/elisp_make-backup.html'
 Version 2018-06-06 2020-12-18"
   (interactive)
@@ -2522,8 +2613,11 @@ Version 2015-10-14"
 
 (defun xah-delete-current-file-make-backup (&optional @no-backup-p)
   "Delete current file, makes a backup~, closes the buffer.
+
 Backup filename is “‹name›~‹date time stamp›~”. Existing file of the same name is overwritten. If the file is not associated with buffer, the backup file name starts with “xx_”.
+
 When `universal-argument' is called first, don't create backup.
+
 URL `http://ergoemacs.org/emacs/elisp_delete-current-file.html'
 Version 2018-05-15 2020-12-18"
   (interactive "P")
@@ -2552,6 +2646,7 @@ Version 2018-05-15 2020-12-18"
 (defun xah-delete-current-file-copy-to-kill-ring ()
   "Delete current buffer/file and close the buffer, push content to `kill-ring',
 unless buffer is greater than 1 mega bytes.
+
 URL `http://ergoemacs.org/emacs/elisp_delete-current-file.html'
 Version 2019-03-22"
   (interactive)
@@ -2576,8 +2671,11 @@ Version 2019-03-22"
 If buffer is a file, make a backup~, push content to `kill-ring' (unless buffer is greater than 1 mega bytes.), then delete it.
 If buffer is not associate with a file, push content to `kill-ring' (unless buffer is greater than 1 mega bytes.), then kill it.
 If buffer is dired, do nothing.
+
 This commands may call `xah-delete-current-file-make-backup'.
+
 If next buffer is dired, refresh it.
+
 URL `http://ergoemacs.org/emacs/elisp_delete-current-file.html'
 Version 2020-02-14"
   (interactive "P")
@@ -2663,6 +2761,7 @@ Version 2020-11-20 2021-01-31"
 
 (defun xah-open-in-vscode ()
   "Open current file or dir in vscode.
+
 URL `http://ergoemacs.org/emacs/emacs_dired_open_file_in_ext_apps.html'
 Version 2020-02-13 2021-01-18"
   (interactive)
@@ -2693,7 +2792,7 @@ Version 2020-02-13 2021-01-18"
   "Open the current file or dired marked files in external app.
 When called in emacs lisp, if @fname is given, open that.
 URL `http://ergoemacs.org/emacs/emacs_dired_open_file_in_ext_apps.html'
-Version 2019-11-04 2021-02-16"
+Version 2019-11-04 2021-06-30"
   (interactive)
   (let* (
          ($file-list
@@ -2720,11 +2819,17 @@ Version 2019-11-04 2021-02-16"
        ((string-equal system-type "gnu/linux")
         (mapc
          (lambda ($fpath) (let ((process-connection-type nil))
-                            (start-process "" nil "xdg-open" $fpath))) $file-list))))))
+                            (start-process "" nil "xdg-open" $fpath))) $file-list))
+       ((string-equal system-type "berkeley-unix")
+        (mapc
+         (lambda ($fpath) (let ((process-connection-type nil))
+                            (start-process "" nil "xdg-open" $fpath)))
+         $file-list))))))
 
 (defun xah-open-in-terminal ()
   "Open the current dir in a new terminal window.
 On Microsoft Windows, it starts cross-platform PowerShell pwsh. You need to have it installed.
+
 URL `http://ergoemacs.org/emacs/emacs_dired_open_file_in_ext_apps.html'
 Version 2020-11-21 2021-03-01"
   (interactive)
@@ -3670,8 +3775,9 @@ Version 2020-04-18"
 
 (defmacro xah-fly--define-keys (@keymap-name @key-cmd-alist &optional @direct-q)
   "Map `define-key' over a alist @key-cmd-alist, with key layout remap.
-The key is remapped by `xah-fly--key-char'.
-If @direct-q is t, do not remap key.
+The key is remapped from Dvorak to the current keyboard layout
+by `xah-fly--key-char'.
+If @direct-q is t, do not remap key to current keyboard layout.
 Example usage:
 ;; (xah-fly--define-keys
 ;;  (define-prefix-command 'xah-fly-dot-keymap)
@@ -3696,6 +3802,7 @@ Version 2020-04-18"
 
 (defvar xah-fly-key-map (make-sparse-keymap)
   "Backward-compatibility map for `xah-fly-keys' minor mode.
+
 Points to `xah-fly-insert-map' when `xah-fly-insert-state-q' is non-nil,
 and points to `xah-fly-command-map' otherwise (which see).")
 (make-obsolete-variable
@@ -3707,12 +3814,14 @@ command and insert modes in `xah-fly-shared-map'."
 
 (defvar xah-fly-shared-map (make-sparse-keymap)
   "Parent keymap of `xah-fly-command-map' and `xah-fly-insert-map'.
+
 Define keys that are available in both command and insert modes here, like
 `xah-fly-mode-toggle'")
 
 ;; (cons 'keymap xah-fly-shared-map) makes a new keymap with `xah-fly-shared-map' as its parent. See info node (elisp)Inheritance and Keymaps.
 (defvar xah-fly-command-map (cons 'keymap xah-fly-shared-map)
   "Keymap that takes precedence over all other keymaps in command mode.
+
 Inherits bindings from `xah-fly-shared-map'. In command mode, if no binding
 is found in this map `xah-fly-shared-map' is checked, then if there is
 still no binding, the other active keymaps are checked like normal. However,
@@ -3720,12 +3829,14 @@ if a key is explicitly bound to nil in this map, it will not be looked
 up in `xah-fly-shared-map' and lookup will skip directly to the normally
 active maps. In this way, bindings in `xah-fly-shared-map' can be disabled
 by this map.
+
 Effectively, this map takes precedence over all others when command mode
 is enabled.")
 
 (defvar xah-fly-insert-map (cons 'keymap xah-fly-shared-map)
   "Keymap for bindings that will be checked in insert mode. Active whenever
 `xah-fly-keys' is non-nil.
+
 Inherits bindings from `xah-fly-shared-map'. In insert mode, if no binding
 is found in this map `xah-fly-shared-map' is checked, then if there is
 still no binding, the other active keymaps are checked like normal. However,
@@ -3733,6 +3844,7 @@ if a key is explicitly bound to nil in this map, it will not be looked
 up in `xah-fly-shared-map' and lookup will skip directly to the normally
 active maps. In this way, bindings in `xah-fly-shared-map' can be disabled
 by this map.
+
 Keep in mind that this acts like a normal global minor mode map, so other
 minor modes loaded later may override bindings in this map.")
 
@@ -4234,6 +4346,14 @@ minor modes loaded later may override bindings in this map.")
    ))
 
 ;; HHH___________________________________________________________________
+;; Movement key integrations with built-in Emacs packages
+
+(xah-fly--define-keys
+ indent-rigidly-map
+ '(("h" . indent-rigidly-left)
+   ("n" . indent-rigidly-right)))
+
+;; HHH___________________________________________________________________
 ;;;; misc
 
 ;; the following have keys in emacs, but right now i decided not to give them a key, because either they are rarely used (say, less than once a month by 90% of emacs users), or there is a more efficient command/workflow with key in xah-fly-keys
@@ -4381,6 +4501,7 @@ minor modes loaded later may override bindings in this map.")
 (defun xah-fly-keys-set-layout (@layout)
   "Set a keyboard layout.
 Argument must be one of:
+
  'azerty
  'azerty-be
  'beopy
@@ -4403,6 +4524,7 @@ Argument must be one of:
  'carpalx-qgmlwy
  'carpalx-qgmlwb
  'carpalx-qfmlwy
+
 For backwards compatibility, a string that is the name of one of the above symbols is also acceptable (case-sensitive).
 Version 2021-05-19"
   (interactive (list
@@ -4545,3 +4667,4 @@ URL `http://ergoemacs.org/misc/ergoemacs_vi_mode.html'"
 (provide 'xah-fly-keys)
 
 ;;; xah-fly-keys.el ends here
+
