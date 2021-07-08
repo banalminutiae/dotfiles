@@ -5,20 +5,37 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(scroll-bar-mode -1)
 (setq case-fold-search nil)
 (setq completion-ignore-case t)
 (setq read-buffer-completion-ignore-case t)
 ;; (global-subword-mode 1);;move through camel case
-
+(blink-cursor-mode 0)
 ;; (setq scroll-conservatively 1)
 ;; ;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
+(defun efs/display-startup-time ()
+  (message "Emacs loaded in %s with %d garbage collections."
+	   (format "%.2f seconds"
+		   (float-time
+		    (time-subtract after-init-time before-init-time)))
+	   gcs-done))
+(add-hook 'emacs-startup-hook #'efs/display-startup-time)
+
+(defadvice split-window (after move-point-to-new-window activate)
+  "Moves the point to the newly created window after splitting."
+  (other-window 1))
+
+;; inhibit startup screen if a file is passed it.
+(defun my-inhibit-startup-screen-always ()
+  "Startup screen inhibitor for `command-line-functions`.
+Inhibits startup screen on the first unrecognised option."
+  (ignore (setq inhibit-startup-screen t)))
+
+(add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
+
 (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
-(load "~/.emacs.d/lisp/custom.el")
-
-(defalias 'eb 'eval-buffer)
-(defalias 'er 'eval-region)
 (defalias 'dk 'describe-key)
 (defalias 'dt 'disable-theme)
 
@@ -30,6 +47,8 @@
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
+(global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-]") 'forward-paragraph)
 
 (setq-default select-enable-clipboard t)
 
@@ -66,8 +85,8 @@
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
-(require 'package)
-(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+;; (require 'package)
+;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . rjsx-mode))
 
@@ -92,19 +111,6 @@
 (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
-
-;; (set-face-attribute 'fringe nil :background nil)
-;; (set-background-color "#1B2F3F")
-;; (set-foreground-color "burlywood2")
-;; (set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
-;; (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
-;; (set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
-;; (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-;; (set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
-;; (set-face-attribute 'font-lock-keyword-face nil :foreground "white") 
-;; (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
-;; (set-face-attribute 'font-lock-type-face nil :foreground "goldenrod")
-;; (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2") 
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
