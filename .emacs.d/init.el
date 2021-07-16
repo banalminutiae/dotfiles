@@ -9,6 +9,7 @@
 (setq case-fold-search nil)
 (setq completion-ignore-case t)
 (setq read-buffer-completion-ignore-case t)
+
 ;; (global-subword-mode 1);;move through camel case
 (blink-cursor-mode 0)
 ;; (setq scroll-conservatively 1)
@@ -34,6 +35,8 @@ Inhibits startup screen on the first unrecognised option."
 
 (add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
 
+(global-auto-revert-mode)
+
 (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
 (defalias 'dk 'describe-key)
@@ -49,6 +52,8 @@ Inhibits startup screen on the first unrecognised option."
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-]") 'forward-paragraph)
+(global-set-key (kbd "<f6>") 'xah-open-in-vscode)
+(global-set-key (kbd "C-s") 'save-buffer)
 
 (setq-default select-enable-clipboard t)
 
@@ -68,10 +73,7 @@ Inhibits startup screen on the first unrecognised option."
         (?\".?\")
         (?\{.?\})))
 
-(cua-mode 1)
-;; (ido-mode 1)
-
-;;i-search with more intuitive controls 
+;; i-search with more intuitive controls 
 (progn
   (define-key isearch-mode-map (kbd "<up>")`isearch-ring-retreat)
   (define-key isearch-mode-map (kbd "<down>")`isearch-ring-advance)
@@ -91,6 +93,8 @@ Inhibits startup screen on the first unrecognised option."
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . rjsx-mode))
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+
+(setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-keys 1)
@@ -98,6 +102,7 @@ Inhibits startup screen on the first unrecognised option."
 (setq-default truncate-lines t)
 ;; (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
+
 
 (set-face-attribute 'fringe nil :background nil)
 (set-background-color "#161616")

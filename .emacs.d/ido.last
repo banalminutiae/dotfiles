@@ -136,7 +136,7 @@
 
 ;; ----- ido-dir-file-cache -----
 (
- ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24792 21809 0 0) "transient/" "recentf" "init.el~" "init.el" "image-dired/" "ido.last~" "ido.last" "eshell/" "elpy/" "elpa/" "bookmarks" "banal-theme.el" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
+ ("c:/Users/Andre/AppData/Roaming/.emacs.d/" (24816 7553 0 0) "url/" "recentf" "lisp/" "init.el" "ido.last~" "ido.last" "eshell/" "elpa/" "bookmarks" "auto-save-list/" "abbrev_defs" ".mc-lists.el" "../" "./")
 
  ("c:/Capstone/2021-03-interactive-study-planner/front_end/" (24792 20667 0 0) "src/" "README.md" "public/" "package.json" "package-lock.json" "node_modules/" ".gitignore" ".env.development" "../" "./")
 
