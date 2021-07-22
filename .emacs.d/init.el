@@ -6,13 +6,19 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
+
+(setq ido-case-fold nil)
 (setq case-fold-search nil)
 (setq completion-ignore-case t)
 (setq read-buffer-completion-ignore-case t)
 
-;; (global-subword-mode 1);;move through camel case
+(setq-default truncate-lines t)
+;; (setq truncate-partial-width-windows t)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
+
+(global-subword-mode 1);;move through camel case
 (blink-cursor-mode 0)
-;; (setq scroll-conservatively 1)
+(setq scroll-conservatively 1)
 ;; ;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
 (defun efs/display-startup-time ()
@@ -41,6 +47,7 @@ Inhibits startup screen on the first unrecognised option."
 
 (defalias 'dk 'describe-key)
 (defalias 'dt 'disable-theme)
+(defalias 'er 'eval-region)
 
 (setq initial-major-mode 'fundamental-mode)
 (global-visual-line-mode t)
@@ -49,10 +56,11 @@ Inhibits startup screen on the first unrecognised option."
 (setq search-whitespace-regexp "[-_ \t\n]+")
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
-(global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "<f6>") 'xah-open-in-vscode)
+(global-set-key (kbd "<f10>") 'align-regexp)
+(global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "C-s") 'save-buffer)
 
 (setq-default select-enable-clipboard t)
@@ -99,19 +107,21 @@ Inhibits startup screen on the first unrecognised option."
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-keys 1)
 
-(setq-default truncate-lines t)
-;; (setq truncate-partial-width-windows t)
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+(global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
+(global-set-key (kbd "C-d") 'xah-fly-command-mode-activate)
+
+
 
 
 (set-face-attribute 'fringe nil :background nil)
 (set-background-color "#161616")
+
 (set-foreground-color "burlywood2")
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
 (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
 (set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
+(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood3")
 (set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3") 
 (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
@@ -127,6 +137,7 @@ Inhibits startup screen on the first unrecognised option."
  '(package-selected-packages
    '(yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode rjsx-mode go-mode git-commit company command-log-mode))
  '(tool-bar-mode nil))
+
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
