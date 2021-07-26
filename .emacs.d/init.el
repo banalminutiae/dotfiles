@@ -99,6 +99,7 @@ Inhibits startup screen on the first unrecognised option."
 ;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . rjsx-mode))
+(add-to-list 'auto-mode-alist '("\\.kt\\'" . java-mode))
 (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
 (add-to-list 'load-path "~/.emacs.d/lisp/") ;; probably don't load an entire directory just for the xfk file

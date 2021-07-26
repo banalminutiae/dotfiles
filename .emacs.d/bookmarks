@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("4coder"
+(("AndroidStudioProjects"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/")
+ (front-context-string . "archive.tar\n  -r")
+ (rear-context-string . " 30 2019-10-23  ")
+ (position . 238))
+("4coder"
  (filename . "c:/4coder/4coder/")
  (front-context-string . "4coder_fleury\n  ")
  (rear-context-string . "096 06-04 13:39 ")
