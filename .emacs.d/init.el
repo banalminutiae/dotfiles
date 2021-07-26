@@ -43,8 +43,6 @@ Inhibits startup screen on the first unrecognised option."
 
 (global-auto-revert-mode)
 
-(add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
-
 (defalias 'dk 'describe-key)
 (defalias 'dt 'disable-theme)
 (defalias 'er 'eval-region)
@@ -62,6 +60,8 @@ Inhibits startup screen on the first unrecognised option."
 (global-set-key (kbd "<f10>") 'align-regexp)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "C-s") 'save-buffer)
+
+(global-set-key (kbd "<kp-home>") 'describe-key)
 
 (setq-default select-enable-clipboard t)
 
@@ -99,8 +99,9 @@ Inhibits startup screen on the first unrecognised option."
 ;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . rjsx-mode))
+(add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
-(add-to-list 'load-path "~/.emacs.d/lisp/")
+(add-to-list 'load-path "~/.emacs.d/lisp/") ;; probably don't load an entire directory just for the xfk file
 
 (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
@@ -109,9 +110,6 @@ Inhibits startup screen on the first unrecognised option."
 
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
 (global-set-key (kbd "C-d") 'xah-fly-command-mode-activate)
-
-
-
 
 (set-face-attribute 'fringe nil :background nil)
 (set-background-color "#161616")
@@ -126,6 +124,32 @@ Inhibits startup screen on the first unrecognised option."
 (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
+
+;; turn on font lock with maximum decoration
+(global-font-lock-mode t)
+(setq font-lock-maximum-decoration t)
+
+(require 'font-lock)
+
+;; create a face for function calls
+(defface font-lock-function-call-face
+'((t (:foreground "DarkGoldenrod3")))
+"Font Lock mode face used to highlight function calls."
+:group 'font-lock-highlighting-faces)
+(defvar font-lock-function-call-face 'font-lock-function-call-face)
+
+;; add it to the font lock tables
+(add-hook 'c-mode-common-hook 
+	  (lambda ()
+	    (font-lock-add-keywords
+	     nil
+	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
+
+(add-hook 'go-mode-hook 
+	  (lambda ()
+	    (font-lock-add-keywords
+	     nil
+	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
