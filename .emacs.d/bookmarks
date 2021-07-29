@@ -7,11 +7,6 @@
  (front-context-string . "archive.tar\n  -r")
  (rear-context-string . " 30 2019-10-23  ")
  (position . 238))
-("4coder"
- (filename . "c:/4coder/4coder/")
- (front-context-string . "4coder_fleury\n  ")
- (rear-context-string . "096 06-04 13:39 ")
- (position . 217))
 ("Graphics"
  (filename . "c:/Users/Andre/Documents/Graphics/")
  (front-context-string)
@@ -32,11 +27,6 @@
  (front-context-string . ")   \n   ;; (\"l\" ")
  (rear-context-string . ")\n   (\"k\" . yank")
  (position . 131982))
-("General Frontend"
- (filename . "c:/Capstone/2021-03-interactive-study-planner/General Frontend/")
- (front-context-string . ".env.development")
- (rear-context-string . " 82 07-01 14:58 ")
- (position . 262))
 ("Renderer_Win32.cpp"
  (filename . "c:/Users/Andre/Documents/Graphics/Renderer/Renderer/Renderer_Win32.cpp")
  (front-context-string . "#include <Window")
@@ -57,11 +47,6 @@
  (front-context-string . "Books\n  drwxrwxr")
  (rear-context-string . "096 12-29 19:53 ")
  (position . 255))
-(".emacs.d"
- (filename . "~/.emacs.d/")
- (front-context-string . "auto-save-list\n ")
- (rear-context-string . "  0 12-29 22:55 ")
- (position . 233))
 ("init.el"
  (filename . "~/.emacs.d/init.el")
  (front-context-string . ";;quality of lif")

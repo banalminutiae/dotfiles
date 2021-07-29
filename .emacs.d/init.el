@@ -7,6 +7,8 @@
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
 
+(setq column-number-mode t)
+
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
 (setq completion-ignore-case t)
@@ -48,7 +50,7 @@ Inhibits startup screen on the first unrecognised option."
 (defalias 'er 'eval-region)
 
 (setq initial-major-mode 'fundamental-mode)
-(global-visual-line-mode t)
+(global-visual-line-mode t) ;; word wrap thingy 
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq search-whitespace-regexp "[-_ \t\n]+")
@@ -56,8 +58,8 @@ Inhibits startup screen on the first unrecognised option."
 
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-]") 'forward-paragraph)
-(global-set-key (kbd "<f6>") 'xah-open-in-vscode)
-(global-set-key (kbd "<f10>") 'align-regexp)
+(global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
+(global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names 
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "C-s") 'save-buffer)
 
@@ -99,7 +101,11 @@ Inhibits startup screen on the first unrecognised option."
 ;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . rjsx-mode))
-(add-to-list 'auto-mode-alist '("\\.kt\\'" . java-mode))
+(add-to-list 'auto-mode-alist '("\\.ts\\'" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.kt\\'" . go-mode))	;; I don't wanna load an entire package for kotlin,
+	;; nor do I want to writ emy own major mode so this'll do for
+	;; a no-semicolon, curly-braced language with type inference idk.
+
 (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
 (add-to-list 'load-path "~/.emacs.d/lisp/") ;; probably don't load an entire directory just for the xfk file
