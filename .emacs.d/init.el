@@ -23,6 +23,7 @@
 (setq scroll-conservatively 1)
 ;; ;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
+;; modeline startup profiling
 (defun efs/display-startup-time ()
   (message "Emacs loaded in %s with %d garbage collections."
 	   (format "%.2f seconds"
@@ -35,7 +36,7 @@
   "Moves the point to the newly created window after splitting."
   (other-window 1))
 
-;; inhibit startup screen if a file is passed it.
+;; inhibit startup screen if a file is passed to it.
 (defun my-inhibit-startup-screen-always ()
   "Startup screen inhibitor for `command-line-functions`.
 Inhibits startup screen on the first unrecognised option."
@@ -45,15 +46,46 @@ Inhibits startup screen on the first unrecognised option."
 
 (global-auto-revert-mode)
 
+;; column selection with mouse
+(defun mouse-start-rectangle (start-event)
+  (interactive "e")
+  (deactivate-mark)
+  (mouse-set-point start-event)
+  (rectangle-mark-mode +1)
+  (let ((drag-event))
+    (track-mouse
+      (while (progn
+               (setq drag-event (read-event))
+               (mouse-movement-p drag-event))
+        (mouse-set-point drag-event)))))
+
+(global-set-key (kbd "S-<down-mouse-1>") #'mouse-start-rectangle)
+
+(defun move-line-up ()
+  "Move up the current line."
+  (interactive)
+  (transpose-lines 1)
+  (forward-line -2)
+  (indent-according-to-mode))
+
+(defun move-line-down ()
+  "Move down the current line."
+  (interactive)
+  (forward-line 1)
+  (transpose-lines 1)
+  (forward-line -1)
+  (indent-according-to-mode))
+
 (defalias 'dk 'describe-key)
 (defalias 'dt 'disable-theme)
 (defalias 'er 'eval-region)
 
-(setq initial-major-mode 'fundamental-mode)
 (global-visual-line-mode t) ;; word wrap thingy 
+(setq initial-major-mode 'fundamental-mode)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq search-whitespace-regexp "[-_ \t\n]+")
+
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
 (global-set-key (kbd "M-[") 'backward-paragraph)
@@ -62,6 +94,8 @@ Inhibits startup screen on the first unrecognised option."
 (global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names 
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "M-i") 'move-line-up)
+(global-set-key (kbd "M-k") 'move-line-down)
 
 (global-set-key (kbd "<kp-home>") 'describe-key)
 
@@ -146,6 +180,8 @@ Inhibits startup screen on the first unrecognised option."
 (defvar font-lock-function-call-face 'font-lock-function-call-face)
 
 ;; add it to the font lock tables
+
+;; this should fire before any other language hook
 (add-hook 'c-mode-common-hook 
 	  (lambda ()
 	    (font-lock-add-keywords
