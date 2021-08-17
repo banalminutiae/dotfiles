@@ -3,11 +3,11 @@
 (add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 800000)))
 (add-hook 'focus-out-hook 'garbage-collect)
 
+(setq inhibit-splash-screen t)
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 (scroll-bar-mode -1)
-
-(setq column-number-mode t)
 
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
@@ -21,7 +21,6 @@
 (global-subword-mode 1);;move through camel case
 (blink-cursor-mode 0)
 (setq scroll-conservatively 1)
-;; ;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
 ;; modeline startup profiling
 (defun efs/display-startup-time ()
@@ -32,19 +31,59 @@
 	   gcs-done))
 (add-hook 'emacs-startup-hook #'efs/display-startup-time)
 
-(defadvice split-window (after move-point-to-new-window activate)
-  "Moves the point to the newly created window after splitting."
-  (other-window 1))
 
 ;; inhibit startup screen if a file is passed to it.
 (defun my-inhibit-startup-screen-always ()
-  "Startup screen inhibitor for `command-line-functions`.
-Inhibits startup screen on the first unrecognised option."
   (ignore (setq inhibit-startup-screen t)))
 
 (add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
 
+(defadvice split-window (after move-point-to-new-window activate)
+  "Moves the point to the newly created window after splitting."
+  (other-window 1))
+
 (global-auto-revert-mode)
+
+;; dvorak to qwerty
+(defun dvorak-qwerty-translate (x)
+  (interactive "sDvorak key: ")
+  (setq keymap
+	'(("." . "e")
+	  ("," . "w")
+	  ("'" . "q")
+	  (";" . "z")
+	  ("/" . "[")
+	  ("[" . "-")
+	  ("]" . "=")
+	  ("=" . "]")
+	  ("-" . "'")
+	  ("a" . "a")
+	  ("b" . "n")
+	  ("c" . "i")
+	  ("d" . "h")
+	  ("e" . "d")
+	  ("f" . "y")
+	  ("g" . "u")
+	  ("h" . "j")
+	  ("i" . "g")
+	  ("j" . "c")
+	  ("k" . "v")
+	  ("l" . "p")
+	  ("m" . "m")
+	  ("n" . "l")
+	  ("o" . "s")
+	  ("p" . "r")
+	  ("q" . "x")
+	  ("r" . "o")
+	  ("s" . ";")
+	  ("t" . "k")
+	  ("u" . "f")
+	  ("v" . ".")
+	  ("w" . ",")
+	  ("x" . "b")
+	  ("y" . "t")
+	  ("z" . "/")))
+  (message "Corresponding QWERTY key: %s" (setq result (cdr (assq 'x keymap)))))
 
 ;; column selection with mouse
 (defun mouse-start-rectangle (start-event)
@@ -76,32 +115,34 @@ Inhibits startup screen on the first unrecognised option."
   (forward-line -1)
   (indent-according-to-mode))
 
-(defalias 'dk 'describe-key)
 (defalias 'dt 'disable-theme)
 (defalias 'er 'eval-region)
 
 (global-visual-line-mode t) ;; word wrap thingy 
-(setq initial-major-mode 'fundamental-mode)
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq search-whitespace-regexp "[-_ \t\n]+")
 
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
-(global-set-key (kbd "M-[") 'backward-paragraph)
-(global-set-key (kbd "M-]") 'forward-paragraph)
-(global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
-(global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names 
+(global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
-(global-set-key (kbd "C-s") 'save-buffer)
-(global-set-key (kbd "M-i") 'move-line-up)
-(global-set-key (kbd "M-k") 'move-line-down)
-
-(global-set-key (kbd "<kp-home>") 'describe-key)
+(global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
+(global-set-key (kbd "<f7>") 'kill-buffer-and-window)
+(global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names 
+(global-set-key (kbd "M-]") 'forward-paragraph)
+(global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-w") 'move-line-up)
+(global-set-key (kbd "M-n") 'xah-next-user-buffer)
+(global-set-key (kbd "M-p") 'xah-previous-user-buffer)
+(global-set-key (kbd "M-s") 'move-line-down)
+(global-set-key (kbd "C-p") 'previous-line)        
+(global-set-key (kbd "C-n") 'next-line)
+(global-set-key (kbd "M-DEL") 'kill-buffer-and-window)
 
 (setq-default select-enable-clipboard t)
 
-(setq backup-directory-alist `(("." . "~/.saves")))
+(setq make-backup-files nil)
  
 (show-paren-mode 1)
 
@@ -131,10 +172,10 @@ Inhibits startup screen on the first unrecognised option."
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
-;; (require 'package)
-;; (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
+(require 'package)
+(add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
-(add-to-list 'auto-mode-alist '("\\.tsx\\'" . rjsx-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . javascript-mode))
 (add-to-list 'auto-mode-alist '("\\.kt\\'" . go-mode))	;; I don't wanna load an entire package for kotlin,
 	;; nor do I want to writ emy own major mode so this'll do for
@@ -142,20 +183,24 @@ Inhibits startup screen on the first unrecognised option."
 
 (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
-(add-to-list 'load-path "~/.emacs.d/lisp/") ;; probably don't load an entire directory just for the xfk file
+(add-to-list 'load-path "~/.emacs.d/lisp/")
 
-(setq xah-fly-use-control-key nil)
+(unless (version< emacs-version "24")
+  (add-to-list 'load-path "~/.emacs.d/lisp/")
+  (autoload 'zig-mode "zig-mode" nil t)
+  (add-to-list 'auto-mode-alist '("\\.zig\\'" . zig-mode)))
+
+
+;; (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-keys 1)
 
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
-(global-set-key (kbd "C-d") 'xah-fly-command-mode-activate)
 
 (set-face-attribute 'fringe nil :background nil)
 (set-background-color "#161616")
-
-(set-foreground-color "burlywood2")
+(set-foreground-color "burlywood3")
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
 (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
 (set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
@@ -166,6 +211,19 @@ Inhibits startup screen on the first unrecognised option."
 (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
 
+;; (set-face-attribute 'fringe nil :background nil)
+;; (set-background-color "#E2E4B8")
+;; (set-foreground-color "black")
+;; (set-face-attribute 'font-lock-builtin-face nil :foreground "black")
+;; (set-face-attribute 'font-lock-comment-face nil :foreground "black")
+;; (set-face-attribute 'font-lock-constant-face nil :foreground "black")
+;; (set-face-attribute 'font-lock-doc-face nil :foreground "black")
+;; (set-face-attribute 'font-lock-function-name-face nil :foreground "black")
+;; (set-face-attribute 'font-lock-keyword-face nil :foreground "black") 
+;; (set-face-attribute 'font-lock-string-face nil :foreground "black")
+;; (set-face-attribute 'font-lock-type-face nil :foreground "black")
+;; (set-face-attribute 'font-lock-variable-name-face nil :foreground "black")
+
 ;; turn on font lock with maximum decoration
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
@@ -174,7 +232,7 @@ Inhibits startup screen on the first unrecognised option."
 
 ;; create a face for function calls
 (defface font-lock-function-call-face
-'((t (:foreground "DarkGoldenrod3")))
+'((t (:foreground "DarkGoldenrod3"))) 
 "Font Lock mode face used to highlight function calls."
 :group 'font-lock-highlighting-faces)
 (defvar font-lock-function-call-face 'font-lock-function-call-face)
@@ -202,7 +260,7 @@ Inhibits startup screen on the first unrecognised option."
  '(c-basic-offset 4)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode rjsx-mode go-mode git-commit company command-log-mode))
+   '(typescript-mode rjsx-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
  '(tool-bar-mode nil))
 
 (custom-set-faces
