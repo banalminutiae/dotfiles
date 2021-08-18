@@ -14,6 +14,8 @@
 (setq completion-ignore-case t)
 (setq read-buffer-completion-ignore-case t)
 
+(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
+
 (setq-default truncate-lines t)
 ;; (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
@@ -46,7 +48,7 @@
 
 ;; dvorak to qwerty
 (defun dvorak-qwerty-translate (x)
-  (interactive "sDvorak key: ")
+  (interactive "sDVORAK Key: ")
   (setq keymap
 	'(("." . "e")
 	  ("," . "w")
@@ -83,7 +85,8 @@
 	  ("x" . "b")
 	  ("y" . "t")
 	  ("z" . "/")))
-  (message "Corresponding QWERTY key: %s" (setq result (cdr (assq 'x keymap)))))
+  (message "Corresponding QWERTY key: %s" (cdr (assoc 'x keymap))))
+
 
 ;; column selection with mouse
 (defun mouse-start-rectangle (start-event)
