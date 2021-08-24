@@ -14,7 +14,7 @@
 (setq completion-ignore-case t)
 (setq read-buffer-completion-ignore-case t)
 
-(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
+;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
 (setq-default truncate-lines t)
 ;; (setq truncate-partial-width-windows t)
@@ -131,7 +131,6 @@
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
-(global-set-key (kbd "<f7>") 'kill-buffer-and-window)
 (global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names 
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
@@ -141,7 +140,6 @@
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "C-p") 'previous-line)        
 (global-set-key (kbd "C-n") 'next-line)
-(global-set-key (kbd "M-DEL") 'kill-buffer-and-window)
 
 (setq-default select-enable-clipboard t)
 
@@ -178,7 +176,8 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
-(add-to-list 'auto-mode-alist '("\\.tsx\\'" . typescript-mode))
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
+(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . javascript-mode))
 (add-to-list 'auto-mode-alist '("\\.kt\\'" . go-mode))	;; I don't wanna load an entire package for kotlin,
 	;; nor do I want to writ emy own major mode so this'll do for
@@ -263,7 +262,7 @@
  '(c-basic-offset 4)
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(typescript-mode rjsx-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
+   '(web-mode typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
  '(tool-bar-mode nil))
 
 (custom-set-faces
