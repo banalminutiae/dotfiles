@@ -1,8 +1,6 @@
 ;; -*- lexical-binding: t; -*-
 (setq gc-cons-threshold 100000000)
 (add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 800000)))
-(add-hook 'focus-out-hook 'garbage-collect)
-
 (setq inhibit-splash-screen t)
 
 (menu-bar-mode -1)
@@ -44,49 +42,8 @@
   "Moves the point to the newly created window after splitting."
   (other-window 1))
 
+(setq delete-by-moving-totrash t)
 (global-auto-revert-mode)
-
-;; dvorak to qwerty
-(defun dvorak-qwerty-translate (x)
-  (interactive "sDVORAK Key: ")
-  (setq keymap
-	'(("." . "e")
-	  ("," . "w")
-	  ("'" . "q")
-	  (";" . "z")
-	  ("/" . "[")
-	  ("[" . "-")
-	  ("]" . "=")
-	  ("=" . "]")
-	  ("-" . "'")
-	  ("a" . "a")
-	  ("b" . "n")
-	  ("c" . "i")
-	  ("d" . "h")
-	  ("e" . "d")
-	  ("f" . "y")
-	  ("g" . "u")
-	  ("h" . "j")
-	  ("i" . "g")
-	  ("j" . "c")
-	  ("k" . "v")
-	  ("l" . "p")
-	  ("m" . "m")
-	  ("n" . "l")
-	  ("o" . "s")
-	  ("p" . "r")
-	  ("q" . "x")
-	  ("r" . "o")
-	  ("s" . ";")
-	  ("t" . "k")
-	  ("u" . "f")
-	  ("v" . ".")
-	  ("w" . ",")
-	  ("x" . "b")
-	  ("y" . "t")
-	  ("z" . "/")))
-  (message "Corresponding QWERTY key: %s" (cdr (assoc 'x keymap))))
-
 
 ;; column selection with mouse
 (defun mouse-start-rectangle (start-event)
