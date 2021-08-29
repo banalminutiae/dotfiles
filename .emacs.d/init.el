@@ -38,11 +38,15 @@
 
 (add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
 
+(setq column-number-mode t)
+
 (defadvice split-window (after move-point-to-new-window activate)
   "Moves the point to the newly created window after splitting."
   (other-window 1))
 
-(setq delete-by-moving-totrash t)
+(setq column-numbers-mode t)
+
+(setq delete-by-moving-to-trash t)
 (global-auto-revert-mode)
 
 ;; column selection with mouse
