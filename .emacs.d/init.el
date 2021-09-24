@@ -89,6 +89,12 @@
 
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
 
+(defun cmd()
+  (interactive)
+  (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "cmd.exe")))
+    (set-process-query-on-exit-flag proc nil))
+  )
+
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
@@ -153,7 +159,6 @@
   (autoload 'zig-mode "zig-mode" nil t)
   (add-to-list 'auto-mode-alist '("\\.zig\\'" . zig-mode)))
 
-
 ;; (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
@@ -163,29 +168,16 @@
 
 (set-face-attribute 'fringe nil :background nil)
 (set-background-color "#161616")
-(set-foreground-color "burlywood3")
+(set-foreground-color "burlywood2")
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
 (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
 (set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood3")
+(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
 (set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3") 
 (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
-
-;; (set-face-attribute 'fringe nil :background nil)
-;; (set-background-color "#E2E4B8")
-;; (set-foreground-color "black")
-;; (set-face-attribute 'font-lock-builtin-face nil :foreground "black")
-;; (set-face-attribute 'font-lock-comment-face nil :foreground "black")
-;; (set-face-attribute 'font-lock-constant-face nil :foreground "black")
-;; (set-face-attribute 'font-lock-doc-face nil :foreground "black")
-;; (set-face-attribute 'font-lock-function-name-face nil :foreground "black")
-;; (set-face-attribute 'font-lock-keyword-face nil :foreground "black") 
-;; (set-face-attribute 'font-lock-string-face nil :foreground "black")
-;; (set-face-attribute 'font-lock-type-face nil :foreground "black")
-;; (set-face-attribute 'font-lock-variable-name-face nil :foreground "black")
 
 ;; turn on font lock with maximum decoration
 (global-font-lock-mode t)
@@ -232,4 +224,3 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
- ;; shitty custom variables. Edit only through the menu thingy
