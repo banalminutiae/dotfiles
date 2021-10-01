@@ -14,7 +14,7 @@
 
 ;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
-(setq-default truncate-lines t)
+;; (setq-default truncate-lines t)
 ;; (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
@@ -30,7 +30,6 @@
 		    (time-subtract after-init-time before-init-time)))
 	   gcs-done))
 (add-hook 'emacs-startup-hook #'efs/display-startup-time)
-
 
 ;; inhibit startup screen if a file is passed to it.
 (defun my-inhibit-startup-screen-always ()
@@ -82,7 +81,7 @@
 (defalias 'dt 'disable-theme)
 (defalias 'er 'eval-region)
 
-(global-visual-line-mode t) ;; word wrap thingy 
+;; (global-visual-line-mode t) ;; word wrap thingy 
 
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq search-whitespace-regexp "[-_ \t\n]+")
@@ -98,7 +97,8 @@
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
-(global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names 
+(global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names
+(global-set-key (kbd "<f12>") 'isearch-forward-symbol-at-point)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-w") 'move-line-up)
@@ -107,6 +107,7 @@
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "C-p") 'previous-line)        
 (global-set-key (kbd "C-n") 'next-line)
+
 
 (setq-default select-enable-clipboard t)
 
@@ -167,23 +168,25 @@
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
 
 (set-face-attribute 'fringe nil :background nil)
-(set-background-color "#161616")
-(set-foreground-color "burlywood2")
-(set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
-(set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
-(set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-(set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
-(set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3") 
-(set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
-(set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
-(set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
+;; (set-background-color "#161616")
+;; (set-foreground-color "burlywood2")
+;; (set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
+;; (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
+;; (set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
+;; (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
+;; (set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
+;; (set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3") 
+;; (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
+;; (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
+;; (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
 
 ;; turn on font lock with maximum decoration
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
 (require 'font-lock)
+
+(load-theme 'naysayer t)
 
 ;; create a face for function calls
 (defface font-lock-function-call-face
@@ -213,9 +216,11 @@
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 4)
+ '(custom-safe-themes
+   '("5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(web-mode typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
+   '(naysayer-theme web-mode typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
  '(tool-bar-mode nil))
 
 (custom-set-faces
