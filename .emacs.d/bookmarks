@@ -2,7 +2,47 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("res"
+(("layout"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/Assignment2/app/src/main/res/layout/")
+ (front-context-string . "activity_main.xm")
+ (rear-context-string . "844 09-30 23:03 ")
+ (position . 265))
+("assignment2"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/Assignment2/app/src/main/java/curtin/edu/assignment2/")
+ (front-context-string . "DatabaseCursor.j")
+ (rear-context-string . "354 10-09 16:29 ")
+ (position . 285))
+("orksheet3"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/orksheet3/app/src/main/java/au/edu/curtin/orksheet3/")
+ (front-context-string . "Fragment_Map.jav")
+ (rear-context-string . "082 08-26 21:25 ")
+ (position . 281))
+("lecture_6_demo"
+ (filename . "c:/Users/Andre/Documents/MAD_Code/P6DemoRaw/Lecture6Demo/app/src/main/java/curtin/edu/lecture_6_demo/")
+ (front-context-string . "MainActivity.jav")
+ (rear-context-string . "887 10-03 19:03 ")
+ (position . 293))
+("p4"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/P4/app/src/main/java/curtin/edu/p4/")
+ (front-context-string . "FactionList.java")
+ (rear-context-string . "685 08-20 17:05 ")
+ (position . 466))
+("p3"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/P3/app/src/main/java/curtin/edu/p3/")
+ (front-context-string . "MainActivity.kt\n")
+ (rear-context-string . "623 08-03 20:00 ")
+ (position . 264))
+("p5"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/P5/app/src/main/java/curtin/edu/p5/")
+ (front-context-string . "BigPhotoFragment")
+ (rear-context-string . "007 09-24 00:51 ")
+ (position . 264))
+("MainActivity.java"
+ (filename . "c:/Users/Andre/AndroidStudioProjects/P6/app/src/main/java/curtin/edu/p6/MainActivity.java")
+ (front-context-string . "            publ")
+ (rear-context-string . "      @Override\n")
+ (position . 1463))
+("res"
  (filename . "c:/Users/Andre/AndroidStudioProjects/Assignment1/app/src/main/res/")
  (front-context-string . "drawable\n  drwxr")
  (rear-context-string . "192 08-26 22:03 ")
@@ -27,11 +67,6 @@
  (front-context-string . "Landing.tsx\n  -r")
  (rear-context-string . "917 07-15 14:58 ")
  (position . 263))
-("src"
- (filename . "c:/Capstone/2021-03-interactive-study-planner/General Frontend/src/")
- (front-context-string . "App.css\n  -rw-rw")
- (rear-context-string . "602 07-08 18:39 ")
- (position . 257))
 ("xah-fly-keys.el"
  (filename . "~/.emacs.d/lisp/xah-fly-keys.el")
  (front-context-string . ")   \n   ;; (\"l\" ")

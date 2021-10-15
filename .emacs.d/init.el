@@ -5,7 +5,7 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+;; (scroll-bar-mode -1)
 
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
@@ -92,7 +92,7 @@
   (interactive)
   (let ((proc (start-process "cmd" nil "cmd.exe" "/C" "start" "cmd.exe")))
     (set-process-query-on-exit-flag proc nil))
-  )
+)
 
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
@@ -107,7 +107,6 @@
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "C-p") 'previous-line)        
 (global-set-key (kbd "C-n") 'next-line)
-
 
 (setq-default select-enable-clipboard t)
 
@@ -126,6 +125,8 @@
       '(
         (?\".?\")
         (?\{.?\})))
+
+(rg-use-old-defaults)
 
 ;; i-search with more intuitive controls 
 (progn
@@ -190,7 +191,7 @@
 
 ;; create a face for function calls
 (defface font-lock-function-call-face
-'((t (:foreground "DarkGoldenrod3"))) 
+'((t (:foreground "burlywood"))) 
 "Font Lock mode face used to highlight function calls."
 :group 'font-lock-highlighting-faces)
 (defvar font-lock-function-call-face 'font-lock-function-call-face)
@@ -220,7 +221,7 @@
    '("5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
  '(menu-bar-mode nil)
  '(package-selected-packages
-   '(naysayer-theme web-mode typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
+   '(rg naysayer-theme web-mode typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
  '(tool-bar-mode nil))
 
 (custom-set-faces
@@ -228,4 +229,4 @@
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+ '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal))))) 
