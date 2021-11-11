@@ -5,7 +5,7 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-;; (scroll-bar-mode -1)
+(scroll-bar-mode -1)
 
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
@@ -44,6 +44,9 @@
   (other-window 1))
 
 (setq column-numbers-mode t)
+(setq-default indent-tabs-mode nil)
+(setq-default tab-width 4)
+(setq indent-line-function 'insert-tab)
 
 (setq delete-by-moving-to-trash t)
 (global-auto-revert-mode)
@@ -145,12 +148,7 @@
 (require 'package)
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
-(add-to-list 'auto-mode-alist '("\\.tsx\\'" . web-mode))
-(add-to-list 'auto-mode-alist '("\\.jsx\\'" . web-mode))
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . javascript-mode))
-(add-to-list 'auto-mode-alist '("\\.kt\\'" . go-mode))	;; I don't wanna load an entire package for kotlin,
-	;; nor do I want to writ emy own major mode so this'll do for
-	;; a no-semicolon, curly-braced language with type inference idk.
 
 (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
@@ -219,14 +217,13 @@
  '(c-basic-offset 4)
  '(custom-safe-themes
    '("5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
- '(menu-bar-mode nil)
  '(package-selected-packages
-   '(rg naysayer-theme web-mode typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode))
- '(tool-bar-mode nil))
+   '(rg naysayer-theme typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
  ;; Your init file should contain only one such instance.
  ;; If there is more than one, they won't work right.
- '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal))))) 
+ '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
+ 
