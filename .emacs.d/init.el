@@ -203,11 +203,11 @@
 	     nil
 	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
 
-(add-hook 'go-mode-hook 
-	  (lambda ()
-	    (font-lock-add-keywords
-	     nil
-	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
+;; (add-hook 'go-mode-hook 
+;; 	  (lambda ()
+;; 	    (font-lock-add-keywords
+;; 	     nil
+;; 	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
