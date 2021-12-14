@@ -97,6 +97,12 @@
     (set-process-query-on-exit-flag proc nil))
 )
 
+(defun bg()
+  (interactive)
+  (let ((proc (start-process "baregrep" nil "baregrep.exe" "" "baregrep.exe")))
+    (set-process-query-on-exist-flag proc nil))
+)
+
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
@@ -202,12 +208,6 @@
 	    (font-lock-add-keywords
 	     nil
 	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
-
-;; (add-hook 'go-mode-hook 
-;; 	  (lambda ()
-;; 	    (font-lock-add-keywords
-;; 	     nil
-;; 	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
 
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
