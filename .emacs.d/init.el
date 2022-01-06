@@ -1,11 +1,11 @@
 ;; -*- lexical-binding: t; -*-
 (setq gc-cons-threshold 100000000)
 (add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 800000)))
-(setq inhibit-splash-screen t)
+;; (setq inhibit-splash-screen t)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-(scroll-bar-mode -1)
+;; (scroll-bar-mode -1)
 
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
@@ -103,19 +103,6 @@
     (set-process-query-on-exist-flag proc nil))
 )
 
-(global-set-key (kbd "<f2>") 'string-rectangle)
-(global-set-key (kbd "<f5>") 'repeat-complex-command)
-(global-set-key (kbd "<f6>") 'xah-open-in-vscode) ;; maybe make on for intellij too
-(global-set-key (kbd "<f10>") 'align-regexp) ;; pretty much only for langs where types go after names
-(global-set-key (kbd "<f12>") 'isearch-forward-symbol-at-point)
-(global-set-key (kbd "M-]") 'forward-paragraph)
-(global-set-key (kbd "M-[") 'backward-paragraph)
-(global-set-key (kbd "M-w") 'move-line-up)
-(global-set-key (kbd "M-n") 'xah-next-user-buffer)
-(global-set-key (kbd "M-p") 'xah-previous-user-buffer)
-(global-set-key (kbd "M-s") 'move-line-down)
-(global-set-key (kbd "C-p") 'previous-line)        
-(global-set-key (kbd "C-n") 'next-line)
 
 (setq-default select-enable-clipboard t)
 
@@ -192,6 +179,20 @@
 (require 'font-lock)
 
 (load-theme 'naysayer t)
+
+(global-set-key (kbd "<f2>") 'string-rectangle)
+(global-set-key (kbd "<f5>") 'repeat-complex-command)
+(global-set-key (kbd "<f6>") 'xah-open-in-vscode)
+(global-set-key (kbd "<f10>") 'align-regexp) 
+(global-set-key (kbd "<f12>") 'isearch-forward-symbol-at-point)
+(global-set-key (kbd "M-]") 'forward-paragraph)
+(global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-w") 'move-line-up)
+(global-set-key (kbd "M-n") 'xah-next-user-buffer)
+(global-set-key (kbd "M-p") 'xah-previous-user-buffer)
+(global-set-key (kbd "M-s") 'move-line-down)
+(global-set-key (kbd "C-p") 'previous-line)        
+(global-set-key (kbd "C-n") 'next-line)
 
 ;; create a face for function calls
 (defface font-lock-function-call-face
