@@ -2,11 +2,11 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("RayTracer"
- (filename . "c:/Users/Andre/Documents/Graphics/RayTracer/")
- (front-context-string . "build\n  drwxrwxr")
- (rear-context-string . "096 01-05 19:01 ")
- (position . 236))
+(("src"
+ (filename . "c:/Users/Andre/Documents/Graphics/RayTracer/src/")
+ (front-context-string . "build.bat\n  -rw-")
+ (rear-context-string . "150 01-05 19:18 ")
+ (position . 240))
 ("AndroidStudioProjects"
  (filename . "c:/Users/Andre/AndroidStudioProjects/")
  (front-context-string . "archive.tar\n  -r")

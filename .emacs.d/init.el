@@ -5,7 +5,7 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
-;; (scroll-bar-mode -1)
+(scroll-bar-mode -1)
 
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
@@ -152,7 +152,9 @@
   (autoload 'zig-mode "zig-mode" nil t)
   (add-to-list 'auto-mode-alist '("\\.zig\\'" . zig-mode)))
 
-;; (setq xah-fly-use-control-key nil)
+                                  
+
+(setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-keys 1)
@@ -180,11 +182,14 @@
 
 (load-theme 'naysayer t)
 
+(setq compile-command "build.bat")
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
-(global-set-key (kbd "<f6>") 'xah-open-in-vscode)
+;; (global-set-key (kbd "<f6>") 'xah-open-in-vscode)
+(global-set-key (kbd "<f6>") 'indent-rigidly)
 (global-set-key (kbd "<f10>") 'align-regexp) 
 (global-set-key (kbd "<f12>") 'isearch-forward-symbol-at-point)
+(global-set-key (kbd "M-q") 'compile)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-w") 'move-line-up)
@@ -193,6 +198,8 @@
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "C-p") 'previous-line)        
 (global-set-key (kbd "C-n") 'next-line)
+(global-set-key (kbd "C-f") 'forward-char)
+(global-set-key (kbd "C-b") 'backward-char)
 
 ;; create a face for function calls
 (defface font-lock-function-call-face
@@ -217,9 +224,9 @@
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 4)
  '(custom-safe-themes
-   '("5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
+        '("5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
  '(package-selected-packages
-   '(rg naysayer-theme typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode)))
+        '(rg naysayer-theme typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
