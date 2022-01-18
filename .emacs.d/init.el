@@ -37,6 +37,40 @@
 
 (add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
 
+;; (setq-default mode-line-format
+;;               (list
+;;                ;; the buffer name; the file name as a tool tip
+;;                '(:eval (propertize "%b " 'face 'font-lock-preprocessor-face
+;;                                    'help-echo (buffer-file-name)))
+
+;;                ;; line and column
+;;                "(" ;; '%02' to set to 2 chars at least; prevents flickering
+;;                (propertize "%02l" 'face 'font-lock-preprocessor-face) ","
+;;                (propertize "%02c" 'face 'font-lock-preprocessor-face) 
+;;                ") "
+
+;;                ;; the current major mode for the buffer.
+;;                "["
+
+;;                '(:eval (propertize "%m" 'face 'font-lock-preprocessor-face
+;;                                    'help-echo buffer-file-coding-system))
+;;                "] "
+
+
+;;                "[" ;; insert vs overwrite mode, input-method in a tooltip
+
+;;                ;; was this buffer modified since the last save?
+;;                '(:eval (when (buffer-modified-p)
+;;                          (concat ""  (propertize "Mod"
+;;                                                  'face 'font-lock-preprocessor-face
+;;                                                  'help-echo "Buffer has been modified"))))
+
+;;                "] "
+
+;;                ;; i don't want to see minor-modes; but if you want, uncomment this:
+;;                minor-mode-alist  ;; list of minor modes
+;;                ))
+
 (setq column-number-mode t)
 
 (defadvice split-window (after move-point-to-new-window activate)
@@ -152,8 +186,6 @@
   (autoload 'zig-mode "zig-mode" nil t)
   (add-to-list 'auto-mode-alist '("\\.zig\\'" . zig-mode)))
 
-                                  
-
 (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
@@ -173,7 +205,7 @@
 ;; (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
 ;; (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
 ;; (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
-
+;; (set-face-attribute 'font-lock-preprocessor-face nil :foreground "black")
 ;; turn on font lock with maximum decoration
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
