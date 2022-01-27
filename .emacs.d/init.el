@@ -37,39 +37,40 @@
 
 (add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
 
-(setq-default mode-line-format
-              (list
-               ;; the buffer name; the file name as a tool tip
-               '(:eval (propertize "%b " 'face 'font-lock-preprocessor-face
-                                   'help-echo (buffer-file-name)))
 
-               ;; line and column
-               "(" ;; '%02' to set to 2 chars at least; prevents flickering
-               (propertize "%02l" 'face 'font-lock-preprocessor-face) ","
-               (propertize "%02c" 'face 'font-lock-preprocessor-face) 
-               ") "
+;; (setq-default mode-line-format
+;;               (list
+;;                ;; the buffer name; the file name as a tool tip
+;;                '(:eval (propertize "%b " 'face 'font-lock-preprocessor-face
+;;                                    'help-echo (buffer-file-name)))
 
-               ;; the current major mode for the buffer.
-               "["
+;;                ;; line and column
+;;                "(" ;; '%02' to set to 2 chars at least; prevents flickering
+;;                (propertize "%02l" 'face 'font-lock-preprocessor-face) ","
+;;                (propertize "%02c" 'face 'font-lock-preprocessor-face) 
+;;                ") "
 
-               '(:eval (propertize "%m" 'face 'font-lock-preprocessor-face
-                                   'help-echo buffer-file-coding-system))
-               "] "
+;;                ;; the current major mode for the buffer.
+;;                "["
+
+;;                '(:eval (propertize "%m" 'face 'font-lock-preprocessor-face
+;;                                    'help-echo buffer-file-coding-system))
+;;                "] "
 
 
-               "[" ;; insert vs overwrite mode, input-method in a tooltip
+;;                "[" ;; insert vs overwrite mode, input-method in a tooltip
 
-               ;; was this buffer modified since the last save?
-               '(:eval (when (buffer-modified-p)
-                         (concat ""  (propertize "*"
-                                                 'face 'font-lock-preprocessor-face
-                                                 'help-echo "Buffer has been modified"))))
+;;                ;; was this buffer modified since the last save?
+;;                '(:eval (when (buffer-modified-p)
+;;                          (concat ""  (propertize "*"
+;;                                                  'face 'font-lock-preprocessor-face
+;;                                                  'help-echo "Buffer has been modified"))))
 
-               "] "
+;;                "] "
 
-               ;; i don't want to see minor-modes; but if you want, uncomment this:
-               minor-mode-alist  ;; list of minor modes
-               ))
+;;                ;; i don't want to see minor-modes; but if you want, uncomment this:
+;;                minor-mode-alist  ;; list of minor modes
+;;                ))
 
 (setq column-number-mode t)
 
@@ -141,7 +142,7 @@
 (setq-default select-enable-clipboard t)
 
 (setq make-backup-files nil)
- 
+
 (show-paren-mode 1)
 
 (set-language-environment "UTF-8")
@@ -212,7 +213,7 @@
 
 (require 'font-lock)
 
-(load-theme 'badwolf t)
+(load-theme 'naysayer t)
 
 (setq compile-command "build.bat")
 (global-set-key (kbd "<f2>") 'string-rectangle)
