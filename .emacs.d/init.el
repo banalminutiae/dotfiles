@@ -37,41 +37,6 @@
 
 (add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
 
-
-;; (setq-default mode-line-format
-;;               (list
-;;                ;; the buffer name; the file name as a tool tip
-;;                '(:eval (propertize "%b " 'face 'font-lock-preprocessor-face
-;;                                    'help-echo (buffer-file-name)))
-
-;;                ;; line and column
-;;                "(" ;; '%02' to set to 2 chars at least; prevents flickering
-;;                (propertize "%02l" 'face 'font-lock-preprocessor-face) ","
-;;                (propertize "%02c" 'face 'font-lock-preprocessor-face) 
-;;                ") "
-
-;;                ;; the current major mode for the buffer.
-;;                "["
-
-;;                '(:eval (propertize "%m" 'face 'font-lock-preprocessor-face
-;;                                    'help-echo buffer-file-coding-system))
-;;                "] "
-
-
-;;                "[" ;; insert vs overwrite mode, input-method in a tooltip
-
-;;                ;; was this buffer modified since the last save?
-;;                '(:eval (when (buffer-modified-p)
-;;                          (concat ""  (propertize "*"
-;;                                                  'face 'font-lock-preprocessor-face
-;;                                                  'help-echo "Buffer has been modified"))))
-
-;;                "] "
-
-;;                ;; i don't want to see minor-modes; but if you want, uncomment this:
-;;                minor-mode-alist  ;; list of minor modes
-;;                ))
-
 (setq column-number-mode t)
 
 (defadvice split-window (after move-point-to-new-window activate)
@@ -257,10 +222,10 @@
  ;; If there is more than one, they won't work right.
  '(c-basic-offset 4)
  '(custom-safe-themes
-        '("16ab866312f1bd47d1304b303145f339eac46bbc8d655c9bfa423b957aa23cc9" "5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
+   '("16ab866312f1bd47d1304b303145f339eac46bbc8d655c9bfa423b957aa23cc9" "5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
  '(linum-format " %5i ")
  '(package-selected-packages
-        '(badwolf-theme rg naysayer-theme typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode)))
+   '(tuareg badwolf-theme rg naysayer-theme typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
