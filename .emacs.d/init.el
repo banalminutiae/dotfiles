@@ -1,7 +1,6 @@
 ;; -*- lexical-binding: t; -*-
 (setq gc-cons-threshold 100000000)
 (add-hook 'after-init-hook (lambda () (setq gc-cons-threshold 800000)))
-;; (setq inhibit-splash-screen t)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -12,17 +11,14 @@
 (setq completion-ignore-case t)
 (setq read-buffer-completion-ignore-case t)
 
-;(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
-
 ;; (setq-default truncate-lines t)
 ;; (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(global-subword-mode 1);;move through camel case
+(global-subword-mode 1)
 (blink-cursor-mode 0)
 (setq scroll-conservatively 1)
 
-;; modeline startup profiling
 (defun efs/display-startup-time ()
   (message "Emacs loaded in %s with %d garbage collections."
 	   (format "%.2f seconds"
@@ -36,8 +32,6 @@
   (ignore (setq inhibit-startup-screen t)))
 
 (add-hook 'command-line-functions #'my-inhibit-startup-screen-always)
-
-(setq column-number-mode t)
 
 (defadvice split-window (after move-point-to-new-window activate)
   "Moves the point to the newly created window after splitting."
@@ -81,11 +75,6 @@
   (forward-line -1)
   (indent-according-to-mode))
 
-(defalias 'dt 'disable-theme)
-(defalias 'er 'eval-region)
-
-;; (global-visual-line-mode t) ;; word wrap thingy 
-
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq search-whitespace-regexp "[-_ \t\n]+")
 
@@ -102,7 +91,6 @@
   (let ((proc (start-process "baregrep" nil "baregrep.exe" "" "baregrep.exe")))
     (set-process-query-on-exist-flag proc nil))
 )
-
 
 (setq-default select-enable-clipboard t)
 
@@ -160,19 +148,6 @@
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
 
 (set-face-attribute 'fringe nil :background nil)
-;; (set-background-color "#161616")
-;; (set-foreground-color "burlywood2")
-;; (set-face-attribute 'font-lock-builtin-face nil :foreground "#DAB98F")
-;; (set-face-attribute 'font-lock-comment-face nil :foreground "gray50")
-;; (set-face-attribute 'font-lock-constant-face nil :foreground "olive drab")
-;; (set-face-attribute 'font-lock-doc-face nil :foreground "gray50")
-;; (set-face-attribute 'font-lock-function-name-face nil :foreground "burlywood2")
-;; (set-face-attribute 'font-lock-keyword-face nil :foreground "DarkGoldenrod3") 
-;; (set-face-attribute 'font-lock-string-face nil :foreground "olive drab")
-;; (set-face-attribute 'font-lock-type-face nil :foreground "#D6AF2A")
-;; (set-face-attribute 'font-lock-variable-name-face nil :foreground "burlywood2")
-;; (set-face-attribute 'font-lock-preprocessor-face nil :foreground "black")
-;; turn on font lock with maximum decoration
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
@@ -199,22 +174,6 @@
 (global-set-key (kbd "C-f") 'forward-char)
 (global-set-key (kbd "C-b") 'backward-char)
 
-;; create a face for function calls
-(defface font-lock-function-call-face
-'((t (:foreground "burlywood"))) 
-"Font Lock mode face used to highlight function calls."
-:group 'font-lock-highlighting-faces)
-(defvar font-lock-function-call-face 'font-lock-function-call-face)
-
-;; add it to the font lock tables
-
-;; this should fire before any other language hook
-(add-hook 'c-mode-common-hook 
-	  (lambda ()
-	    (font-lock-add-keywords
-	     nil
-	     '(("\\<\\(\\sw+\\) ?(" 1 font-lock-function-call-face)) t)))
-
 (custom-set-variables
  ;; custom-set-variables was added by Custom.
  ;; If you edit it by hand, you could mess it up, so be careful.
@@ -225,7 +184,7 @@
    '("16ab866312f1bd47d1304b303145f339eac46bbc8d655c9bfa423b957aa23cc9" "5d59bd44c5a875566348fa44ee01c98c1d72369dc531c1c5458b0864841f887c" default))
  '(linum-format " %5i ")
  '(package-selected-packages
-   '(tuareg badwolf-theme rg naysayer-theme typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode)))
+   '(tuareg rg naysayer-theme typescript-mode yaml-mode xah-fly-keys xah-find which-key use-package try toml-mode s rust-mode go-mode git-commit company command-log-mode)))
 
 (custom-set-faces
  ;; custom-set-faces was added by Custom.
@@ -234,3 +193,4 @@
  ;; If there is more than one, they won't work right.
  '(default ((t (:family "Inconsolata SemiExpanded" :foundry "outline" :slant normal :weight normal :height 120 :width normal)))))
  
+(put 'narrow-to-region 'disabled nil)
