@@ -156,19 +156,23 @@
 (load-theme 'naysayer t)
 
 (setq compile-command "build.bat")
+(define-key xah-fly-command-map (kbd "q") 'goto-line)
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 ;; (global-set-key (kbd "<f6>") 'xah-open-in-vscode)
 (global-set-key (kbd "<f6>") 'indent-rigidly)
 (global-set-key (kbd "<f10>") 'align-regexp) 
 (global-set-key (kbd "<f12>") 'isearch-forward-symbol-at-point)
+
+(global-set-key (kbd "<kp-8>") 'xah-next-user-buffer)
+(global-set-key (kbd "<kp-2>") 'xah-previous-user-buffer)
+    
 (global-set-key (kbd "M-q") 'compile)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-w") 'move-line-up)
-(global-set-key (kbd "M-n") 'xah-next-user-buffer)
-(global-set-key (kbd "M-p") 'xah-previous-user-buffer)
 (global-set-key (kbd "M-s") 'move-line-down)
+
 (global-set-key (kbd "C-p") 'previous-line)        
 (global-set-key (kbd "C-n") 'next-line)
 (global-set-key (kbd "C-f") 'forward-char)
