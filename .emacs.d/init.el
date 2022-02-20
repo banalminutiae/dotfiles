@@ -13,7 +13,7 @@
 
 ;; (setq-default truncate-lines t)
 ;; (setq truncate-partial-width-windows t)
-(add-to-list 'default-frame-alist '(fullscreen . maximized))
+;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (global-subword-mode 1)
 (blink-cursor-mode 0)
@@ -173,6 +173,7 @@
 (global-set-key (kbd "M-w") 'move-line-up)
 (global-set-key (kbd "M-s") 'move-line-down)
 
+(global-set-key (kbd "C-s") 'save-buffer)        
 (global-set-key (kbd "C-p") 'previous-line)        
 (global-set-key (kbd "C-n") 'next-line)
 (global-set-key (kbd "C-f") 'forward-char)
