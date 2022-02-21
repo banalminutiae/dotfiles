@@ -157,7 +157,7 @@
 
 (setq compile-command "build.bat")
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
-(define-key xah-fly-command-map (kbd "'") 'zap-up-to-char)
+(define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 ;; (global-set-key (kbd "<f6>") 'xah-open-in-vscode)
