@@ -130,6 +130,7 @@
 (add-to-list 'package-archives '("melpa" . "http://melpa.org/packages/"))
 
 (add-to-list 'auto-mode-alist '("\\.ts\\'" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.cs\\'" . java-mode))
 
 (add-hook 'go-mode-hook (lambda () (setq tab-width 4)))
 
