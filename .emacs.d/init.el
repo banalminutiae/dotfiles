@@ -136,11 +136,6 @@
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
 
-(unless (version< emacs-version "24")
-  (add-to-list 'load-path "~/.emacs.d/lisp/")
-  (autoload 'zig-mode "zig-mode" nil t)
-  (add-to-list 'auto-mode-alist '("\\.zig\\'" . zig-mode)))
-
 (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
@@ -182,5 +177,4 @@
 (global-set-key (kbd "C-b") 'backward-char)
 
 (setq custom-file (locate-user-emacs-file "custom_vars.el"))
-(load custom-file 'noerror 'message)
-
+(load custom-file 'noerror 'message) 
