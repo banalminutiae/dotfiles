@@ -2,7 +2,17 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("learnopengl"
+(("odin-mode.el"
+ (filename . "c:/Users/Andre/Documents/odin-mode/odin-mode.el")
+ (front-context-string . ";;; odin-mode-v1")
+ (rear-context-string)
+ (position . 1))
+("AOC"
+ (filename . "c:/Users/Andre/Documents/AOC/")
+ (front-context-string)
+ (rear-context-string . "  0 02-28 23:05 ")
+ (position . 220))
+("learnopengl"
  (filename . "c:/Users/Andre/Documents/Graphics/learnopengl/")
  (front-context-string . "Debug\n  -rw-rw-r")
  (rear-context-string . "096 02-07 18:26 ")
@@ -12,11 +22,6 @@
  (front-context-string . "build.bat\n  -rw-")
  (rear-context-string . "150 01-05 19:18 ")
  (position . 240))
-("AndroidStudioProjects"
- (filename . "c:/Users/Andre/AndroidStudioProjects/")
- (front-context-string . "archive.tar\n  -r")
- (rear-context-string . " 30 2019-10-23  ")
- (position . 238))
 ("Graphics"
  (filename . "c:/Users/Andre/Documents/Graphics/")
  (front-context-string)
