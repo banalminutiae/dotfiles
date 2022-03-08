@@ -9,9 +9,9 @@
 (setq completion-ignore-case t)
 (setq read-buffer-completion-ignore-case t)
 
-;; (setq-default truncate-lines t)
-;; (setq truncate-partial-width-windows t)
-;; (add-to-list 'default-frame-alist '(fullscreen . maximized))
+(setq-default truncate-lines t)
+(setq truncate-partial-width-windows t)
+(add-to-list 'default-frame-alist '(fullscreen . maximized))
 
 (global-subword-mode 1)
 (blink-cursor-mode 0)
@@ -25,8 +25,6 @@
              gcs-done (length features)))
 
 (add-hook 'emacs-startup-hook #'efs/display-startup-time)
-
-
 
 (defadvice split-window (after move-point-to-new-window activate)
   "Moves the point to the newly created window after splitting."
@@ -128,8 +126,8 @@
 
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
 
-(add-to-list 'default-frame-alist '(foreground-color . "#d1b897"))
-(add-to-list 'default-frame-alist '(background-color . "#062329"))
+(add-to-list 'default-frame-alist '(background-color . "#062329")) ;; having this load before the background prevents a solid half second of startup flicker
+(add-to-list 'default-frame-alist '(foreground-color . "#d1b897")) 
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#ffffff")
 (set-face-attribute 'font-lock-comment-face nil :foreground "#44b340")
 (set-face-attribute 'font-lock-constant-face nil :foreground "#44b340")

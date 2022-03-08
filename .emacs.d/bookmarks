@@ -37,11 +37,6 @@
  (front-context-string . "#include <Window")
  (rear-context-string)
  (position . 1))
-("2021-03-interactive-study-planner"
- (filename . "c:/Capstone/2021-03-interactive-study-planner/")
- (front-context-string . "bitbucket-pipeli")
- (rear-context-string . "147 05-25 18:20 ")
- (position . 238))
 ("HandmadeMath.h"
  (filename . "c:/Users/Andre/Documents/Handmade-Math-1.11.1/HandmadeMath.h")
  (front-context-string . "/*\n  HandmadeMat")
