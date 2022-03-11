@@ -130,12 +130,16 @@
 (add-to-list 'default-frame-alist '(foreground-color . "#d1b897")) 
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#ffffff")
 (set-face-attribute 'font-lock-comment-face nil :foreground "#44b340")
+(set-face-attribute 'font-lock-doc-face nil :foreground "#2ec90c")
 (set-face-attribute 'font-lock-constant-face nil :foreground "#44b340")
 (set-face-attribute 'font-lock-function-name-face nil :foreground "#ffffff")
 (set-face-attribute 'font-lock-keyword-face nil :foreground "#ffffff")
 (set-face-attribute 'font-lock-type-face nil :foreground "#8cde94")
 (set-face-attribute 'font-lock-string-face nil :foreground "#2ec09c")
 (set-face-attribute 'font-lock-variable-name-face nil :foreground "#c1d1e3")
+(set-face-attribute 'font-lock-preprocessor-face nil :foreground "#8cde94")
+(set-face-attribute 'font-lock-warning-face nil :foreground "#ffaa00")
+(set-face-attribute 'font-lock-negation-char-face nil :foreground "#ffaa00")
 
 (set-face-attribute 'fringe nil :background nil)
 (global-font-lock-mode t)
@@ -147,16 +151,15 @@
 
 (global-set-key (kbd "<f1>") 'isearch-forward-symbol-at-point)
 (global-set-key (kbd "<f2>") 'string-rectangle)
-;; <f3>
+(global-set-key (kbd "<f3>") 'align-regexp) 
 ;; <f4>
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
-(global-set-key (kbd "<f6>") 'indent-rigidly)
+;; <f6>
 ;; <f7>
 ;; <f8>
 ;; <f9> 
 ;; <f10>
-;; <f11>
-(global-set-key (kbd "<f12>") 'align-regexp) 
+(global-set-key (kbd "<f11>") 'indent-rigidly)
 
 (global-set-key (kbd "M-q") 'compile)
 (global-set-key (kbd "M-s") 'move-line-down)
