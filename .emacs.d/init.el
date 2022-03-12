@@ -1,5 +1,9 @@
 ;; -*- lexical-binding: t; -*-
-(setq gc-cons-threshold 10000000)
+;; Increases Garbage Collection During Startup
+(setq startup/gc-cons-threshold gc-cons-threshold)
+(setq gc-cons-threshold most-positive-fixnum)
+(defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
+(add-hook 'emacs-startup-hook 'startup/reset-gc)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -179,4 +183,3 @@
 (setq custom-file (locate-user-emacs-file "custom_vars.el"))
 (load custom-file 'noerror 'message) 
 
-(setq gc-cons-threshold (* 2 1000 000))
