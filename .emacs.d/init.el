@@ -141,7 +141,7 @@
 (set-face-attribute 'font-lock-warning-face nil :foreground "#ffaa00")
 (set-face-attribute 'font-lock-negation-char-face nil :foreground "#ffaa00")
 
-(set-face-attribute 'fringe nil :background nil)
+(set-face-attribute 'fringe nil :background "#062329" :foreground "#060320")
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
