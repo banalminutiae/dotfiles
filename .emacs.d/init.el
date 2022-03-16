@@ -21,6 +21,8 @@
 (blink-cursor-mode 0)
 (setq scroll-conservatively 1)
 
+(global-visual-line-mode 1)
+
 (defun efs/display-startup-time ()
     (message "Emacs loaded in %s with %d garbage collections and %d features loaded."
              (format "%.2f seconds"
@@ -89,6 +91,13 @@
     (set-process-query-on-exist-flag proc nil))
 )
 
+(when (eq system-type 'windows-nt)
+  (with-eval-after-load 'grep
+    ;; findstr can handle the basic find|grep use case
+    (grep-apply-setting 'grep-find-template
+                        "findstr /S /N /D:. /C:<R> <F>")
+    (setq find-name-arg nil)))
+
 (setq-default select-enable-clipboard t)
 
 (setq make-backup-files nil)
@@ -149,6 +158,8 @@
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
+(global-set-key (kbd "M-d") 'find-file-other-window) ;; key-chord later
+
 (setq compile-command "build.bat")
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
 (define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
@@ -162,7 +173,7 @@
 ;; <f7>
 ;; <f8>
 ;; <f9> 
-;; <f10>
+;; ~<f10>~
 (global-set-key (kbd "<f11>") 'indent-rigidly)
 
 (global-set-key (kbd "M-q") 'compile)
