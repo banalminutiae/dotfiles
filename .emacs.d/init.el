@@ -130,15 +130,6 @@
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
-(add-to-list 'load-path "~/.emacs.d/lisp/")
-
-(setq xah-fly-use-control-key nil)
-(require 'xah-fly-keys)
-(xah-fly-keys-set-layout "qwerty")
-(xah-fly-keys 1)
-
-(global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
-
 (add-to-list 'default-frame-alist '(background-color . "#062329")) ;; having this load before the background prevents a solid half second of startup flicker
 (add-to-list 'default-frame-alist '(foreground-color . "#d1b897")) 
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#ffffff")
@@ -158,26 +149,41 @@
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
+(add-to-list 'load-path "~/.emacs.d/lisp/")
+
+(setq xah-fly-use-control-key nil)
+(require 'xah-fly-keys)
+(xah-fly-keys-set-layout "qwerty")
+(xah-fly-keys 1)
+
+(setq xah-fly-insert-mode-indicator "✍" )
+
+(global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
+
+
 (setq compile-command "build.bat")
 
 ;; sequences with leader key SPACE
 (define-key xah-fly-leader-key-map (kbd "5") 'make-frame-command)
 
+;; sequences with leader key 't' i.e. k in qwerty
+(define-key xah-fly-t-keymap (kbd "a") 'list-matching-lines)
     
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
 (define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
 
 (global-set-key (kbd "<f1>") 'isearch-forward-symbol-at-point)
 (global-set-key (kbd "<f2>") 'string-rectangle)
-(global-set-key (kbd "<f3>") 'align-regexp) 
-;; <f4> reformat xah whitespace to one?
+(global-set-key (kbd "<f3>") 'align-regexp)
+(global-set-key (kbd "<f4>") 'xah-reformat-whitespaces-to-one-space)     
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
-;; <f6>
-;; <f7>
+(global-set-key (kbd "<f6>") 'kmacro-start-macro)   
+(global-set-key (kbd "<f7>") 'kmacro-end-macro)   
 ;; <f8>
 ;; <f9> 
-;; ~<f10>~
+;; <f10>
 (global-set-key (kbd "<f11>") 'indent-rigidly)
+;; <f12>
 
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
