@@ -165,13 +165,18 @@
 
 ;; sequences with leader key SPACE
 (define-key xah-fly-leader-key-map (kbd "5") 'make-frame-command)
+(define-key xah-fly-leader-key-map (kbd "9") 'make-frame-command)
 
 ;; sequences with leader key 't' i.e. k in qwerty
 (define-key xah-fly-t-keymap (kbd "a") 'list-matching-lines)
     
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
 (define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
+(define-key xah-fly-command-map (kbd "]") 'transpose-words)
+(define-key xah-fly-command-map (kbd "'") 'transpose-paragraphs)
 
+(global-set-key (kbd "<apps>") 'eval-buffer)
+    
 (global-set-key (kbd "<f1>") 'isearch-forward-symbol-at-point)
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f3>") 'align-regexp)
@@ -197,7 +202,6 @@
 (global-set-key (kbd "C-n") 'next-line)
 (global-set-key (kbd "C-p") 'previous-line)        
 (global-set-key (kbd "C-s") 'save-buffer)
-(global-set-key (kbd "C-z") 'list-buffers)
 
 (global-set-key (kbd "<kp-8>") 'xah-next-user-buffer)
 (global-set-key (kbd "<kp-2>") 'xah-previous-user-buffer)
