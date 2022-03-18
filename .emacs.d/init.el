@@ -158,16 +158,19 @@
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
-(global-set-key (kbd "M-d") 'find-file-other-window) ;; key-chord later
-
 (setq compile-command "build.bat")
+
+;; sequences with leader key SPACE
+(define-key xah-fly-leader-key-map (kbd "5") 'make-frame-command)
+
+    
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
 (define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
 
 (global-set-key (kbd "<f1>") 'isearch-forward-symbol-at-point)
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f3>") 'align-regexp) 
-;; <f4>
+;; <f4> reformat xah whitespace to one?
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 ;; <f6>
 ;; <f7>
@@ -176,17 +179,19 @@
 ;; ~<f10>~
 (global-set-key (kbd "<f11>") 'indent-rigidly)
 
+(global-set-key (kbd "M-]") 'forward-paragraph)
+(global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-q") 'compile)
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "M-w") 'move-line-up)
-(global-set-key (kbd "M-]") 'forward-paragraph)
-(global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-z") 'find-file-other-window) 
 
 (global-set-key (kbd "C-b") 'backward-char)
 (global-set-key (kbd "C-f") 'forward-char)
 (global-set-key (kbd "C-n") 'next-line)
 (global-set-key (kbd "C-p") 'previous-line)        
-(global-set-key (kbd "C-s") 'save-buffer)        
+(global-set-key (kbd "C-s") 'save-buffer)
+(global-set-key (kbd "C-z") 'list-buffers)
 
 (global-set-key (kbd "<kp-8>") 'xah-next-user-buffer)
 (global-set-key (kbd "<kp-2>") 'xah-previous-user-buffer)
