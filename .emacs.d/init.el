@@ -1,9 +1,11 @@
 ;; -*- lexical-binding: t; -*-
-;; Increases Garbage Collection During Startup
+;; increases garbage collection during startup
 (setq startup/gc-cons-threshold gc-cons-threshold)
-(setq gc-cons-threshold most-positive-fixnum)
+(setq gc-cons-thresphold most-positive-fixnum)
 (defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
 (add-hook 'emacs-startup-hook 'startup/reset-gc)
+
+(setq inhibit-splash-screen t)
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
@@ -20,6 +22,8 @@
 (global-subword-mode 1)
 (blink-cursor-mode 0)
 (setq scroll-conservatively 1)
+
+(put 'set-goal-column 'disabled nil)
 
 (global-visual-line-mode 1)
 
@@ -78,6 +82,10 @@
 (setq search-whitespace-regexp "[-_ \t\n]+")
 
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
+
+(defun transpose-words-left (arg)
+  (interactive "*p")
+  (transpose-subr 'backward-word arg))
 
 (defun cmd()
   (interactive)
@@ -157,22 +165,24 @@
 (xah-fly-keys 1)
 
 (setq xah-fly-insert-mode-indicator "✍" )
+(setq xah-fly-command-mode-indicator "¥")
 
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
-
 
 (setq compile-command "build.bat")
 
 ;; sequences with leader key SPACE
-(define-key xah-fly-leader-key-map (kbd "5") 'make-frame-command)
+(define-key xah-fly-leader-key-map (kbd "5") 'list-buffers)
 (define-key xah-fly-leader-key-map (kbd "9") 'make-frame-command)
+(define-key xah-fly-leader-key-map (kbd "[") 'hippie-sequences)
 
-;; sequences with leader key 't' i.e. k in qwerty
+;; expand with leader key 't' i.e. k in qwerty
 (define-key xah-fly-t-keymap (kbd "a") 'list-matching-lines)
     
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
 (define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
 (define-key xah-fly-command-map (kbd "]") 'transpose-words)
+(define-key xah-fly-command-map (kbd "[") 'transpose-words-left)    
 (define-key xah-fly-command-map (kbd "'") 'transpose-paragraphs)
 
 (global-set-key (kbd "<apps>") 'eval-buffer)
@@ -192,6 +202,7 @@
 
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-p") 'fill-paragraph)
 (global-set-key (kbd "M-q") 'compile)
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "M-w") 'move-line-up)
