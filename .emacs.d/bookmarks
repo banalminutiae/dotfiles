@@ -2,7 +2,27 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("odin-mode.el"
+(("Chess"
+ (filename . "c:/Users/Andre/Documents/Chess/")
+ (front-context-string . "bin\n  -rw-rw-rw-")
+ (rear-context-string . "  0 02-14 10:03 ")
+ (position . 223))
+("questions.org"
+ (filename . "c:/Users/Andre/OneDrive/Desktop/questions.org")
+ (front-context-string . "* Introduce your")
+ (rear-context-string)
+ (position . 1))
+("Desktop"
+ (filename . "c:/Users/Andre/OneDrive/Desktop/")
+ (front-context-string . "Andrew_Li_Resume")
+ (rear-context-string . "697 03-17 19:52 ")
+ (position . 262))
+("tiny_renderer"
+ (filename . "c:/Users/Andre/Documents/tiny_renderer/")
+ (front-context-string . "read_obj.odin\n  ")
+ (rear-context-string . " 44 03-20 21:30 ")
+ (position . 391))
+("odin-mode.el"
  (filename . "c:/Users/Andre/Documents/odin-mode/odin-mode.el")
  (front-context-string . ";;; odin-mode-v1")
  (rear-context-string)

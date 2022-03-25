@@ -6,7 +6,9 @@
 (add-hook 'emacs-startup-hook 'startup/reset-gc)
 
 (setq inhibit-splash-screen t)
-
+(setq initial-major-mode 'fundamental-mode)
+(setq frame-inhibit-implied-resize t)
+    
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
@@ -25,6 +27,7 @@
 
 (put 'set-goal-column 'disabled nil)
 
+(prettify-symbols-mode 1) 
 (global-visual-line-mode 1)
 
 (defun efs/display-startup-time ()
@@ -117,12 +120,11 @@
 
 (setq-default electric-indent-inhibit t)	
 
-;;bracket matching
-(electric-pair-mode 1)
-(setq electric-pair-pairs
-      '(
-        (?\".?\")
-        (?\{.?\})))
+;; (electric-pair-mode 1)
+;; (setq electric-pair-pairs
+;;       '(
+;;         (?\".?\")
+;;         (?\{.?\})))
 
 ;; i-search with more intuitive controls 
 (progn
@@ -138,8 +140,6 @@
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
-(add-to-list 'default-frame-alist '(background-color . "#062329")) ;; having this load before the background prevents a solid half second of startup flicker
-(add-to-list 'default-frame-alist '(foreground-color . "#d1b897")) 
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#ffffff")
 (set-face-attribute 'font-lock-comment-face nil :foreground "#44b340")
 (set-face-attribute 'font-lock-doc-face nil :foreground "#2ec90c")
@@ -153,11 +153,18 @@
 (set-face-attribute 'font-lock-warning-face nil :foreground "#ffaa00")
 (set-face-attribute 'font-lock-negation-char-face nil :foreground "#ffaa00")
 
-(set-face-attribute 'fringe nil :background "#062329" :foreground "#060320")
+(add-to-list 'default-frame-alist '(foreground-color . "#d1b897")) 
+(add-to-list 'default-frame-alist '(background-color . "#062329")) 
+
+(set-face-attribute 'fringe nil :background "#062329" :foreground "#062329") ;; #062329
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
+
+(require 'odin-mode)
+(add-to-list 'auto-mode-alist '("\\.odin\\'" . odin-mode))
+(add-to-list 'auto-mode-alist '("\\.go\\'" . odin-mode))
 
 (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
@@ -178,14 +185,16 @@
 
 ;; expand with leader key 't' i.e. k in qwerty
 (define-key xah-fly-t-keymap (kbd "a") 'list-matching-lines)
-    
+
+;; command mode shortcuts
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
 (define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
 (define-key xah-fly-command-map (kbd "]") 'transpose-words)
 (define-key xah-fly-command-map (kbd "[") 'transpose-words-left)    
-(define-key xah-fly-command-map (kbd "'") 'transpose-paragraphs)
+(define-key xah-fly-command-map (kbd "'") 'find-file-other-window)
+(define-key xah-fly-command-map (kbd "\\") 'switch-to-buffer-other-window)
 
-(global-set-key (kbd "<apps>") 'eval-buffer)
+(global-set-key (kbd "<apps>") 'xah-run-current-file)
     
 (global-set-key (kbd "<f1>") 'isearch-forward-symbol-at-point)
 (global-set-key (kbd "<f2>") 'string-rectangle)
@@ -193,7 +202,7 @@
 (global-set-key (kbd "<f4>") 'xah-reformat-whitespaces-to-one-space)     
 (global-set-key (kbd "<f5>") 'repeat-complex-command)
 (global-set-key (kbd "<f6>") 'kmacro-start-macro)   
-(global-set-key (kbd "<f7>") 'kmacro-end-macro)   
+(global-set-key (kbd "<f7>") 'kmacro-end-and-call-macro)   
 ;; <f8>
 ;; <f9> 
 ;; <f10>
@@ -206,7 +215,6 @@
 (global-set-key (kbd "M-q") 'compile)
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "M-w") 'move-line-up)
-(global-set-key (kbd "M-z") 'find-file-other-window) 
 
 (global-set-key (kbd "C-b") 'backward-char)
 (global-set-key (kbd "C-f") 'forward-char)
