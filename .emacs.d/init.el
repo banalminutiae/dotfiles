@@ -140,6 +140,8 @@
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
+(add-to-list 'default-frame-alist '(font . "Inconsolata SemiExpanded-12"))
+
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#ffffff")
 (set-face-attribute 'font-lock-comment-face nil :foreground "#44b340")
 (set-face-attribute 'font-lock-doc-face nil :foreground "#2ec90c")
@@ -226,5 +228,5 @@
 (global-set-key (kbd "<kp-2>") 'xah-previous-user-buffer)
 
 (setq custom-file (locate-user-emacs-file "custom_vars.el"))
-(load custom-file 'noerror 'message) 
+;; (load custom-file 'noerror 'message) 
 
