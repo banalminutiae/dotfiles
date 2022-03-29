@@ -1,9 +1,7 @@
 ;; -*- lexical-binding: t; -*-
-;; increases garbage collection during startup
-(setq startup/gc-cons-threshold gc-cons-threshold)
-(setq gc-cons-thresphold most-positive-fixnum)
-(defun startup/reset-gc () (setq gc-cons-threshold startup/gc-cons-threshold))
-(add-hook 'emacs-startup-hook 'startup/reset-gc)
+;; suppress garbage collection during startup
+(setq gc-cons-threshold (eval-when-compile (* 1024 1024 1024)))
+(run-with-idle-timer 2 t (lambda () (garbage-collect)))
 
 (setq inhibit-splash-screen t)
 (setq initial-major-mode 'fundamental-mode)
@@ -120,11 +118,11 @@
 
 (setq-default electric-indent-inhibit t)	
 
-;; (electric-pair-mode 1)
-;; (setq electric-pair-pairs
-;;       '(
-;;         (?\".?\")
-;;         (?\{.?\})))
+(electric-pair-mode 1)
+(setq electric-pair-pairs
+      '(
+        (?\".?\")
+        (?\{.?\})))
 
 ;; i-search with more intuitive controls 
 (progn
@@ -166,7 +164,10 @@
 
 (require 'odin-mode)
 (add-to-list 'auto-mode-alist '("\\.odin\\'" . odin-mode))
+;; close enough
 (add-to-list 'auto-mode-alist '("\\.go\\'" . odin-mode))
+(add-to-list 'auto-mode-alist '("\\.cs\\'" . java-mdoe)) 
+(add-to-list 'auto-mode-alist '("\\.tsx\\'" . javascript-mode))
 
 (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
@@ -230,3 +231,4 @@
 (setq custom-file (locate-user-emacs-file "custom_vars.el"))
 ;; (load custom-file 'noerror 'message) 
 
+(setq gc-cons-threshold (* 2 1000 1000))
