@@ -1,15 +1,13 @@
 ;; -*- lexical-binding: t; -*-
-;; suppress garbage collection during startup
-(setq gc-cons-threshold (eval-when-compile (* 1024 1024 1024)))
-(run-with-idle-timer 2 t (lambda () (garbage-collect)))
 
 (setq inhibit-splash-screen t)
 (setq initial-major-mode 'fundamental-mode)
 (setq frame-inhibit-implied-resize t)
-    
+
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
+(setq fido-mode t)
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
 (setq completion-ignore-case t)
@@ -19,7 +17,6 @@
 (setq truncate-partial-width-windows t)
 (add-to-list 'default-frame-alist '(fullscreen . maximized))
 
-(global-subword-mode 1)
 (blink-cursor-mode 0)
 (setq scroll-conservatively 1)
 
@@ -83,6 +80,7 @@
 (setq search-whitespace-regexp "[-_ \t\n]+")
 
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
+(define-key key-translation-map (kbd "<apps>") (kbd "C-g"))
 
 (defun transpose-words-left (arg)
   (interactive "*p")
@@ -156,7 +154,7 @@
 (add-to-list 'default-frame-alist '(foreground-color . "#d1b897")) 
 (add-to-list 'default-frame-alist '(background-color . "#062329")) 
 
-(set-face-attribute 'fringe nil :background "#062329" :foreground "#062329") ;; #062329
+(set-face-attribute 'fringe nil :background "#062329" :foreground "#062329") 
 (global-font-lock-mode t)
 (setq font-lock-maximum-decoration t)
 
@@ -168,14 +166,12 @@
 (add-to-list 'auto-mode-alist '("\\.go\\'" . odin-mode))
 (add-to-list 'auto-mode-alist '("\\.cs\\'" . java-mdoe)) 
 (add-to-list 'auto-mode-alist '("\\.tsx\\'" . javascript-mode))
+(add-to-list 'auto-mode-alist '("\\.h\\'" . c++-mode))
 
 (setq xah-fly-use-control-key nil)
 (require 'xah-fly-keys)
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-keys 1)
-
-(setq xah-fly-insert-mode-indicator "✍" )
-(setq xah-fly-command-mode-indicator "¥")
 
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
 
@@ -187,7 +183,7 @@
 (define-key xah-fly-leader-key-map (kbd "[") 'hippie-sequences)
 
 ;; expand with leader key 't' i.e. k in qwerty
-(define-key xah-fly-t-keymap (kbd "a") 'list-matching-lines)
+(define-key xah-fly-Rp2p0-key-map (kbd "a") 'list-matching-lines)
 
 ;; command mode shortcuts
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
@@ -197,8 +193,6 @@
 (define-key xah-fly-command-map (kbd "'") 'find-file-other-window)
 (define-key xah-fly-command-map (kbd "\\") 'switch-to-buffer-other-window)
 
-(global-set-key (kbd "<apps>") 'xah-run-current-file)
-    
 (global-set-key (kbd "<f1>") 'isearch-forward-symbol-at-point)
 (global-set-key (kbd "<f2>") 'string-rectangle)
 (global-set-key (kbd "<f3>") 'align-regexp)
@@ -212,6 +206,8 @@
 (global-set-key (kbd "<f11>") 'indent-rigidly)
 ;; <f12>
 
+(global-set-key (kbd "M-f") 'forward-word)
+(global-set-key (kbd "M-b") 'backward-word)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
 (global-set-key (kbd "M-p") 'fill-paragraph)
@@ -228,7 +224,5 @@
 (global-set-key (kbd "<kp-8>") 'xah-next-user-buffer)
 (global-set-key (kbd "<kp-2>") 'xah-previous-user-buffer)
 
+;; pipe custom variables into another file, never actually write it to existence
 (setq custom-file (locate-user-emacs-file "custom_vars.el"))
-;; (load custom-file 'noerror 'message) 
-
-(setq gc-cons-threshold (* 2 1000 1000))
