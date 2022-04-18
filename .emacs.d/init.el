@@ -7,7 +7,6 @@
 (menu-bar-mode -1)
 (tool-bar-mode -1)
 
-(setq fido-mode t)
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
 (setq completion-ignore-case t)
@@ -210,19 +209,17 @@
 (global-set-key (kbd "M-b") 'backward-word)
 (global-set-key (kbd "M-]") 'forward-paragraph)
 (global-set-key (kbd "M-[") 'backward-paragraph)
-(global-set-key (kbd "M-p") 'fill-paragraph)
+(global-set-key (kbd "M-n") 'next-line)
+(global-set-key (kbd "M-p") 'previous-line)        
 (global-set-key (kbd "M-q") 'compile)
 (global-set-key (kbd "M-s") 'move-line-down)
 (global-set-key (kbd "M-w") 'move-line-up)
-
+;; C-k -> SPACE-g, replace with something
 (global-set-key (kbd "C-b") 'backward-char)
 (global-set-key (kbd "C-f") 'forward-char)
-(global-set-key (kbd "C-n") 'next-line)
-(global-set-key (kbd "C-p") 'previous-line)        
+(global-set-key (kbd "C-n") 'xah-next-user-buffer)
+(global-set-key (kbd "C-p") 'xah-previous-user-buffer)        
 (global-set-key (kbd "C-s") 'save-buffer)
-
-(global-set-key (kbd "<kp-8>") 'xah-next-user-buffer)
-(global-set-key (kbd "<kp-2>") 'xah-previous-user-buffer)
 
 ;; pipe custom variables into another file, never actually write it to existence
 (setq custom-file (locate-user-emacs-file "custom_vars.el"))
