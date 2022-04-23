@@ -23,6 +23,7 @@
 
 (prettify-symbols-mode 1) 
 (global-visual-line-mode 1)
+(setq-default c-basic-offset 4)
 
 (defun efs/display-startup-time ()
     (message "Emacs loaded in %s with %d garbage collections and %d features loaded."
@@ -120,15 +121,6 @@
       '(
         (?\".?\")
         (?\{.?\})))
-
-;; i-search with more intuitive controls 
-(progn
-  (define-key isearch-mode-map (kbd "<up>")`isearch-ring-retreat)
-  (define-key isearch-mode-map (kbd "<down>")`isearch-ring-advance)
-  (define-key isearch-mode-map (kbd "<left>")`isearch-repeat-backward)
-  (define-key isearch-mode-map (kbd "<right>")`isearch-repeat-forwrd)
-  (define-key minibuffer-local-isearch-map (kbd"<left>")`isearch-reverse-exit-minibuffer)
-  (define-key minibuffer-local-isearch-map (kbd "<right>")`isearch-forward-exit-minibuffer))
 
 ;;no backups
 (setq make-backp-files nil)
