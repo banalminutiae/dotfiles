@@ -6,6 +6,11 @@
 
 (menu-bar-mode -1)
 (tool-bar-mode -1)
+(setq column-number-mode 1)
+
+(add-hook 'emacs-startup-hook
+          (lambda ()
+            (fido-mode t)))
 
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
@@ -80,7 +85,6 @@
 (setq search-whitespace-regexp "[-_ \t\n]+")
 
 (define-key key-translation-map (kbd "ESC") (kbd "C-g"))
-(define-key key-translation-map (kbd "<apps>") (kbd "C-g"))
 
 (defun transpose-words-left (arg)
   (interactive "*p")
@@ -165,6 +169,7 @@
 (xah-fly-keys 1)
 
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
+(global-set-key (kbd "<apps>") 'xah-fly-command-mode-activate)
 
 (setq compile-command "build.bat")
 
