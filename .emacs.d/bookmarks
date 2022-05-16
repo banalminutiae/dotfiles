@@ -2,7 +2,12 @@
 ;;; This format is meant to be slightly human-readable;
 ;;; nevertheless, you probably don't want to edit it.
 ;;; -*- End Of Bookmark File Format Version Stamp -*-
-(("org"
+(("lisp"
+ (filename . "~/.emacs.d/lisp/")
+ (front-context-string . "elixir-mode.el\n ")
+ (rear-context-string . "258 04-26 22:44 ")
+ (position . 244))
+("org"
  (filename . "c:/Users/Andre/Documents/org/")
  (front-context-string . "applications.org")
  (rear-context-string . "466 04-29 20:09 ")

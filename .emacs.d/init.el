@@ -142,7 +142,8 @@
 (setq font-lock-maximum-decoration t)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
-
+(load "~/.emacs.d/lisp/functions")
+    
 ;; close enough
 (add-to-list 'auto-mode-alist '("\\.go\\'" . odin-mode))
 (add-to-list 'auto-mode-alist '("\\.cs\\'" . java-mdoe)) 
@@ -155,7 +156,6 @@
 (xah-fly-keys 1)
 
 (global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
-(global-set-key (kbd "<apps>") 'xah-fly-command-mode-activate)
 
 (setq compile-command "build.bat")
 
