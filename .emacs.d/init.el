@@ -10,7 +10,7 @@
 
 (add-hook 'emacs-startup-hook
           (lambda ()
-            (fido-mode t)))
+            (fido-vertical-mode t)))
 
 (setq ido-case-fold nil)
 (setq case-fold-search nil)
@@ -38,6 +38,8 @@
              gcs-done (length features)))
 
 (add-hook 'emacs-startup-hook #'efs/display-startup-time)
+
+(define-key dired-mode-map [mouse-2] 'dired-mouse-find-file)
 
 (defadvice split-window (after move-point-to-new-window activate)
   "Moves the point to the newly created window after splitting."
@@ -81,6 +83,23 @@
   (forward-line -1)
   (indent-according-to-mode))
 
+(defun my-delete-word (arg)
+  "Delete characters forward until encountering the end of a word.
+With argument, do this that many times.
+This command does not push text to `kill-ring'."
+  (interactive "p")
+  (delete-region
+   (point)
+   (progn
+     (forward-word arg)
+     (point))))
+
+(defun my-backward-delete-word (arg)
+  "Delete characters backward until encountering the beginning of a word.
+With argument, do this that many times.
+This command does not push text to `kill-ring'."
+  (interactive "p")
+  (my-delete-word (- arg)))
 (defalias 'yes-or-no-p 'y-or-n-p)
 (setq search-whitespace-regexp "[-_ \t\n]+")
 
@@ -119,8 +138,10 @@
 (setq backup-by-copying t)
 (setq auto-save-default nil)
 
-(add-to-list 'default-frame-alist '(font . "Inconsolata SemiExpanded-12"))
+(set-frame-font "Iosevka-13" t t)
 
+(set-face-foreground 'mode-line "black")
+(set-face-background 'mode-line "#d1b897")
 (set-face-attribute 'font-lock-builtin-face nil :foreground "#ffffff")
 (set-face-attribute 'font-lock-comment-face nil :foreground "#44b340")
 (set-face-attribute 'font-lock-doc-face nil :foreground "#2ec90c")
@@ -133,12 +154,12 @@
 (set-face-attribute 'font-lock-preprocessor-face nil :foreground "#8cde94")
 (set-face-attribute 'font-lock-warning-face nil :foreground "#ffaa00")
 (set-face-attribute 'font-lock-negation-char-face nil :foreground "#ffaa00")
+(set-face-attribute 'fringe nil :background nil)
 
 (add-to-list 'default-frame-alist '(foreground-color . "#d1b897")) 
 (add-to-list 'default-frame-alist '(background-color . "#062329")) 
 
-(set-face-attribute 'fringe nil :background "#062329" :foreground "#062329") 
-(global-font-lock-mode t)
+(set-face-attribute 'fringe nil :background "#062329" :foreground "#062329")
 (setq font-lock-maximum-decoration t)
 
 (add-to-list 'load-path "~/.emacs.d/lisp/")
@@ -155,7 +176,7 @@
 (xah-fly-keys-set-layout "qwerty")
 (xah-fly-keys 1)
 
-(global-set-key (kbd "`") 'xah-fly-command-mode-activate) ;; if I need to backtick then alt-9-6 I guess
+(global-set-key (kbd "`") 'xah-fly-command-mode-activate) 
 
 (setq compile-command "build.bat")
 
@@ -168,10 +189,12 @@
 (define-key xah-fly-Rp2p0-key-map (kbd "a") 'list-matching-lines)
 
 ;; command mode shortcuts
+(define-key xah-fly-command-map (kbd "e") 'my-backward-delete-word)
+(define-key xah-fly-command-map (kbd "r") 'my-delete-word)
 (define-key xah-fly-command-map (kbd "q") 'goto-line)
 (define-key xah-fly-command-map (kbd "b") 'zap-up-to-char)
-(define-key xah-fly-command-map (kbd "]") 'transpose-words)
-(define-key xah-fly-command-map (kbd "[") 'transpose-words-left)    
+(define-key xah-fly-command-map (kbd "]") 'forward-paragraph)
+(define-key xah-fly-command-map (kbd "[") 'backward-paragraph)
 (define-key xah-fly-command-map (kbd "'") 'find-file-other-window)
 (define-key xah-fly-command-map (kbd "\\") 'switch-to-buffer-other-window)
 
@@ -190,8 +213,7 @@
 
 (global-set-key (kbd "M-f") 'forward-word)
 (global-set-key (kbd "M-b") 'backward-word)
-(global-set-key (kbd "M-]") 'forward-paragraph)
-(global-set-key (kbd "M-[") 'backward-paragraph)
+(global-set-key (kbd "M-]") 'xah-toggle-letter-case)
 (global-set-key (kbd "M-n") 'xah-next-user-buffer)
 (global-set-key (kbd "M-p") 'xah-previous-user-buffer)
 (global-set-key (kbd "M-q") 'compile)
@@ -203,7 +225,6 @@
 
 (global-set-key (kbd "C-n") 'next-line)
 (global-set-key (kbd "C-p") 'previous-line)        
-(global-set-key (kbd "C-s") 'save-buffer)
 
 ;; pipe custom variables into another file, never actually write it to existence
 (setq custom-file (locate-user-emacs-file "custom_vars.el"))
